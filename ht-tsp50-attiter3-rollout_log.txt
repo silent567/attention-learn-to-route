@@ -1,0 +1,5786 @@
+245
+
+
+{'baseline': 'rollout',
+ 'batch_size': 512,
+ 'bl_alpha': 0.05,
+ 'bl_warmup_epochs': 1,
+ 'checkpoint_encoder': False,
+ 'checkpoint_epochs': 1,
+ 'data_distribution': None,
+ 'embedding_dim': 128,
+ 'epoch_size': 1280000,
+ 'epoch_start': 0,
+ 'eval_batch_size': 1024,
+ 'eval_only': False,
+ 'exp_beta': 0.8,
+ 'graph_size': 50,
+ 'hidden_dim': 128,
+ 'load_path': None,
+ 'log_dir': 'logs',
+ 'log_step': 50,
+ 'lr_critic': 0.0001,
+ 'lr_decay': 1.0,
+ 'lr_model': 0.0001,
+ 'max_grad_norm': 1.0,
+ 'model': 'attentioniter3',
+ 'n_encode_layers': 3,
+ 'n_epochs': 100,
+ 'no_cuda': False,
+ 'no_progress_bar': False,
+ 'no_tensorboard': False,
+ 'normalization': 'batch',
+ 'output_dir': 'outputs',
+ 'problem': 'tsp',
+ 'resume': None,
+ 'run_name': 'tsp50_attiter3_rollout_20200202T054549',
+ 'save_dir': 'outputs/tsp_50/tsp50_attiter3_rollout_20200202T054549',
+ 'seed': 1234,
+ 'shrink_size': None,
+ 'tanh_clipping': 10.0,
+ 'use_cuda': True,
+ 'val_dataset': None,
+ 'val_size': 10000}
+Evaluating baseline model on evaluation dataset
+Start train epoch 0, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 0, train_batch_id: 0, avg_cost: 21.614694595336914
+grad_norm: 202.78118769283904, clipped: 1.0
+epoch: 0, train_batch_id: 50, avg_cost: 7.745120048522949
+grad_norm: 13.552048127074563, clipped: 1.0
+epoch: 0, train_batch_id: 100, avg_cost: 7.0669026374816895
+grad_norm: 19.600814746485735, clipped: 1.0
+epoch: 0, train_batch_id: 150, avg_cost: 6.950691223144531
+grad_norm: 18.069000494542685, clipped: 1.0
+epoch: 0, train_batch_id: 200, avg_cost: 6.819920063018799
+grad_norm: 10.101261865739179, clipped: 1.0
+epoch: 0, train_batch_id: 250, avg_cost: 6.754490375518799
+grad_norm: 16.868989412579257, clipped: 1.0
+epoch: 0, train_batch_id: 300, avg_cost: 6.668998718261719
+grad_norm: 8.877067695055961, clipped: 1.0
+epoch: 0, train_batch_id: 350, avg_cost: 6.650664329528809
+grad_norm: 13.849744982998152, clipped: 1.0
+epoch: 0, train_batch_id: 400, avg_cost: 6.579742431640625
+grad_norm: 8.458317116599034, clipped: 1.0
+epoch: 0, train_batch_id: 450, avg_cost: 6.570147514343262
+grad_norm: 9.595366046241038, clipped: 1.0
+epoch: 0, train_batch_id: 500, avg_cost: 6.531856536865234
+grad_norm: 8.564213544509094, clipped: 1.0
+epoch: 0, train_batch_id: 550, avg_cost: 6.539319038391113
+grad_norm: 6.390726540936857, clipped: 1.0
+epoch: 0, train_batch_id: 600, avg_cost: 6.507789611816406
+grad_norm: 10.662142925273784, clipped: 1.0
+epoch: 0, train_batch_id: 650, avg_cost: 6.463033676147461
+grad_norm: 7.413630818081373, clipped: 1.0
+epoch: 0, train_batch_id: 700, avg_cost: 6.495232105255127
+grad_norm: 10.805739834671053, clipped: 1.0
+epoch: 0, train_batch_id: 750, avg_cost: 6.444540023803711
+grad_norm: 7.404297800094754, clipped: 1.0
+epoch: 0, train_batch_id: 800, avg_cost: 6.4535932540893555
+grad_norm: 7.481553564775961, clipped: 1.0
+epoch: 0, train_batch_id: 850, avg_cost: 6.431896209716797
+grad_norm: 11.291783461233445, clipped: 1.0
+epoch: 0, train_batch_id: 900, avg_cost: 6.454350471496582
+grad_norm: 6.878207376084375, clipped: 1.0
+epoch: 0, train_batch_id: 950, avg_cost: 6.424635410308838
+grad_norm: 10.663192546902003, clipped: 1.0
+epoch: 0, train_batch_id: 1000, avg_cost: 6.433304786682129
+grad_norm: 15.136373486743551, clipped: 1.0
+epoch: 0, train_batch_id: 1050, avg_cost: 6.397012710571289
+grad_norm: 6.711713049104772, clipped: 1.0
+epoch: 0, train_batch_id: 1100, avg_cost: 6.3943681716918945
+grad_norm: 9.308020309807233, clipped: 1.0
+epoch: 0, train_batch_id: 1150, avg_cost: 6.349931240081787
+grad_norm: 9.295392082368503, clipped: 1.0
+epoch: 0, train_batch_id: 1200, avg_cost: 6.448549747467041
+grad_norm: 10.339612713285618, clipped: 1.0
+epoch: 0, train_batch_id: 1250, avg_cost: 6.367585182189941
+grad_norm: 10.772547544390664, clipped: 1.0
+epoch: 0, train_batch_id: 1300, avg_cost: 6.394741058349609
+grad_norm: 9.050701677803962, clipped: 1.0
+epoch: 0, train_batch_id: 1350, avg_cost: 6.355947494506836
+grad_norm: 7.79453736736484, clipped: 1.0
+epoch: 0, train_batch_id: 1400, avg_cost: 6.32727575302124
+grad_norm: 10.155782335691677, clipped: 1.0
+epoch: 0, train_batch_id: 1450, avg_cost: 6.399767875671387
+grad_norm: 8.534000923517594, clipped: 1.0
+epoch: 0, train_batch_id: 1500, avg_cost: 6.32938289642334
+grad_norm: 7.703768852190989, clipped: 1.0
+epoch: 0, train_batch_id: 1550, avg_cost: 6.341548919677734
+grad_norm: 10.752749927070782, clipped: 1.0
+epoch: 0, train_batch_id: 1600, avg_cost: 6.349898815155029
+grad_norm: 11.540622416063716, clipped: 1.0
+epoch: 0, train_batch_id: 1650, avg_cost: 6.352640151977539
+grad_norm: 5.863621901198398, clipped: 1.0
+epoch: 0, train_batch_id: 1700, avg_cost: 6.316572189331055
+grad_norm: 9.715281584595033, clipped: 1.0
+epoch: 0, train_batch_id: 1750, avg_cost: 6.370680809020996
+grad_norm: 8.24159298576018, clipped: 1.0
+epoch: 0, train_batch_id: 1800, avg_cost: 6.3081183433532715
+grad_norm: 5.406577432102282, clipped: 1.0
+epoch: 0, train_batch_id: 1850, avg_cost: 6.320338249206543
+grad_norm: 6.612569463886155, clipped: 1.0
+epoch: 0, train_batch_id: 1900, avg_cost: 6.309235572814941
+grad_norm: 7.62058761842582, clipped: 1.0
+epoch: 0, train_batch_id: 1950, avg_cost: 6.383157730102539
+grad_norm: 10.329849319675887, clipped: 1.0
+epoch: 0, train_batch_id: 2000, avg_cost: 6.357714653015137
+grad_norm: 7.20154234436437, clipped: 1.0
+epoch: 0, train_batch_id: 2050, avg_cost: 6.3091230392456055
+grad_norm: 5.7891928112852575, clipped: 1.0
+epoch: 0, train_batch_id: 2100, avg_cost: 6.34556770324707
+grad_norm: 8.156350252205133, clipped: 1.0
+epoch: 0, train_batch_id: 2150, avg_cost: 6.30075740814209
+grad_norm: 6.108676895103475, clipped: 1.0
+epoch: 0, train_batch_id: 2200, avg_cost: 6.314098834991455
+grad_norm: 13.461521672011779, clipped: 1.0
+epoch: 0, train_batch_id: 2250, avg_cost: 6.331733226776123
+grad_norm: 8.857266563301058, clipped: 1.0
+epoch: 0, train_batch_id: 2300, avg_cost: 6.320173740386963
+grad_norm: 7.571160579390771, clipped: 1.0
+epoch: 0, train_batch_id: 2350, avg_cost: 6.273541450500488
+grad_norm: 6.380138531800064, clipped: 1.0
+epoch: 0, train_batch_id: 2400, avg_cost: 6.272343635559082
+grad_norm: 7.221503500605175, clipped: 1.0
+epoch: 0, train_batch_id: 2450, avg_cost: 6.270739555358887
+grad_norm: 7.121890633094498, clipped: 1.0
+Finished epoch 0, took 00:20:12 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.992064476013184 +- 0.010090082883834839
+Evaluating candidate model on evaluation dataset
+Epoch 0 candidate mean 11.003664016723633, baseline epoch 0 mean 15.362571716308594, difference -4.358907699584961
+p-value: 0.0
+Update baseline
+Evaluating baseline model on evaluation dataset
+Set warmup alpha = 1.0
+Start train epoch 1, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 1, train_batch_id: 0, avg_cost: 6.288588523864746
+grad_norm: 66.12603698550453, clipped: 1.0
+epoch: 1, train_batch_id: 50, avg_cost: 6.861886978149414
+grad_norm: 74.13457619729617, clipped: 1.0
+epoch: 1, train_batch_id: 100, avg_cost: 6.792588233947754
+grad_norm: 67.18347955465308, clipped: 1.0
+epoch: 1, train_batch_id: 150, avg_cost: 6.656490325927734
+grad_norm: 62.36523246232236, clipped: 1.0
+epoch: 1, train_batch_id: 200, avg_cost: 6.687904357910156
+grad_norm: 76.3020606041018, clipped: 1.0
+epoch: 1, train_batch_id: 250, avg_cost: 6.73296594619751
+grad_norm: 77.24089114562048, clipped: 1.0
+epoch: 1, train_batch_id: 300, avg_cost: 7.209721088409424
+grad_norm: 57.88122120611206, clipped: 1.0
+epoch: 1, train_batch_id: 350, avg_cost: 6.773137092590332
+grad_norm: 55.463764787543404, clipped: 1.0
+epoch: 1, train_batch_id: 400, avg_cost: 6.856192111968994
+grad_norm: 67.0439770549614, clipped: 1.0
+epoch: 1, train_batch_id: 450, avg_cost: 6.828252792358398
+grad_norm: 58.33394968391727, clipped: 1.0
+epoch: 1, train_batch_id: 500, avg_cost: 6.8414692878723145
+grad_norm: 67.25407419015389, clipped: 1.0
+epoch: 1, train_batch_id: 550, avg_cost: 6.836219310760498
+grad_norm: 59.18287429383474, clipped: 1.0
+epoch: 1, train_batch_id: 600, avg_cost: 6.850546360015869
+grad_norm: 68.28241525180476, clipped: 1.0
+epoch: 1, train_batch_id: 650, avg_cost: 7.0643310546875
+grad_norm: 58.17187718574307, clipped: 1.0
+epoch: 1, train_batch_id: 700, avg_cost: 6.824395656585693
+grad_norm: 66.77386723205244, clipped: 1.0
+epoch: 1, train_batch_id: 750, avg_cost: 7.027517318725586
+grad_norm: 66.35401405584244, clipped: 1.0
+epoch: 1, train_batch_id: 800, avg_cost: 6.980246067047119
+grad_norm: 45.5818780422447, clipped: 1.0
+epoch: 1, train_batch_id: 850, avg_cost: 6.886651992797852
+grad_norm: 64.89203366811648, clipped: 1.0
+epoch: 1, train_batch_id: 900, avg_cost: 6.700173377990723
+grad_norm: 48.99402910879817, clipped: 1.0
+epoch: 1, train_batch_id: 950, avg_cost: 6.942566394805908
+grad_norm: 43.9349669252701, clipped: 1.0
+epoch: 1, train_batch_id: 1000, avg_cost: 6.939245700836182
+grad_norm: 43.06164670706132, clipped: 1.0
+epoch: 1, train_batch_id: 1050, avg_cost: 6.9105987548828125
+grad_norm: 47.285227209354005, clipped: 1.0
+epoch: 1, train_batch_id: 1100, avg_cost: 7.002059459686279
+grad_norm: 64.82742580758536, clipped: 1.0
+epoch: 1, train_batch_id: 1150, avg_cost: 6.7925124168396
+grad_norm: 79.16810577673611, clipped: 1.0
+epoch: 1, train_batch_id: 1200, avg_cost: 6.75998592376709
+grad_norm: 46.14034654457124, clipped: 1.0
+epoch: 1, train_batch_id: 1250, avg_cost: 6.83182954788208
+grad_norm: 39.71161849378204, clipped: 1.0
+epoch: 1, train_batch_id: 1300, avg_cost: 6.708288669586182
+grad_norm: 63.708546884117375, clipped: 1.0
+epoch: 1, train_batch_id: 1350, avg_cost: 7.0353312492370605
+grad_norm: 65.50516703053425, clipped: 1.0
+epoch: 1, train_batch_id: 1400, avg_cost: 6.676177024841309
+grad_norm: 56.76426407646922, clipped: 1.0
+epoch: 1, train_batch_id: 1450, avg_cost: 7.496216773986816
+grad_norm: 49.86160290360302, clipped: 1.0
+epoch: 1, train_batch_id: 1500, avg_cost: 6.77776575088501
+grad_norm: 55.37529260031267, clipped: 1.0
+epoch: 1, train_batch_id: 1550, avg_cost: 6.677833080291748
+grad_norm: 66.70287651901353, clipped: 1.0
+epoch: 1, train_batch_id: 1600, avg_cost: 6.851576805114746
+grad_norm: 46.89454300015682, clipped: 1.0
+epoch: 1, train_batch_id: 1650, avg_cost: 6.964116096496582
+grad_norm: 47.300941326048054, clipped: 1.0
+epoch: 1, train_batch_id: 1700, avg_cost: 6.7147979736328125
+grad_norm: 55.47982477092186, clipped: 1.0
+epoch: 1, train_batch_id: 1750, avg_cost: 7.088459491729736
+grad_norm: 58.222342156138176, clipped: 1.0
+epoch: 1, train_batch_id: 1800, avg_cost: 6.8764872550964355
+grad_norm: 41.45473280096563, clipped: 1.0
+epoch: 1, train_batch_id: 1850, avg_cost: 6.884468078613281
+grad_norm: 52.84386318365714, clipped: 1.0
+epoch: 1, train_batch_id: 1900, avg_cost: 7.089128017425537
+grad_norm: 44.618172132400865, clipped: 1.0
+epoch: 1, train_batch_id: 1950, avg_cost: 6.799095153808594
+grad_norm: 66.71462539286163, clipped: 1.0
+epoch: 1, train_batch_id: 2000, avg_cost: 7.282283306121826
+grad_norm: 58.95203453741321, clipped: 1.0
+epoch: 1, train_batch_id: 2050, avg_cost: 7.24943733215332
+grad_norm: 39.11851518661588, clipped: 1.0
+epoch: 1, train_batch_id: 2100, avg_cost: 6.914468765258789
+grad_norm: 67.4861438054276, clipped: 1.0
+epoch: 1, train_batch_id: 2150, avg_cost: 7.170186519622803
+grad_norm: 39.53007777928552, clipped: 1.0
+epoch: 1, train_batch_id: 2200, avg_cost: 7.0793585777282715
+grad_norm: 41.4548558850658, clipped: 1.0
+epoch: 1, train_batch_id: 2250, avg_cost: 6.929118633270264
+grad_norm: 39.67894944657488, clipped: 1.0
+epoch: 1, train_batch_id: 2300, avg_cost: 7.017187118530273
+grad_norm: 52.01156146586383, clipped: 1.0
+epoch: 1, train_batch_id: 2350, avg_cost: 6.69372034072876
+grad_norm: 44.14713603580258, clipped: 1.0
+epoch: 1, train_batch_id: 2400, avg_cost: 6.822258949279785
+grad_norm: 36.6576617652569, clipped: 1.0
+epoch: 1, train_batch_id: 2450, avg_cost: 6.93186092376709
+grad_norm: 46.62116960742995, clipped: 1.0
+Finished epoch 1, took 00:24:35 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.7299222946167 +- 0.011797127313911915
+Evaluating candidate model on evaluation dataset
+Epoch 1 candidate mean 10.721983909606934, baseline epoch 0 mean 11.000407218933105, difference -0.2784233093261719
+p-value: 5.00345283835782e-91
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 2, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 2, train_batch_id: 0, avg_cost: 6.929366111755371
+grad_norm: 45.38227530811995, clipped: 1.0
+epoch: 2, train_batch_id: 50, avg_cost: 7.0704755783081055
+grad_norm: 52.62581044742539, clipped: 1.0
+epoch: 2, train_batch_id: 100, avg_cost: 6.7065300941467285
+grad_norm: 73.90516920548718, clipped: 1.0
+epoch: 2, train_batch_id: 150, avg_cost: 6.9444780349731445
+grad_norm: 50.46273287448757, clipped: 1.0
+epoch: 2, train_batch_id: 200, avg_cost: 6.852263450622559
+grad_norm: 43.37679661525563, clipped: 1.0
+epoch: 2, train_batch_id: 250, avg_cost: 6.757353782653809
+grad_norm: 56.969628236181904, clipped: 1.0
+epoch: 2, train_batch_id: 300, avg_cost: 6.870981693267822
+grad_norm: 44.85748917720591, clipped: 1.0
+epoch: 2, train_batch_id: 350, avg_cost: 6.9598612785339355
+grad_norm: 56.19058594357908, clipped: 1.0
+epoch: 2, train_batch_id: 400, avg_cost: 6.963640213012695
+grad_norm: 60.132816345380256, clipped: 1.0
+epoch: 2, train_batch_id: 450, avg_cost: 6.868590354919434
+grad_norm: 50.69415758347581, clipped: 1.0
+epoch: 2, train_batch_id: 500, avg_cost: 6.739317893981934
+grad_norm: 43.489318178121145, clipped: 1.0
+epoch: 2, train_batch_id: 550, avg_cost: 6.831108093261719
+grad_norm: 26.69927573108937, clipped: 1.0
+epoch: 2, train_batch_id: 600, avg_cost: 6.8430585861206055
+grad_norm: 39.85140772770298, clipped: 1.0
+epoch: 2, train_batch_id: 650, avg_cost: 6.775946617126465
+grad_norm: 42.86281813999617, clipped: 1.0
+epoch: 2, train_batch_id: 700, avg_cost: 6.728888511657715
+grad_norm: 41.85076267690704, clipped: 1.0
+epoch: 2, train_batch_id: 750, avg_cost: 6.656614303588867
+grad_norm: 39.50111875865579, clipped: 1.0
+epoch: 2, train_batch_id: 800, avg_cost: 6.859624862670898
+grad_norm: 42.37702042022402, clipped: 1.0
+epoch: 2, train_batch_id: 850, avg_cost: 6.921055793762207
+grad_norm: 45.155119699746386, clipped: 1.0
+epoch: 2, train_batch_id: 900, avg_cost: 6.865535736083984
+grad_norm: 60.91544344442957, clipped: 1.0
+epoch: 2, train_batch_id: 950, avg_cost: 6.735491752624512
+grad_norm: 42.18192962091366, clipped: 1.0
+epoch: 2, train_batch_id: 1000, avg_cost: 6.815080165863037
+grad_norm: 52.41993691067645, clipped: 1.0
+epoch: 2, train_batch_id: 1050, avg_cost: 6.8619279861450195
+grad_norm: 36.730971180265264, clipped: 1.0
+epoch: 2, train_batch_id: 1100, avg_cost: 6.738485336303711
+grad_norm: 77.6234053028485, clipped: 1.0
+epoch: 2, train_batch_id: 1150, avg_cost: 6.908594131469727
+grad_norm: 39.664323837744355, clipped: 1.0
+epoch: 2, train_batch_id: 1200, avg_cost: 6.699857711791992
+grad_norm: 43.60909956064781, clipped: 1.0
+epoch: 2, train_batch_id: 1250, avg_cost: 6.791524887084961
+grad_norm: 55.04310637495487, clipped: 1.0
+epoch: 2, train_batch_id: 1300, avg_cost: 6.824856281280518
+grad_norm: 41.614976712667755, clipped: 1.0
+epoch: 2, train_batch_id: 1350, avg_cost: 6.708963394165039
+grad_norm: 43.32198003098946, clipped: 1.0
+epoch: 2, train_batch_id: 1400, avg_cost: 6.78804874420166
+grad_norm: 48.91522257243286, clipped: 1.0
+epoch: 2, train_batch_id: 1450, avg_cost: 6.858887195587158
+grad_norm: 35.40107450498001, clipped: 1.0
+epoch: 2, train_batch_id: 1500, avg_cost: 6.751920700073242
+grad_norm: 39.93708215001706, clipped: 1.0
+epoch: 2, train_batch_id: 1550, avg_cost: 6.848578453063965
+grad_norm: 52.78976203894653, clipped: 1.0
+epoch: 2, train_batch_id: 1600, avg_cost: 6.8100080490112305
+grad_norm: 40.05550675982713, clipped: 1.0
+epoch: 2, train_batch_id: 1650, avg_cost: 6.807583808898926
+grad_norm: 43.71135580150128, clipped: 1.0
+epoch: 2, train_batch_id: 1700, avg_cost: 6.78771448135376
+grad_norm: 43.588814302555214, clipped: 1.0
+epoch: 2, train_batch_id: 1750, avg_cost: 6.908727169036865
+grad_norm: 51.283931418614905, clipped: 1.0
+epoch: 2, train_batch_id: 1800, avg_cost: 7.012215614318848
+grad_norm: 28.085169715948023, clipped: 1.0
+epoch: 2, train_batch_id: 1850, avg_cost: 6.784093856811523
+grad_norm: 56.975831982453364, clipped: 1.0
+epoch: 2, train_batch_id: 1900, avg_cost: 7.23606014251709
+grad_norm: 33.21311381985316, clipped: 1.0
+epoch: 2, train_batch_id: 1950, avg_cost: 6.9832377433776855
+grad_norm: 57.53157422033504, clipped: 1.0
+epoch: 2, train_batch_id: 2000, avg_cost: 6.848348617553711
+grad_norm: 44.24675346341125, clipped: 1.0
+epoch: 2, train_batch_id: 2050, avg_cost: 6.795546531677246
+grad_norm: 35.159181255186056, clipped: 1.0
+epoch: 2, train_batch_id: 2100, avg_cost: 6.7165069580078125
+grad_norm: 62.699642331206896, clipped: 1.0
+epoch: 2, train_batch_id: 2150, avg_cost: 6.871390342712402
+grad_norm: 49.68175790200372, clipped: 1.0
+epoch: 2, train_batch_id: 2200, avg_cost: 6.86589241027832
+grad_norm: 39.37649136832742, clipped: 1.0
+epoch: 2, train_batch_id: 2250, avg_cost: 7.122012138366699
+grad_norm: 35.35043603137756, clipped: 1.0
+epoch: 2, train_batch_id: 2300, avg_cost: 6.828701972961426
+grad_norm: 39.00296336487902, clipped: 1.0
+epoch: 2, train_batch_id: 2350, avg_cost: 6.694197654724121
+grad_norm: 40.009781651547456, clipped: 1.0
+epoch: 2, train_batch_id: 2400, avg_cost: 6.692447185516357
+grad_norm: 34.10447946245281, clipped: 1.0
+epoch: 2, train_batch_id: 2450, avg_cost: 6.707584381103516
+grad_norm: 35.42393096571329, clipped: 1.0
+Finished epoch 2, took 00:24:40 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.966924667358398 +- 0.00925955455750227
+Evaluating candidate model on evaluation dataset
+Epoch 2 candidate mean 9.973613739013672, baseline epoch 1 mean 10.743199348449707, difference -0.7695856094360352
+p-value: 0.0
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 3, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 3, train_batch_id: 0, avg_cost: 6.8353776931762695
+grad_norm: 22.537136518549303, clipped: 1.0
+epoch: 3, train_batch_id: 50, avg_cost: 7.006227493286133
+grad_norm: 29.23987710566148, clipped: 1.0
+epoch: 3, train_batch_id: 100, avg_cost: 6.826775550842285
+grad_norm: 48.4973778266786, clipped: 1.0
+epoch: 3, train_batch_id: 150, avg_cost: 6.744467258453369
+grad_norm: 23.520409852829836, clipped: 1.0
+epoch: 3, train_batch_id: 200, avg_cost: 6.90504264831543
+grad_norm: 38.62950605848346, clipped: 1.0
+epoch: 3, train_batch_id: 250, avg_cost: 6.674343109130859
+grad_norm: 33.62554752822555, clipped: 1.0
+epoch: 3, train_batch_id: 300, avg_cost: 6.648491859436035
+grad_norm: 32.645933682206035, clipped: 1.0
+epoch: 3, train_batch_id: 350, avg_cost: 6.797679901123047
+grad_norm: 26.256799295468856, clipped: 1.0
+epoch: 3, train_batch_id: 400, avg_cost: 6.77963924407959
+grad_norm: 40.395441052798944, clipped: 1.0
+epoch: 3, train_batch_id: 450, avg_cost: 6.776066780090332
+grad_norm: 29.294476635624424, clipped: 1.0
+epoch: 3, train_batch_id: 500, avg_cost: 6.68338680267334
+grad_norm: 40.58506113752765, clipped: 1.0
+epoch: 3, train_batch_id: 550, avg_cost: 6.6646623611450195
+grad_norm: 43.98427527455646, clipped: 1.0
+epoch: 3, train_batch_id: 600, avg_cost: 6.699680805206299
+grad_norm: 37.87056444640092, clipped: 1.0
+epoch: 3, train_batch_id: 650, avg_cost: 6.641562461853027
+grad_norm: 37.04172309660038, clipped: 1.0
+epoch: 3, train_batch_id: 700, avg_cost: 6.799046039581299
+grad_norm: 34.978881630500126, clipped: 1.0
+epoch: 3, train_batch_id: 750, avg_cost: 6.981466293334961
+grad_norm: 27.814160402632403, clipped: 1.0
+epoch: 3, train_batch_id: 800, avg_cost: 6.800322532653809
+grad_norm: 24.350620549175943, clipped: 1.0
+epoch: 3, train_batch_id: 850, avg_cost: 6.901285171508789
+grad_norm: 36.56118815936796, clipped: 1.0
+epoch: 3, train_batch_id: 900, avg_cost: 6.885775089263916
+grad_norm: 25.62413009315155, clipped: 1.0
+epoch: 3, train_batch_id: 950, avg_cost: 6.625729560852051
+grad_norm: 25.545309695393534, clipped: 1.0
+epoch: 3, train_batch_id: 1000, avg_cost: 6.789772033691406
+grad_norm: 35.04348448216947, clipped: 1.0
+epoch: 3, train_batch_id: 1050, avg_cost: 6.799053192138672
+grad_norm: 46.340794037623546, clipped: 1.0
+epoch: 3, train_batch_id: 1100, avg_cost: 6.586794853210449
+grad_norm: 39.70980142970935, clipped: 1.0
+epoch: 3, train_batch_id: 1150, avg_cost: 6.632904052734375
+grad_norm: 27.660906281499813, clipped: 1.0
+epoch: 3, train_batch_id: 1200, avg_cost: 6.597245693206787
+grad_norm: 29.243444961065766, clipped: 1.0
+epoch: 3, train_batch_id: 1250, avg_cost: 6.713460922241211
+grad_norm: 32.24352508686948, clipped: 1.0
+epoch: 3, train_batch_id: 1300, avg_cost: 6.784183025360107
+grad_norm: 34.64585893608365, clipped: 1.0
+epoch: 3, train_batch_id: 1350, avg_cost: 6.585508823394775
+grad_norm: 34.98817446408607, clipped: 1.0
+epoch: 3, train_batch_id: 1400, avg_cost: 6.647385597229004
+grad_norm: 29.385018891582924, clipped: 1.0
+epoch: 3, train_batch_id: 1450, avg_cost: 6.834014892578125
+grad_norm: 38.662640463153735, clipped: 1.0
+epoch: 3, train_batch_id: 1500, avg_cost: 6.814068794250488
+grad_norm: 34.22302474881482, clipped: 1.0
+epoch: 3, train_batch_id: 1550, avg_cost: 6.596884250640869
+grad_norm: 36.50135673800937, clipped: 1.0
+epoch: 3, train_batch_id: 1600, avg_cost: 6.712981224060059
+grad_norm: 36.25480754765275, clipped: 1.0
+epoch: 3, train_batch_id: 1650, avg_cost: 6.600158214569092
+grad_norm: 40.086364375562944, clipped: 1.0
+epoch: 3, train_batch_id: 1700, avg_cost: 6.817278861999512
+grad_norm: 36.55522819749995, clipped: 1.0
+epoch: 3, train_batch_id: 1750, avg_cost: 6.634336948394775
+grad_norm: 27.875790534744045, clipped: 1.0
+epoch: 3, train_batch_id: 1800, avg_cost: 6.614831924438477
+grad_norm: 33.541306638372475, clipped: 1.0
+epoch: 3, train_batch_id: 1850, avg_cost: 6.564475059509277
+grad_norm: 26.476933681203356, clipped: 1.0
+epoch: 3, train_batch_id: 1900, avg_cost: 6.563434600830078
+grad_norm: 34.847459659859645, clipped: 1.0
+epoch: 3, train_batch_id: 1950, avg_cost: 6.573295593261719
+grad_norm: 33.68770285603894, clipped: 1.0
+epoch: 3, train_batch_id: 2000, avg_cost: 6.606013298034668
+grad_norm: 39.28236453498184, clipped: 1.0
+epoch: 3, train_batch_id: 2050, avg_cost: 6.679366111755371
+grad_norm: 27.91854776482928, clipped: 1.0
+epoch: 3, train_batch_id: 2100, avg_cost: 6.635907173156738
+grad_norm: 59.05493103174059, clipped: 1.0
+epoch: 3, train_batch_id: 2150, avg_cost: 6.659948348999023
+grad_norm: 30.23384816641371, clipped: 1.0
+epoch: 3, train_batch_id: 2200, avg_cost: 6.7369160652160645
+grad_norm: 67.29822153440068, clipped: 1.0
+epoch: 3, train_batch_id: 2250, avg_cost: 6.641973495483398
+grad_norm: 31.090746850505386, clipped: 1.0
+epoch: 3, train_batch_id: 2300, avg_cost: 6.566472053527832
+grad_norm: 29.38674375864619, clipped: 1.0
+epoch: 3, train_batch_id: 2350, avg_cost: 6.625664710998535
+grad_norm: 24.618527645911314, clipped: 1.0
+epoch: 3, train_batch_id: 2400, avg_cost: 6.646328449249268
+grad_norm: 29.452385789309595, clipped: 1.0
+epoch: 3, train_batch_id: 2450, avg_cost: 6.69956111907959
+grad_norm: 37.96661468205275, clipped: 1.0
+Finished epoch 3, took 00:24:41 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.408222198486328 +- 0.010294918902218342
+Evaluating candidate model on evaluation dataset
+Epoch 3 candidate mean 10.42396068572998, baseline epoch 2 mean 9.967872619628906, difference 0.4560880661010742
+Start train epoch 4, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 4, train_batch_id: 0, avg_cost: 6.665106773376465
+grad_norm: 22.416961839448348, clipped: 1.0
+epoch: 4, train_batch_id: 50, avg_cost: 6.6496686935424805
+grad_norm: 44.67908881014239, clipped: 1.0
+epoch: 4, train_batch_id: 100, avg_cost: 6.727117538452148
+grad_norm: 40.90381395275444, clipped: 1.0
+epoch: 4, train_batch_id: 150, avg_cost: 6.683661460876465
+grad_norm: 36.334681804855364, clipped: 1.0
+epoch: 4, train_batch_id: 200, avg_cost: 6.901432514190674
+grad_norm: 35.031057238482624, clipped: 1.0
+epoch: 4, train_batch_id: 250, avg_cost: 6.773500919342041
+grad_norm: 42.843292244196476, clipped: 1.0
+epoch: 4, train_batch_id: 300, avg_cost: 6.665591239929199
+grad_norm: 35.29834287707233, clipped: 1.0
+epoch: 4, train_batch_id: 350, avg_cost: 6.642789840698242
+grad_norm: 37.860116663903916, clipped: 1.0
+epoch: 4, train_batch_id: 400, avg_cost: 6.876721382141113
+grad_norm: 28.775756650932966, clipped: 1.0
+epoch: 4, train_batch_id: 450, avg_cost: 6.653468132019043
+grad_norm: 48.11018087689963, clipped: 1.0
+epoch: 4, train_batch_id: 500, avg_cost: 6.596504211425781
+grad_norm: 37.42032770257612, clipped: 1.0
+epoch: 4, train_batch_id: 550, avg_cost: 6.749128341674805
+grad_norm: 43.005719792025516, clipped: 1.0
+epoch: 4, train_batch_id: 600, avg_cost: 6.7733259201049805
+grad_norm: 29.983622311932137, clipped: 1.0
+epoch: 4, train_batch_id: 650, avg_cost: 6.664186477661133
+grad_norm: 32.469991484523874, clipped: 1.0
+epoch: 4, train_batch_id: 700, avg_cost: 6.718419551849365
+grad_norm: 26.784574627781815, clipped: 1.0
+epoch: 4, train_batch_id: 750, avg_cost: 6.52500057220459
+grad_norm: 27.14381768842961, clipped: 1.0
+epoch: 4, train_batch_id: 800, avg_cost: 6.583910942077637
+grad_norm: 28.949132817599732, clipped: 1.0
+epoch: 4, train_batch_id: 850, avg_cost: 6.742739200592041
+grad_norm: 50.82743698987643, clipped: 1.0
+epoch: 4, train_batch_id: 900, avg_cost: 6.831995964050293
+grad_norm: 35.579234071649026, clipped: 1.0
+epoch: 4, train_batch_id: 950, avg_cost: 6.611234664916992
+grad_norm: 31.417163935941804, clipped: 1.0
+epoch: 4, train_batch_id: 1000, avg_cost: 6.559922218322754
+grad_norm: 29.070817589714498, clipped: 1.0
+epoch: 4, train_batch_id: 1050, avg_cost: 6.500521659851074
+grad_norm: 29.80788654494648, clipped: 1.0
+epoch: 4, train_batch_id: 1100, avg_cost: 6.559528350830078
+grad_norm: 33.484221382856916, clipped: 1.0
+epoch: 4, train_batch_id: 1150, avg_cost: 6.758901119232178
+grad_norm: 23.602924709817945, clipped: 1.0
+epoch: 4, train_batch_id: 1200, avg_cost: 6.564815521240234
+grad_norm: 41.44082006637418, clipped: 1.0
+epoch: 4, train_batch_id: 1250, avg_cost: 6.732159614562988
+grad_norm: 24.702178601602444, clipped: 1.0
+epoch: 4, train_batch_id: 1300, avg_cost: 6.589841842651367
+grad_norm: 34.812562459939045, clipped: 1.0
+epoch: 4, train_batch_id: 1350, avg_cost: 6.544582366943359
+grad_norm: 27.72668540866224, clipped: 1.0
+epoch: 4, train_batch_id: 1400, avg_cost: 6.584770679473877
+grad_norm: 29.52636962070668, clipped: 1.0
+epoch: 4, train_batch_id: 1450, avg_cost: 6.722785472869873
+grad_norm: 25.97005404026996, clipped: 1.0
+epoch: 4, train_batch_id: 1500, avg_cost: 6.833467483520508
+grad_norm: 36.91941183309267, clipped: 1.0
+epoch: 4, train_batch_id: 1550, avg_cost: 6.490684509277344
+grad_norm: 26.592053434118416, clipped: 1.0
+epoch: 4, train_batch_id: 1600, avg_cost: 6.645539283752441
+grad_norm: 24.73684590273235, clipped: 1.0
+epoch: 4, train_batch_id: 1650, avg_cost: 6.498151779174805
+grad_norm: 31.22733629172479, clipped: 1.0
+epoch: 4, train_batch_id: 1700, avg_cost: 6.583174228668213
+grad_norm: 27.524626054993426, clipped: 1.0
+epoch: 4, train_batch_id: 1750, avg_cost: 6.5335469245910645
+grad_norm: 41.30417982160197, clipped: 1.0
+epoch: 4, train_batch_id: 1800, avg_cost: 6.718201160430908
+grad_norm: 30.086886068177872, clipped: 1.0
+epoch: 4, train_batch_id: 1850, avg_cost: 6.509505271911621
+grad_norm: 30.055939920722167, clipped: 1.0
+epoch: 4, train_batch_id: 1900, avg_cost: 6.5814714431762695
+grad_norm: 35.045958115136514, clipped: 1.0
+epoch: 4, train_batch_id: 1950, avg_cost: 6.49463415145874
+grad_norm: 33.357380650589285, clipped: 1.0
+epoch: 4, train_batch_id: 2000, avg_cost: 6.553615570068359
+grad_norm: 26.496722664686736, clipped: 1.0
+epoch: 4, train_batch_id: 2050, avg_cost: 6.492151260375977
+grad_norm: 26.20837677894773, clipped: 1.0
+epoch: 4, train_batch_id: 2100, avg_cost: 6.533843040466309
+grad_norm: 28.14398945517811, clipped: 1.0
+epoch: 4, train_batch_id: 2150, avg_cost: 6.513525009155273
+grad_norm: 31.781548997995326, clipped: 1.0
+epoch: 4, train_batch_id: 2200, avg_cost: 6.606423377990723
+grad_norm: 34.521533174602304, clipped: 1.0
+epoch: 4, train_batch_id: 2250, avg_cost: 6.623989105224609
+grad_norm: 28.78148823384918, clipped: 1.0
+epoch: 4, train_batch_id: 2300, avg_cost: 6.49986457824707
+grad_norm: 31.216308035026394, clipped: 1.0
+epoch: 4, train_batch_id: 2350, avg_cost: 6.5803680419921875
+grad_norm: 29.553260432890628, clipped: 1.0
+epoch: 4, train_batch_id: 2400, avg_cost: 6.56294584274292
+grad_norm: 30.007356718489277, clipped: 1.0
+epoch: 4, train_batch_id: 2450, avg_cost: 6.548490524291992
+grad_norm: 27.78201046770307, clipped: 1.0
+Finished epoch 4, took 00:24:49 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.610739707946777 +- 0.00949343666434288
+Evaluating candidate model on evaluation dataset
+Epoch 4 candidate mean 10.617263793945312, baseline epoch 2 mean 9.967872619628906, difference 0.6493911743164062
+Start train epoch 5, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 5, train_batch_id: 0, avg_cost: 6.657341003417969
+grad_norm: 27.205937820521427, clipped: 1.0
+epoch: 5, train_batch_id: 50, avg_cost: 6.576667308807373
+grad_norm: 40.52856776673537, clipped: 1.0
+epoch: 5, train_batch_id: 100, avg_cost: 6.632906913757324
+grad_norm: 27.12066466121576, clipped: 1.0
+epoch: 5, train_batch_id: 150, avg_cost: 6.649487495422363
+grad_norm: 27.020231081147887, clipped: 1.0
+epoch: 5, train_batch_id: 200, avg_cost: 6.587960243225098
+grad_norm: 41.61517722815883, clipped: 1.0
+epoch: 5, train_batch_id: 250, avg_cost: 6.560837268829346
+grad_norm: 30.73134620761485, clipped: 1.0
+epoch: 5, train_batch_id: 300, avg_cost: 6.57822322845459
+grad_norm: 24.004842238660633, clipped: 1.0
+epoch: 5, train_batch_id: 350, avg_cost: 6.621874809265137
+grad_norm: 26.755398355110348, clipped: 1.0
+epoch: 5, train_batch_id: 400, avg_cost: 6.653478622436523
+grad_norm: 26.515654916459606, clipped: 1.0
+epoch: 5, train_batch_id: 450, avg_cost: 6.6921257972717285
+grad_norm: 30.384122957478603, clipped: 1.0
+epoch: 5, train_batch_id: 500, avg_cost: 6.472393989562988
+grad_norm: 47.881492671641475, clipped: 1.0
+epoch: 5, train_batch_id: 550, avg_cost: 6.6839189529418945
+grad_norm: 32.73596603675136, clipped: 1.0
+epoch: 5, train_batch_id: 600, avg_cost: 6.6072235107421875
+grad_norm: 27.241406022001122, clipped: 1.0
+epoch: 5, train_batch_id: 650, avg_cost: 6.567462921142578
+grad_norm: 35.90228813768618, clipped: 1.0
+epoch: 5, train_batch_id: 700, avg_cost: 6.695830345153809
+grad_norm: 23.135240565519112, clipped: 1.0
+epoch: 5, train_batch_id: 750, avg_cost: 6.6081132888793945
+grad_norm: 25.48712966218301, clipped: 1.0
+epoch: 5, train_batch_id: 800, avg_cost: 6.666730880737305
+grad_norm: 33.507002463554024, clipped: 1.0
+epoch: 5, train_batch_id: 850, avg_cost: 6.578080654144287
+grad_norm: 30.835302939676378, clipped: 1.0
+epoch: 5, train_batch_id: 900, avg_cost: 6.559013843536377
+grad_norm: 53.3428988907817, clipped: 1.0
+epoch: 5, train_batch_id: 950, avg_cost: 6.687370777130127
+grad_norm: 41.873308682331704, clipped: 1.0
+epoch: 5, train_batch_id: 1000, avg_cost: 6.66010046005249
+grad_norm: 47.68800174607851, clipped: 1.0
+epoch: 5, train_batch_id: 1050, avg_cost: 6.511098861694336
+grad_norm: 49.34039022140254, clipped: 1.0
+epoch: 5, train_batch_id: 1100, avg_cost: 6.609989643096924
+grad_norm: 25.337049373809155, clipped: 1.0
+epoch: 5, train_batch_id: 1150, avg_cost: 6.5003461837768555
+grad_norm: 26.35155552549572, clipped: 1.0
+epoch: 5, train_batch_id: 1200, avg_cost: 6.532068729400635
+grad_norm: 32.6053985207917, clipped: 1.0
+epoch: 5, train_batch_id: 1250, avg_cost: 6.565418243408203
+grad_norm: 25.9273799531163, clipped: 1.0
+epoch: 5, train_batch_id: 1300, avg_cost: 6.773319244384766
+grad_norm: 44.289767770363355, clipped: 1.0
+epoch: 5, train_batch_id: 1350, avg_cost: 6.570099830627441
+grad_norm: 38.30371272250979, clipped: 1.0
+epoch: 5, train_batch_id: 1400, avg_cost: 6.5417890548706055
+grad_norm: 28.754845265146603, clipped: 1.0
+epoch: 5, train_batch_id: 1450, avg_cost: 6.518426895141602
+grad_norm: 25.653912149245546, clipped: 1.0
+epoch: 5, train_batch_id: 1500, avg_cost: 6.55237340927124
+grad_norm: 29.194326845478642, clipped: 1.0
+epoch: 5, train_batch_id: 1550, avg_cost: 6.75284481048584
+grad_norm: 42.961347239381986, clipped: 1.0
+epoch: 5, train_batch_id: 1600, avg_cost: 6.46047306060791
+grad_norm: 26.64440341332686, clipped: 1.0
+epoch: 5, train_batch_id: 1650, avg_cost: 6.592961311340332
+grad_norm: 28.627822268055873, clipped: 1.0
+epoch: 5, train_batch_id: 1700, avg_cost: 6.59107780456543
+grad_norm: 29.529254947305, clipped: 1.0
+epoch: 5, train_batch_id: 1750, avg_cost: 6.542075157165527
+grad_norm: 29.638798346949894, clipped: 1.0
+epoch: 5, train_batch_id: 1800, avg_cost: 6.640568256378174
+grad_norm: 30.45003239368496, clipped: 1.0
+epoch: 5, train_batch_id: 1850, avg_cost: 6.66825008392334
+grad_norm: 28.2257079532624, clipped: 1.0
+epoch: 5, train_batch_id: 1900, avg_cost: 6.6363677978515625
+grad_norm: 28.55713269166373, clipped: 1.0
+epoch: 5, train_batch_id: 1950, avg_cost: 6.57358455657959
+grad_norm: 24.82551286085023, clipped: 1.0
+epoch: 5, train_batch_id: 2000, avg_cost: 6.54293155670166
+grad_norm: 27.263597135992473, clipped: 1.0
+epoch: 5, train_batch_id: 2050, avg_cost: 6.554830551147461
+grad_norm: 38.66297363908928, clipped: 1.0
+epoch: 5, train_batch_id: 2100, avg_cost: 6.555972099304199
+grad_norm: 33.49577690512506, clipped: 1.0
+epoch: 5, train_batch_id: 2150, avg_cost: 6.693281650543213
+grad_norm: 29.535187637435467, clipped: 1.0
+epoch: 5, train_batch_id: 2200, avg_cost: 6.621371746063232
+grad_norm: 20.54578097278819, clipped: 1.0
+epoch: 5, train_batch_id: 2250, avg_cost: 6.60335111618042
+grad_norm: 35.068206823694176, clipped: 1.0
+epoch: 5, train_batch_id: 2300, avg_cost: 6.6031904220581055
+grad_norm: 27.269788056081516, clipped: 1.0
+epoch: 5, train_batch_id: 2350, avg_cost: 6.6118974685668945
+grad_norm: 30.701886498250428, clipped: 1.0
+epoch: 5, train_batch_id: 2400, avg_cost: 6.535436630249023
+grad_norm: 42.553819084693224, clipped: 1.0
+epoch: 5, train_batch_id: 2450, avg_cost: 6.621618270874023
+grad_norm: 24.388478671466263, clipped: 1.0
+Finished epoch 5, took 00:25:12 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.541540145874023 +- 0.008677298203110695
+Evaluating candidate model on evaluation dataset
+Epoch 5 candidate mean 10.541299819946289, baseline epoch 2 mean 9.967872619628906, difference 0.5734272003173828
+Start train epoch 6, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 6, train_batch_id: 0, avg_cost: 6.556670188903809
+grad_norm: 39.65779187701283, clipped: 1.0
+epoch: 6, train_batch_id: 50, avg_cost: 6.617491722106934
+grad_norm: 34.117771248869566, clipped: 1.0
+epoch: 6, train_batch_id: 100, avg_cost: 6.591684341430664
+grad_norm: 36.41648734961056, clipped: 1.0
+epoch: 6, train_batch_id: 150, avg_cost: 6.67672872543335
+grad_norm: 31.71301284581367, clipped: 1.0
+epoch: 6, train_batch_id: 200, avg_cost: 6.514223575592041
+grad_norm: 37.096332304737174, clipped: 1.0
+epoch: 6, train_batch_id: 250, avg_cost: 6.709190845489502
+grad_norm: 33.12056381286052, clipped: 1.0
+epoch: 6, train_batch_id: 300, avg_cost: 6.575145721435547
+grad_norm: 32.94796536824107, clipped: 1.0
+epoch: 6, train_batch_id: 350, avg_cost: 6.63620662689209
+grad_norm: 58.060381736720416, clipped: 1.0
+epoch: 6, train_batch_id: 400, avg_cost: 6.6542067527771
+grad_norm: 32.30007913649243, clipped: 1.0
+epoch: 6, train_batch_id: 450, avg_cost: 6.578001499176025
+grad_norm: 38.894735421994625, clipped: 1.0
+epoch: 6, train_batch_id: 500, avg_cost: 6.649073600769043
+grad_norm: 29.366771416510492, clipped: 1.0
+epoch: 6, train_batch_id: 550, avg_cost: 6.623502731323242
+grad_norm: 42.99861388968036, clipped: 1.0
+epoch: 6, train_batch_id: 600, avg_cost: 6.7645368576049805
+grad_norm: 24.015736877556147, clipped: 1.0
+epoch: 6, train_batch_id: 650, avg_cost: 6.590209007263184
+grad_norm: 33.17048854360071, clipped: 1.0
+epoch: 6, train_batch_id: 700, avg_cost: 6.6126532554626465
+grad_norm: 30.987572579495033, clipped: 1.0
+epoch: 6, train_batch_id: 750, avg_cost: 6.706262111663818
+grad_norm: 33.02181311271937, clipped: 1.0
+epoch: 6, train_batch_id: 800, avg_cost: 6.648954391479492
+grad_norm: 27.63992915737062, clipped: 1.0
+epoch: 6, train_batch_id: 850, avg_cost: 6.719534873962402
+grad_norm: 32.18259934420738, clipped: 1.0
+epoch: 6, train_batch_id: 900, avg_cost: 6.780185222625732
+grad_norm: 27.258354759375695, clipped: 1.0
+epoch: 6, train_batch_id: 950, avg_cost: 6.647000312805176
+grad_norm: 32.732228711996086, clipped: 1.0
+epoch: 6, train_batch_id: 1000, avg_cost: 6.645084857940674
+grad_norm: 35.998036897789234, clipped: 1.0
+epoch: 6, train_batch_id: 1050, avg_cost: 6.466952323913574
+grad_norm: 35.589546230804785, clipped: 1.0
+epoch: 6, train_batch_id: 1100, avg_cost: 6.644095420837402
+grad_norm: 19.548639896753556, clipped: 1.0
+epoch: 6, train_batch_id: 1150, avg_cost: 6.597640037536621
+grad_norm: 43.30245871739764, clipped: 1.0
+epoch: 6, train_batch_id: 1200, avg_cost: 6.59413480758667
+grad_norm: 24.3338620903451, clipped: 1.0
+epoch: 6, train_batch_id: 1250, avg_cost: 6.412423610687256
+grad_norm: 30.96429740353974, clipped: 1.0
+epoch: 6, train_batch_id: 1300, avg_cost: 6.555606842041016
+grad_norm: 25.505470075057403, clipped: 1.0
+epoch: 6, train_batch_id: 1350, avg_cost: 6.5295867919921875
+grad_norm: 34.56645554425644, clipped: 1.0
+epoch: 6, train_batch_id: 1400, avg_cost: 6.487308979034424
+grad_norm: 34.18796399470731, clipped: 1.0
+epoch: 6, train_batch_id: 1450, avg_cost: 6.519331455230713
+grad_norm: 33.92056427440814, clipped: 1.0
+epoch: 6, train_batch_id: 1500, avg_cost: 6.72088623046875
+grad_norm: 39.12635229016865, clipped: 1.0
+epoch: 6, train_batch_id: 1550, avg_cost: 6.502938270568848
+grad_norm: 30.99039143888971, clipped: 1.0
+epoch: 6, train_batch_id: 1600, avg_cost: 6.678014755249023
+grad_norm: 21.44958586154546, clipped: 1.0
+epoch: 6, train_batch_id: 1650, avg_cost: 6.592068195343018
+grad_norm: 27.704513115874786, clipped: 1.0
+epoch: 6, train_batch_id: 1700, avg_cost: 6.588654518127441
+grad_norm: 29.823727496519282, clipped: 1.0
+epoch: 6, train_batch_id: 1750, avg_cost: 6.476239204406738
+grad_norm: 25.442493760532948, clipped: 1.0
+epoch: 6, train_batch_id: 1800, avg_cost: 6.5297532081604
+grad_norm: 27.61873467364686, clipped: 1.0
+epoch: 6, train_batch_id: 1850, avg_cost: 6.565217971801758
+grad_norm: 41.99317340724799, clipped: 1.0
+epoch: 6, train_batch_id: 1900, avg_cost: 6.694459438323975
+grad_norm: 42.17933386042966, clipped: 1.0
+epoch: 6, train_batch_id: 1950, avg_cost: 6.562589645385742
+grad_norm: 31.554794824860966, clipped: 1.0
+epoch: 6, train_batch_id: 2000, avg_cost: 6.53261661529541
+grad_norm: 24.131136461271428, clipped: 1.0
+epoch: 6, train_batch_id: 2050, avg_cost: 6.544281959533691
+grad_norm: 30.15284206269095, clipped: 1.0
+epoch: 6, train_batch_id: 2100, avg_cost: 6.646510124206543
+grad_norm: 33.51058185528054, clipped: 1.0
+epoch: 6, train_batch_id: 2150, avg_cost: 6.598184585571289
+grad_norm: 31.629496316442637, clipped: 1.0
+epoch: 6, train_batch_id: 2200, avg_cost: 6.557884216308594
+grad_norm: 34.21436554453593, clipped: 1.0
+epoch: 6, train_batch_id: 2250, avg_cost: 6.610705375671387
+grad_norm: 30.132375665388256, clipped: 1.0
+epoch: 6, train_batch_id: 2300, avg_cost: 6.657681465148926
+grad_norm: 28.554886414607903, clipped: 1.0
+epoch: 6, train_batch_id: 2350, avg_cost: 6.604063510894775
+grad_norm: 32.39463567783565, clipped: 1.0
+epoch: 6, train_batch_id: 2400, avg_cost: 6.483954429626465
+grad_norm: 25.710343698012572, clipped: 1.0
+epoch: 6, train_batch_id: 2450, avg_cost: 6.632846355438232
+grad_norm: 30.896471369649543, clipped: 1.0
+Finished epoch 6, took 00:24:44 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 11.07442855834961 +- 0.008507185615599155
+Evaluating candidate model on evaluation dataset
+Epoch 6 candidate mean 11.081578254699707, baseline epoch 2 mean 9.967872619628906, difference 1.1137056350708008
+Start train epoch 7, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 7, train_batch_id: 0, avg_cost: 6.624161720275879
+grad_norm: 27.719776153452745, clipped: 1.0
+epoch: 7, train_batch_id: 50, avg_cost: 6.634585380554199
+grad_norm: 29.58993110280832, clipped: 1.0
+epoch: 7, train_batch_id: 100, avg_cost: 6.694854736328125
+grad_norm: 20.352198056443253, clipped: 1.0
+epoch: 7, train_batch_id: 150, avg_cost: 6.617175102233887
+grad_norm: 23.471872402657215, clipped: 1.0
+epoch: 7, train_batch_id: 200, avg_cost: 6.455738544464111
+grad_norm: 35.4330028868145, clipped: 1.0
+epoch: 7, train_batch_id: 250, avg_cost: 6.640280723571777
+grad_norm: 23.134948155184226, clipped: 1.0
+epoch: 7, train_batch_id: 300, avg_cost: 6.701914310455322
+grad_norm: 27.81586558695566, clipped: 1.0
+epoch: 7, train_batch_id: 350, avg_cost: 6.6334638595581055
+grad_norm: 27.021272853766543, clipped: 1.0
+epoch: 7, train_batch_id: 400, avg_cost: 6.563619613647461
+grad_norm: 26.0473652891917, clipped: 1.0
+epoch: 7, train_batch_id: 450, avg_cost: 6.556792736053467
+grad_norm: 34.4250515930075, clipped: 1.0
+epoch: 7, train_batch_id: 500, avg_cost: 6.629401206970215
+grad_norm: 21.035522554043684, clipped: 1.0
+epoch: 7, train_batch_id: 550, avg_cost: 6.5035014152526855
+grad_norm: 29.038501898093063, clipped: 1.0
+epoch: 7, train_batch_id: 600, avg_cost: 6.669076919555664
+grad_norm: 21.993446788924132, clipped: 1.0
+epoch: 7, train_batch_id: 650, avg_cost: 6.790908336639404
+grad_norm: 29.42633597926051, clipped: 1.0
+epoch: 7, train_batch_id: 700, avg_cost: 6.5545973777771
+grad_norm: 30.021268756691434, clipped: 1.0
+epoch: 7, train_batch_id: 750, avg_cost: 6.493269920349121
+grad_norm: 29.177303169761014, clipped: 1.0
+epoch: 7, train_batch_id: 800, avg_cost: 6.531371593475342
+grad_norm: 23.374657523010526, clipped: 1.0
+epoch: 7, train_batch_id: 850, avg_cost: 6.6473798751831055
+grad_norm: 24.998487178299186, clipped: 1.0
+epoch: 7, train_batch_id: 900, avg_cost: 6.626068115234375
+grad_norm: 25.142081679759723, clipped: 1.0
+epoch: 7, train_batch_id: 950, avg_cost: 6.5977325439453125
+grad_norm: 30.58774463688202, clipped: 1.0
+epoch: 7, train_batch_id: 1000, avg_cost: 6.6021528244018555
+grad_norm: 27.52230519164328, clipped: 1.0
+epoch: 7, train_batch_id: 1050, avg_cost: 6.649214744567871
+grad_norm: 31.016443479668197, clipped: 1.0
+epoch: 7, train_batch_id: 1100, avg_cost: 6.665116786956787
+grad_norm: 23.092942260780845, clipped: 1.0
+epoch: 7, train_batch_id: 1150, avg_cost: 6.746645927429199
+grad_norm: 25.540063888762482, clipped: 1.0
+epoch: 7, train_batch_id: 1200, avg_cost: 6.558877468109131
+grad_norm: 31.470191406965508, clipped: 1.0
+epoch: 7, train_batch_id: 1250, avg_cost: 6.52349853515625
+grad_norm: 30.016285027199036, clipped: 1.0
+epoch: 7, train_batch_id: 1300, avg_cost: 6.537676811218262
+grad_norm: 43.72528733525304, clipped: 1.0
+epoch: 7, train_batch_id: 1350, avg_cost: 6.612239837646484
+grad_norm: 22.591512923100975, clipped: 1.0
+epoch: 7, train_batch_id: 1400, avg_cost: 6.542593479156494
+grad_norm: 40.94313818951393, clipped: 1.0
+epoch: 7, train_batch_id: 1450, avg_cost: 6.853671073913574
+grad_norm: 31.227579903973663, clipped: 1.0
+epoch: 7, train_batch_id: 1500, avg_cost: 6.596992492675781
+grad_norm: 30.76521875631512, clipped: 1.0
+epoch: 7, train_batch_id: 1550, avg_cost: 6.626595497131348
+grad_norm: 50.2334362181967, clipped: 1.0
+epoch: 7, train_batch_id: 1600, avg_cost: 6.571120262145996
+grad_norm: 25.644337332532842, clipped: 1.0
+epoch: 7, train_batch_id: 1650, avg_cost: 6.641502857208252
+grad_norm: 32.65997543003612, clipped: 1.0
+epoch: 7, train_batch_id: 1700, avg_cost: 6.567785263061523
+grad_norm: 38.26411828839691, clipped: 1.0
+epoch: 7, train_batch_id: 1750, avg_cost: 6.550009727478027
+grad_norm: 26.367648748495377, clipped: 1.0
+epoch: 7, train_batch_id: 1800, avg_cost: 6.6083664894104
+grad_norm: 31.829989347072047, clipped: 1.0
+epoch: 7, train_batch_id: 1850, avg_cost: 6.672504425048828
+grad_norm: 33.424150129706106, clipped: 1.0
+epoch: 7, train_batch_id: 1900, avg_cost: 6.592102527618408
+grad_norm: 41.84659494529862, clipped: 1.0
+epoch: 7, train_batch_id: 1950, avg_cost: 6.5355939865112305
+grad_norm: 21.80524964901884, clipped: 1.0
+epoch: 7, train_batch_id: 2000, avg_cost: 6.57480525970459
+grad_norm: 24.524142902453978, clipped: 1.0
+epoch: 7, train_batch_id: 2050, avg_cost: 6.572271347045898
+grad_norm: 26.522565809896758, clipped: 1.0
+epoch: 7, train_batch_id: 2100, avg_cost: 6.693796157836914
+grad_norm: 30.52419532089913, clipped: 1.0
+epoch: 7, train_batch_id: 2150, avg_cost: 6.522625923156738
+grad_norm: 33.51870415849284, clipped: 1.0
+epoch: 7, train_batch_id: 2200, avg_cost: 6.606689453125
+grad_norm: 34.17485920725175, clipped: 1.0
+epoch: 7, train_batch_id: 2250, avg_cost: 6.730408668518066
+grad_norm: 31.873372622914882, clipped: 1.0
+epoch: 7, train_batch_id: 2300, avg_cost: 6.488075256347656
+grad_norm: 27.456621152562736, clipped: 1.0
+epoch: 7, train_batch_id: 2350, avg_cost: 6.711337566375732
+grad_norm: 37.88979761496906, clipped: 1.0
+epoch: 7, train_batch_id: 2400, avg_cost: 6.567440032958984
+grad_norm: 24.736400740219086, clipped: 1.0
+epoch: 7, train_batch_id: 2450, avg_cost: 6.599186420440674
+grad_norm: 29.18116940262529, clipped: 1.0
+Finished epoch 7, took 00:24:40 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.559277534484863 +- 0.008049826137721539
+Evaluating candidate model on evaluation dataset
+Epoch 7 candidate mean 9.559296607971191, baseline epoch 2 mean 9.967872619628906, difference -0.40857601165771484
+p-value: 0.0
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 8, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 8, train_batch_id: 0, avg_cost: 6.581442356109619
+grad_norm: 28.408290439130614, clipped: 1.0
+epoch: 8, train_batch_id: 50, avg_cost: 6.491074562072754
+grad_norm: 31.60907394177547, clipped: 1.0
+epoch: 8, train_batch_id: 100, avg_cost: 6.6166582107543945
+grad_norm: 29.512913424779015, clipped: 1.0
+epoch: 8, train_batch_id: 150, avg_cost: 6.702929496765137
+grad_norm: 27.10073560138524, clipped: 1.0
+epoch: 8, train_batch_id: 200, avg_cost: 6.598997592926025
+grad_norm: 27.322928446328035, clipped: 1.0
+epoch: 8, train_batch_id: 250, avg_cost: 6.571168422698975
+grad_norm: 33.909282532875636, clipped: 1.0
+epoch: 8, train_batch_id: 300, avg_cost: 6.571556091308594
+grad_norm: 23.14028091469546, clipped: 1.0
+epoch: 8, train_batch_id: 350, avg_cost: 6.620865821838379
+grad_norm: 22.635230683858854, clipped: 1.0
+epoch: 8, train_batch_id: 400, avg_cost: 6.655856132507324
+grad_norm: 25.93588579466228, clipped: 1.0
+epoch: 8, train_batch_id: 450, avg_cost: 6.694563865661621
+grad_norm: 27.6780398198316, clipped: 1.0
+epoch: 8, train_batch_id: 500, avg_cost: 6.506469249725342
+grad_norm: 27.13688621354602, clipped: 1.0
+epoch: 8, train_batch_id: 550, avg_cost: 6.602574348449707
+grad_norm: 21.01387511881538, clipped: 1.0
+epoch: 8, train_batch_id: 600, avg_cost: 6.529350280761719
+grad_norm: 27.066606053888137, clipped: 1.0
+epoch: 8, train_batch_id: 650, avg_cost: 6.5871262550354
+grad_norm: 20.101466045717725, clipped: 1.0
+epoch: 8, train_batch_id: 700, avg_cost: 6.683847427368164
+grad_norm: 21.088860619514698, clipped: 1.0
+epoch: 8, train_batch_id: 750, avg_cost: 6.613864898681641
+grad_norm: 22.23012518048905, clipped: 1.0
+epoch: 8, train_batch_id: 800, avg_cost: 6.513576984405518
+grad_norm: 21.98245292209661, clipped: 1.0
+epoch: 8, train_batch_id: 850, avg_cost: 6.565652847290039
+grad_norm: 27.71682458464278, clipped: 1.0
+epoch: 8, train_batch_id: 900, avg_cost: 6.751247406005859
+grad_norm: 21.6443217901629, clipped: 1.0
+epoch: 8, train_batch_id: 950, avg_cost: 6.645105838775635
+grad_norm: 19.607519124508055, clipped: 1.0
+epoch: 8, train_batch_id: 1000, avg_cost: 6.495087146759033
+grad_norm: 22.96836993102676, clipped: 1.0
+epoch: 8, train_batch_id: 1050, avg_cost: 6.577816009521484
+grad_norm: 20.798366690332518, clipped: 1.0
+epoch: 8, train_batch_id: 1100, avg_cost: 6.47303581237793
+grad_norm: 27.925517013058524, clipped: 1.0
+epoch: 8, train_batch_id: 1150, avg_cost: 6.491763591766357
+grad_norm: 24.73766484675974, clipped: 1.0
+epoch: 8, train_batch_id: 1200, avg_cost: 6.515244007110596
+grad_norm: 30.455491462129324, clipped: 1.0
+epoch: 8, train_batch_id: 1250, avg_cost: 6.570714950561523
+grad_norm: 27.651689674406462, clipped: 1.0
+epoch: 8, train_batch_id: 1300, avg_cost: 6.601532459259033
+grad_norm: 30.792672214100442, clipped: 1.0
+epoch: 8, train_batch_id: 1350, avg_cost: 6.529024124145508
+grad_norm: 33.85098460618632, clipped: 1.0
+epoch: 8, train_batch_id: 1400, avg_cost: 6.440631866455078
+grad_norm: 29.082312058409123, clipped: 1.0
+epoch: 8, train_batch_id: 1450, avg_cost: 6.490078449249268
+grad_norm: 29.76038049585305, clipped: 1.0
+epoch: 8, train_batch_id: 1500, avg_cost: 6.534910678863525
+grad_norm: 29.232238424709895, clipped: 1.0
+epoch: 8, train_batch_id: 1550, avg_cost: 6.49540376663208
+grad_norm: 24.601741376856598, clipped: 1.0
+epoch: 8, train_batch_id: 1600, avg_cost: 6.465063571929932
+grad_norm: 28.551103238602813, clipped: 1.0
+epoch: 8, train_batch_id: 1650, avg_cost: 6.53206729888916
+grad_norm: 30.26474892947522, clipped: 1.0
+epoch: 8, train_batch_id: 1700, avg_cost: 6.702789306640625
+grad_norm: 28.289832412394208, clipped: 1.0
+epoch: 8, train_batch_id: 1750, avg_cost: 6.505744934082031
+grad_norm: 21.92270250461855, clipped: 1.0
+epoch: 8, train_batch_id: 1800, avg_cost: 6.459770202636719
+grad_norm: 22.058052842681068, clipped: 1.0
+epoch: 8, train_batch_id: 1850, avg_cost: 6.599327087402344
+grad_norm: 21.742186183652315, clipped: 1.0
+epoch: 8, train_batch_id: 1900, avg_cost: 6.573370456695557
+grad_norm: 31.965382265459667, clipped: 1.0
+epoch: 8, train_batch_id: 1950, avg_cost: 6.497936248779297
+grad_norm: 24.19161357087387, clipped: 1.0
+epoch: 8, train_batch_id: 2000, avg_cost: 6.64888858795166
+grad_norm: 18.27812869078564, clipped: 1.0
+epoch: 8, train_batch_id: 2050, avg_cost: 6.521594524383545
+grad_norm: 21.522059718965924, clipped: 1.0
+epoch: 8, train_batch_id: 2100, avg_cost: 6.51810359954834
+grad_norm: 25.116410133653105, clipped: 1.0
+epoch: 8, train_batch_id: 2150, avg_cost: 6.464301109313965
+grad_norm: 29.4992389042274, clipped: 1.0
+epoch: 8, train_batch_id: 2200, avg_cost: 6.528476715087891
+grad_norm: 19.343664722028503, clipped: 1.0
+epoch: 8, train_batch_id: 2250, avg_cost: 6.49681282043457
+grad_norm: 23.225991865737793, clipped: 1.0
+epoch: 8, train_batch_id: 2300, avg_cost: 6.481473445892334
+grad_norm: 30.57739492987576, clipped: 1.0
+epoch: 8, train_batch_id: 2350, avg_cost: 6.564202308654785
+grad_norm: 32.82470580946774, clipped: 1.0
+epoch: 8, train_batch_id: 2400, avg_cost: 6.490284442901611
+grad_norm: 24.465468030297835, clipped: 1.0
+epoch: 8, train_batch_id: 2450, avg_cost: 6.674086570739746
+grad_norm: 18.7381795520552, clipped: 1.0
+Finished epoch 8, took 00:24:45 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 11.551042556762695 +- 0.0087616927921772
+Evaluating candidate model on evaluation dataset
+Epoch 8 candidate mean 11.54094409942627, baseline epoch 7 mean 9.565526962280273, difference 1.975417137145996
+Start train epoch 9, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 9, train_batch_id: 0, avg_cost: 6.618566513061523
+grad_norm: 24.863122052139893, clipped: 1.0
+epoch: 9, train_batch_id: 50, avg_cost: 6.563387870788574
+grad_norm: 26.376251844883182, clipped: 1.0
+epoch: 9, train_batch_id: 100, avg_cost: 6.5525288581848145
+grad_norm: 28.526790201741836, clipped: 1.0
+epoch: 9, train_batch_id: 150, avg_cost: 6.466485977172852
+grad_norm: 23.48677351951115, clipped: 1.0
+epoch: 9, train_batch_id: 200, avg_cost: 6.46317195892334
+grad_norm: 21.343978478084026, clipped: 1.0
+epoch: 9, train_batch_id: 250, avg_cost: 6.526830196380615
+grad_norm: 27.28563384849759, clipped: 1.0
+epoch: 9, train_batch_id: 300, avg_cost: 6.472991943359375
+grad_norm: 31.5356831863918, clipped: 1.0
+epoch: 9, train_batch_id: 350, avg_cost: 6.523893356323242
+grad_norm: 20.85516969508514, clipped: 1.0
+epoch: 9, train_batch_id: 400, avg_cost: 6.498575210571289
+grad_norm: 28.78732250072195, clipped: 1.0
+epoch: 9, train_batch_id: 450, avg_cost: 6.5568695068359375
+grad_norm: 24.02235207078133, clipped: 1.0
+epoch: 9, train_batch_id: 500, avg_cost: 6.484224796295166
+grad_norm: 26.9090213326728, clipped: 1.0
+epoch: 9, train_batch_id: 550, avg_cost: 6.49383544921875
+grad_norm: 22.212971124029007, clipped: 1.0
+epoch: 9, train_batch_id: 600, avg_cost: 6.477883338928223
+grad_norm: 30.51811046021185, clipped: 1.0
+epoch: 9, train_batch_id: 650, avg_cost: 6.535929203033447
+grad_norm: 30.09039642747243, clipped: 1.0
+epoch: 9, train_batch_id: 700, avg_cost: 6.50816535949707
+grad_norm: 23.956950804765153, clipped: 1.0
+epoch: 9, train_batch_id: 750, avg_cost: 6.53758430480957
+grad_norm: 20.07759323026075, clipped: 1.0
+epoch: 9, train_batch_id: 800, avg_cost: 6.423836708068848
+grad_norm: 22.035800136935084, clipped: 1.0
+epoch: 9, train_batch_id: 850, avg_cost: 6.573185920715332
+grad_norm: 22.236134251881985, clipped: 1.0
+epoch: 9, train_batch_id: 900, avg_cost: 6.593059539794922
+grad_norm: 27.361503265872862, clipped: 1.0
+epoch: 9, train_batch_id: 950, avg_cost: 6.513762474060059
+grad_norm: 20.624380628246616, clipped: 1.0
+epoch: 9, train_batch_id: 1000, avg_cost: 6.474703311920166
+grad_norm: 18.420155156571965, clipped: 1.0
+epoch: 9, train_batch_id: 1050, avg_cost: 6.573334693908691
+grad_norm: 22.47130277624676, clipped: 1.0
+epoch: 9, train_batch_id: 1100, avg_cost: 6.518298149108887
+grad_norm: 23.40066869375679, clipped: 1.0
+epoch: 9, train_batch_id: 1150, avg_cost: 6.464691162109375
+grad_norm: 29.385522411732445, clipped: 1.0
+epoch: 9, train_batch_id: 1200, avg_cost: 6.601363182067871
+grad_norm: 23.397232856387326, clipped: 1.0
+epoch: 9, train_batch_id: 1250, avg_cost: 6.449010848999023
+grad_norm: 26.245755523272603, clipped: 1.0
+epoch: 9, train_batch_id: 1300, avg_cost: 6.485308647155762
+grad_norm: 34.29166941472401, clipped: 1.0
+epoch: 9, train_batch_id: 1350, avg_cost: 6.4457011222839355
+grad_norm: 20.42258295990704, clipped: 1.0
+epoch: 9, train_batch_id: 1400, avg_cost: 6.55747127532959
+grad_norm: 31.352193750678257, clipped: 1.0
+epoch: 9, train_batch_id: 1450, avg_cost: 6.637312889099121
+grad_norm: 24.81070566979143, clipped: 1.0
+epoch: 9, train_batch_id: 1500, avg_cost: 6.546624660491943
+grad_norm: 26.983874650512153, clipped: 1.0
+epoch: 9, train_batch_id: 1550, avg_cost: 6.479122638702393
+grad_norm: 21.855805216020144, clipped: 1.0
+epoch: 9, train_batch_id: 1600, avg_cost: 6.437174320220947
+grad_norm: 33.34256448875453, clipped: 1.0
+epoch: 9, train_batch_id: 1650, avg_cost: 6.576976776123047
+grad_norm: 24.128167069040543, clipped: 1.0
+epoch: 9, train_batch_id: 1700, avg_cost: 6.557187080383301
+grad_norm: 31.72008294151954, clipped: 1.0
+epoch: 9, train_batch_id: 1750, avg_cost: 6.535832405090332
+grad_norm: 30.914984959036985, clipped: 1.0
+epoch: 9, train_batch_id: 1800, avg_cost: 6.50330114364624
+grad_norm: 28.85239530753353, clipped: 1.0
+epoch: 9, train_batch_id: 1850, avg_cost: 6.485226631164551
+grad_norm: 19.389173745917596, clipped: 1.0
+epoch: 9, train_batch_id: 1900, avg_cost: 6.478574752807617
+grad_norm: 27.804129330916194, clipped: 1.0
+epoch: 9, train_batch_id: 1950, avg_cost: 6.47874116897583
+grad_norm: 26.279388406949174, clipped: 1.0
+epoch: 9, train_batch_id: 2000, avg_cost: 6.4845380783081055
+grad_norm: 23.66261731432019, clipped: 1.0
+epoch: 9, train_batch_id: 2050, avg_cost: 6.523953437805176
+grad_norm: 30.598449426278616, clipped: 1.0
+epoch: 9, train_batch_id: 2100, avg_cost: 6.47210693359375
+grad_norm: 20.336761443644864, clipped: 1.0
+epoch: 9, train_batch_id: 2150, avg_cost: 6.564359188079834
+grad_norm: 21.536494603464163, clipped: 1.0
+epoch: 9, train_batch_id: 2200, avg_cost: 6.465430736541748
+grad_norm: 20.744028976939916, clipped: 1.0
+epoch: 9, train_batch_id: 2250, avg_cost: 6.539406776428223
+grad_norm: 29.943452435338056, clipped: 1.0
+epoch: 9, train_batch_id: 2300, avg_cost: 6.558341026306152
+grad_norm: 36.882773241734164, clipped: 1.0
+epoch: 9, train_batch_id: 2350, avg_cost: 6.504683017730713
+grad_norm: 28.662724479301023, clipped: 1.0
+epoch: 9, train_batch_id: 2400, avg_cost: 6.504037857055664
+grad_norm: 18.730723199893205, clipped: 1.0
+epoch: 9, train_batch_id: 2450, avg_cost: 6.45109224319458
+grad_norm: 25.937197532937365, clipped: 1.0
+Finished epoch 9, took 00:24:47 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 11.192146301269531 +- 0.00795736350119114
+Evaluating candidate model on evaluation dataset
+Epoch 9 candidate mean 11.188858985900879, baseline epoch 7 mean 9.565526962280273, difference 1.6233320236206055
+Start train epoch 10, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 10, train_batch_id: 0, avg_cost: 6.4791741371154785
+grad_norm: 31.622095317962703, clipped: 1.0
+epoch: 10, train_batch_id: 50, avg_cost: 6.64362907409668
+grad_norm: 26.37954001943277, clipped: 1.0
+epoch: 10, train_batch_id: 100, avg_cost: 6.595592498779297
+grad_norm: 22.808165265818218, clipped: 1.0
+epoch: 10, train_batch_id: 150, avg_cost: 6.45228385925293
+grad_norm: 28.5770935366269, clipped: 1.0
+epoch: 10, train_batch_id: 200, avg_cost: 6.505483627319336
+grad_norm: 28.784222796464295, clipped: 1.0
+epoch: 10, train_batch_id: 250, avg_cost: 6.524632453918457
+grad_norm: 25.52477788917817, clipped: 1.0
+epoch: 10, train_batch_id: 300, avg_cost: 6.481550693511963
+grad_norm: 30.98501524434951, clipped: 1.0
+epoch: 10, train_batch_id: 350, avg_cost: 6.560102939605713
+grad_norm: 34.35927670595056, clipped: 1.0
+epoch: 10, train_batch_id: 400, avg_cost: 6.500553607940674
+grad_norm: 26.823290005360562, clipped: 1.0
+epoch: 10, train_batch_id: 450, avg_cost: 6.541315078735352
+grad_norm: 23.707283469643077, clipped: 1.0
+epoch: 10, train_batch_id: 500, avg_cost: 6.510519504547119
+grad_norm: 47.9847401454934, clipped: 1.0
+epoch: 10, train_batch_id: 550, avg_cost: 6.480613708496094
+grad_norm: 18.974666572325486, clipped: 1.0
+epoch: 10, train_batch_id: 600, avg_cost: 6.52703857421875
+grad_norm: 25.427278438812742, clipped: 1.0
+epoch: 10, train_batch_id: 650, avg_cost: 6.544055938720703
+grad_norm: 31.826124662558506, clipped: 1.0
+epoch: 10, train_batch_id: 700, avg_cost: 6.5421342849731445
+grad_norm: 28.135052419381772, clipped: 1.0
+epoch: 10, train_batch_id: 750, avg_cost: 6.443604946136475
+grad_norm: 29.574235094196343, clipped: 1.0
+epoch: 10, train_batch_id: 800, avg_cost: 6.453194618225098
+grad_norm: 26.730372166659045, clipped: 1.0
+epoch: 10, train_batch_id: 850, avg_cost: 6.512413024902344
+grad_norm: 25.46512915543879, clipped: 1.0
+epoch: 10, train_batch_id: 900, avg_cost: 6.546350479125977
+grad_norm: 28.30149253732238, clipped: 1.0
+epoch: 10, train_batch_id: 950, avg_cost: 6.519234657287598
+grad_norm: 29.964725564014014, clipped: 1.0
+epoch: 10, train_batch_id: 1000, avg_cost: 6.483092308044434
+grad_norm: 32.40913462193227, clipped: 1.0
+epoch: 10, train_batch_id: 1050, avg_cost: 6.496433734893799
+grad_norm: 30.33324414846054, clipped: 1.0
+epoch: 10, train_batch_id: 1100, avg_cost: 6.503564834594727
+grad_norm: 22.74202544135152, clipped: 1.0
+epoch: 10, train_batch_id: 1150, avg_cost: 6.556318759918213
+grad_norm: 29.055651736399497, clipped: 1.0
+epoch: 10, train_batch_id: 1200, avg_cost: 6.488751411437988
+grad_norm: 35.23060431036648, clipped: 1.0
+epoch: 10, train_batch_id: 1250, avg_cost: 6.486850261688232
+grad_norm: 23.97779185487648, clipped: 1.0
+epoch: 10, train_batch_id: 1300, avg_cost: 6.451487064361572
+grad_norm: 31.59466857868728, clipped: 1.0
+epoch: 10, train_batch_id: 1350, avg_cost: 6.470564842224121
+grad_norm: 29.21990056056116, clipped: 1.0
+epoch: 10, train_batch_id: 1400, avg_cost: 6.604776382446289
+grad_norm: 23.38705405431016, clipped: 1.0
+epoch: 10, train_batch_id: 1450, avg_cost: 6.480726718902588
+grad_norm: 22.526792541958653, clipped: 1.0
+epoch: 10, train_batch_id: 1500, avg_cost: 6.43986701965332
+grad_norm: 28.488050049823407, clipped: 1.0
+epoch: 10, train_batch_id: 1550, avg_cost: 6.527543067932129
+grad_norm: 54.733835143283045, clipped: 1.0
+epoch: 10, train_batch_id: 1600, avg_cost: 6.549879550933838
+grad_norm: 28.165940418406446, clipped: 1.0
+epoch: 10, train_batch_id: 1650, avg_cost: 6.578182697296143
+grad_norm: 31.519248676212428, clipped: 1.0
+epoch: 10, train_batch_id: 1700, avg_cost: 6.670016288757324
+grad_norm: 37.40376951766329, clipped: 1.0
+epoch: 10, train_batch_id: 1750, avg_cost: 6.636962890625
+grad_norm: 24.324474819919523, clipped: 1.0
+epoch: 10, train_batch_id: 1800, avg_cost: 6.538229942321777
+grad_norm: 40.823292963535856, clipped: 1.0
+epoch: 10, train_batch_id: 1850, avg_cost: 6.515545845031738
+grad_norm: 23.64121119494909, clipped: 1.0
+epoch: 10, train_batch_id: 1900, avg_cost: 6.507123947143555
+grad_norm: 27.411780753367964, clipped: 1.0
+epoch: 10, train_batch_id: 1950, avg_cost: 6.500253677368164
+grad_norm: 19.400705805089242, clipped: 1.0
+epoch: 10, train_batch_id: 2000, avg_cost: 6.521295547485352
+grad_norm: 47.733085900377176, clipped: 1.0
+epoch: 10, train_batch_id: 2050, avg_cost: 6.4582719802856445
+grad_norm: 26.480893590923344, clipped: 1.0
+epoch: 10, train_batch_id: 2100, avg_cost: 6.512085914611816
+grad_norm: 23.893676914953236, clipped: 1.0
+epoch: 10, train_batch_id: 2150, avg_cost: 6.506704807281494
+grad_norm: 29.988547077878465, clipped: 1.0
+epoch: 10, train_batch_id: 2200, avg_cost: 6.583035469055176
+grad_norm: 30.016983477855902, clipped: 1.0
+epoch: 10, train_batch_id: 2250, avg_cost: 6.4524664878845215
+grad_norm: 25.790998049179965, clipped: 1.0
+epoch: 10, train_batch_id: 2300, avg_cost: 6.453934669494629
+grad_norm: 23.719454935009498, clipped: 1.0
+epoch: 10, train_batch_id: 2350, avg_cost: 6.517793655395508
+grad_norm: 28.97759742790085, clipped: 1.0
+epoch: 10, train_batch_id: 2400, avg_cost: 6.4788994789123535
+grad_norm: 30.28886187053294, clipped: 1.0
+epoch: 10, train_batch_id: 2450, avg_cost: 6.588313102722168
+grad_norm: 28.43435702115345, clipped: 1.0
+Finished epoch 10, took 00:24:48 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 11.005562782287598 +- 0.007954908534884453
+Evaluating candidate model on evaluation dataset
+Epoch 10 candidate mean 11.01052474975586, baseline epoch 7 mean 9.565526962280273, difference 1.444997787475586
+Start train epoch 11, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 11, train_batch_id: 0, avg_cost: 6.474966049194336
+grad_norm: 27.742773246222313, clipped: 1.0
+epoch: 11, train_batch_id: 50, avg_cost: 6.6211771965026855
+grad_norm: 28.288060671149196, clipped: 1.0
+epoch: 11, train_batch_id: 100, avg_cost: 6.580474853515625
+grad_norm: 30.556667281118028, clipped: 1.0
+epoch: 11, train_batch_id: 150, avg_cost: 6.488248825073242
+grad_norm: 22.134977992648025, clipped: 1.0
+epoch: 11, train_batch_id: 200, avg_cost: 6.452648162841797
+grad_norm: 26.04626069778349, clipped: 1.0
+epoch: 11, train_batch_id: 250, avg_cost: 6.397253513336182
+grad_norm: 23.631365522946766, clipped: 1.0
+epoch: 11, train_batch_id: 300, avg_cost: 6.466455459594727
+grad_norm: 22.66779382512125, clipped: 1.0
+epoch: 11, train_batch_id: 350, avg_cost: 6.475619316101074
+grad_norm: 24.90895728423957, clipped: 1.0
+epoch: 11, train_batch_id: 400, avg_cost: 6.6545305252075195
+grad_norm: 27.316131908346293, clipped: 1.0
+epoch: 11, train_batch_id: 450, avg_cost: 6.520406246185303
+grad_norm: 19.085773643830947, clipped: 1.0
+epoch: 11, train_batch_id: 500, avg_cost: 6.452618598937988
+grad_norm: 24.91732768355737, clipped: 1.0
+epoch: 11, train_batch_id: 550, avg_cost: 6.481514930725098
+grad_norm: 22.382727215975944, clipped: 1.0
+epoch: 11, train_batch_id: 600, avg_cost: 6.401278495788574
+grad_norm: 31.759581921274172, clipped: 1.0
+epoch: 11, train_batch_id: 650, avg_cost: 6.447583198547363
+grad_norm: 24.666569274432554, clipped: 1.0
+epoch: 11, train_batch_id: 700, avg_cost: 6.421029090881348
+grad_norm: 22.13172303419891, clipped: 1.0
+epoch: 11, train_batch_id: 750, avg_cost: 6.4314775466918945
+grad_norm: 25.12513181912553, clipped: 1.0
+epoch: 11, train_batch_id: 800, avg_cost: 6.440773010253906
+grad_norm: 28.17967833628337, clipped: 1.0
+epoch: 11, train_batch_id: 850, avg_cost: 6.513923168182373
+grad_norm: 23.89267903215196, clipped: 1.0
+epoch: 11, train_batch_id: 900, avg_cost: 6.507016658782959
+grad_norm: 20.23543988843193, clipped: 1.0
+epoch: 11, train_batch_id: 950, avg_cost: 6.39345121383667
+grad_norm: 29.71950592433027, clipped: 1.0
+epoch: 11, train_batch_id: 1000, avg_cost: 6.526801109313965
+grad_norm: 26.876555656527238, clipped: 1.0
+epoch: 11, train_batch_id: 1050, avg_cost: 6.63883113861084
+grad_norm: 30.029955542133376, clipped: 1.0
+epoch: 11, train_batch_id: 1100, avg_cost: 6.481781959533691
+grad_norm: 20.884825252669305, clipped: 1.0
+epoch: 11, train_batch_id: 1150, avg_cost: 6.475045204162598
+grad_norm: 25.093916049630018, clipped: 1.0
+epoch: 11, train_batch_id: 1200, avg_cost: 6.5703630447387695
+grad_norm: 37.244013066249806, clipped: 1.0
+epoch: 11, train_batch_id: 1250, avg_cost: 6.442780494689941
+grad_norm: 24.88446300350066, clipped: 1.0
+epoch: 11, train_batch_id: 1300, avg_cost: 6.437775135040283
+grad_norm: 32.75539680926038, clipped: 1.0
+epoch: 11, train_batch_id: 1350, avg_cost: 6.436254501342773
+grad_norm: 19.295700869623918, clipped: 1.0
+epoch: 11, train_batch_id: 1400, avg_cost: 6.5349345207214355
+grad_norm: 23.584885549419297, clipped: 1.0
+epoch: 11, train_batch_id: 1450, avg_cost: 6.400680065155029
+grad_norm: 19.46080458875618, clipped: 1.0
+epoch: 11, train_batch_id: 1500, avg_cost: 6.446748733520508
+grad_norm: 27.459134937186317, clipped: 1.0
+epoch: 11, train_batch_id: 1550, avg_cost: 6.51560115814209
+grad_norm: 33.642091203907846, clipped: 1.0
+epoch: 11, train_batch_id: 1600, avg_cost: 6.5258870124816895
+grad_norm: 25.87350273588551, clipped: 1.0
+epoch: 11, train_batch_id: 1650, avg_cost: 6.499082565307617
+grad_norm: 20.718117167159395, clipped: 1.0
+epoch: 11, train_batch_id: 1700, avg_cost: 6.547372817993164
+grad_norm: 23.0577413529958, clipped: 1.0
+epoch: 11, train_batch_id: 1750, avg_cost: 6.511775016784668
+grad_norm: 22.17990558468463, clipped: 1.0
+epoch: 11, train_batch_id: 1800, avg_cost: 6.439731597900391
+grad_norm: 36.00318057320086, clipped: 1.0
+epoch: 11, train_batch_id: 1850, avg_cost: 6.52020263671875
+grad_norm: 25.218743025940103, clipped: 1.0
+epoch: 11, train_batch_id: 1900, avg_cost: 6.546353816986084
+grad_norm: 26.06589563342347, clipped: 1.0
+epoch: 11, train_batch_id: 1950, avg_cost: 6.484274864196777
+grad_norm: 25.813445950352556, clipped: 1.0
+epoch: 11, train_batch_id: 2000, avg_cost: 6.449172496795654
+grad_norm: 21.370868333022596, clipped: 1.0
+epoch: 11, train_batch_id: 2050, avg_cost: 6.526610374450684
+grad_norm: 29.895624399253848, clipped: 1.0
+epoch: 11, train_batch_id: 2100, avg_cost: 6.47046422958374
+grad_norm: 27.324409526145306, clipped: 1.0
+epoch: 11, train_batch_id: 2150, avg_cost: 6.511858940124512
+grad_norm: 22.47957510955952, clipped: 1.0
+epoch: 11, train_batch_id: 2200, avg_cost: 6.445208549499512
+grad_norm: 30.03278412400761, clipped: 1.0
+epoch: 11, train_batch_id: 2250, avg_cost: 6.446887016296387
+grad_norm: 22.10580507034616, clipped: 1.0
+epoch: 11, train_batch_id: 2300, avg_cost: 6.5009446144104
+grad_norm: 22.05636914884389, clipped: 1.0
+epoch: 11, train_batch_id: 2350, avg_cost: 6.470218658447266
+grad_norm: 33.906922611125985, clipped: 1.0
+epoch: 11, train_batch_id: 2400, avg_cost: 6.512759208679199
+grad_norm: 20.931493615165557, clipped: 1.0
+epoch: 11, train_batch_id: 2450, avg_cost: 6.489031791687012
+grad_norm: 27.702122459682233, clipped: 1.0
+Finished epoch 11, took 00:24:44 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.122932434082031 +- 0.007688931189477444
+Evaluating candidate model on evaluation dataset
+Epoch 11 candidate mean 10.124643325805664, baseline epoch 7 mean 9.565526962280273, difference 0.5591163635253906
+Start train epoch 12, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 12, train_batch_id: 0, avg_cost: 6.582070350646973
+grad_norm: 27.42496709219035, clipped: 1.0
+epoch: 12, train_batch_id: 50, avg_cost: 6.635115623474121
+grad_norm: 23.2577058662032, clipped: 1.0
+epoch: 12, train_batch_id: 100, avg_cost: 6.56808614730835
+grad_norm: 27.215867091393473, clipped: 1.0
+epoch: 12, train_batch_id: 150, avg_cost: 6.5402727127075195
+grad_norm: 23.873944245145296, clipped: 1.0
+epoch: 12, train_batch_id: 200, avg_cost: 6.600245475769043
+grad_norm: 36.16337794722894, clipped: 1.0
+epoch: 12, train_batch_id: 250, avg_cost: 6.660440444946289
+grad_norm: 24.428427450673983, clipped: 1.0
+epoch: 12, train_batch_id: 300, avg_cost: 6.636569499969482
+grad_norm: 34.90992240561642, clipped: 1.0
+epoch: 12, train_batch_id: 350, avg_cost: 6.590071201324463
+grad_norm: 28.56375647467789, clipped: 1.0
+epoch: 12, train_batch_id: 400, avg_cost: 6.518758773803711
+grad_norm: 26.168259407814215, clipped: 1.0
+epoch: 12, train_batch_id: 450, avg_cost: 6.486320972442627
+grad_norm: 33.496440897676074, clipped: 1.0
+epoch: 12, train_batch_id: 500, avg_cost: 6.4766387939453125
+grad_norm: 30.01850296684702, clipped: 1.0
+epoch: 12, train_batch_id: 550, avg_cost: 6.5279340744018555
+grad_norm: 43.547269003954966, clipped: 1.0
+epoch: 12, train_batch_id: 600, avg_cost: 6.438329696655273
+grad_norm: 23.287893462086625, clipped: 1.0
+epoch: 12, train_batch_id: 650, avg_cost: 6.5284833908081055
+grad_norm: 24.184643741238496, clipped: 1.0
+epoch: 12, train_batch_id: 700, avg_cost: 6.513597011566162
+grad_norm: 19.5167722121852, clipped: 1.0
+epoch: 12, train_batch_id: 750, avg_cost: 6.463615417480469
+grad_norm: 33.951739377257766, clipped: 1.0
+epoch: 12, train_batch_id: 800, avg_cost: 6.504898548126221
+grad_norm: 40.60420820808664, clipped: 1.0
+epoch: 12, train_batch_id: 850, avg_cost: 6.4963226318359375
+grad_norm: 35.45374812875101, clipped: 1.0
+epoch: 12, train_batch_id: 900, avg_cost: 6.517979145050049
+grad_norm: 25.610735506283305, clipped: 1.0
+epoch: 12, train_batch_id: 950, avg_cost: 6.48155403137207
+grad_norm: 21.56221447985968, clipped: 1.0
+epoch: 12, train_batch_id: 1000, avg_cost: 6.500236511230469
+grad_norm: 30.90054094184862, clipped: 1.0
+epoch: 12, train_batch_id: 1050, avg_cost: 6.492237567901611
+grad_norm: 32.38452312340263, clipped: 1.0
+epoch: 12, train_batch_id: 1100, avg_cost: 6.47342586517334
+grad_norm: 25.607877129184537, clipped: 1.0
+epoch: 12, train_batch_id: 1150, avg_cost: 6.4939351081848145
+grad_norm: 30.414562097212052, clipped: 1.0
+epoch: 12, train_batch_id: 1200, avg_cost: 6.573556900024414
+grad_norm: 33.81040113269236, clipped: 1.0
+epoch: 12, train_batch_id: 1250, avg_cost: 6.536937713623047
+grad_norm: 26.086730348202124, clipped: 1.0
+epoch: 12, train_batch_id: 1300, avg_cost: 6.506999969482422
+grad_norm: 40.49226288526341, clipped: 1.0
+epoch: 12, train_batch_id: 1350, avg_cost: 6.503131866455078
+grad_norm: 31.793778039214544, clipped: 1.0
+epoch: 12, train_batch_id: 1400, avg_cost: 6.483044147491455
+grad_norm: 27.246584183583245, clipped: 1.0
+epoch: 12, train_batch_id: 1450, avg_cost: 6.519557952880859
+grad_norm: 26.243229223018268, clipped: 1.0
+epoch: 12, train_batch_id: 1500, avg_cost: 6.418943405151367
+grad_norm: 18.76384756777964, clipped: 1.0
+epoch: 12, train_batch_id: 1550, avg_cost: 6.463161945343018
+grad_norm: 22.29648567605525, clipped: 1.0
+epoch: 12, train_batch_id: 1600, avg_cost: 6.583193302154541
+grad_norm: 35.633521335704714, clipped: 1.0
+epoch: 12, train_batch_id: 1650, avg_cost: 6.367814540863037
+grad_norm: 31.752351668791466, clipped: 1.0
+epoch: 12, train_batch_id: 1700, avg_cost: 6.444741249084473
+grad_norm: 22.182182112151885, clipped: 1.0
+epoch: 12, train_batch_id: 1750, avg_cost: 6.476678848266602
+grad_norm: 79.41249844784072, clipped: 1.0
+epoch: 12, train_batch_id: 1800, avg_cost: 6.476736545562744
+grad_norm: 23.38112685892107, clipped: 1.0
+epoch: 12, train_batch_id: 1850, avg_cost: 6.466892242431641
+grad_norm: 31.418762695124084, clipped: 1.0
+epoch: 12, train_batch_id: 1900, avg_cost: 6.508473873138428
+grad_norm: 22.41276824822429, clipped: 1.0
+epoch: 12, train_batch_id: 1950, avg_cost: 6.459068298339844
+grad_norm: 25.25368707863273, clipped: 1.0
+epoch: 12, train_batch_id: 2000, avg_cost: 6.416751384735107
+grad_norm: 21.258354694811107, clipped: 1.0
+epoch: 12, train_batch_id: 2050, avg_cost: 6.435858726501465
+grad_norm: 26.105076206605546, clipped: 1.0
+epoch: 12, train_batch_id: 2100, avg_cost: 6.6545257568359375
+grad_norm: 28.607694654088387, clipped: 1.0
+epoch: 12, train_batch_id: 2150, avg_cost: 6.551610469818115
+grad_norm: 25.70178036422989, clipped: 1.0
+epoch: 12, train_batch_id: 2200, avg_cost: 6.452235698699951
+grad_norm: 29.35478567305895, clipped: 1.0
+epoch: 12, train_batch_id: 2250, avg_cost: 6.685959339141846
+grad_norm: 21.89655736712055, clipped: 1.0
+epoch: 12, train_batch_id: 2300, avg_cost: 6.482328414916992
+grad_norm: 37.71877067325235, clipped: 1.0
+epoch: 12, train_batch_id: 2350, avg_cost: 6.520149230957031
+grad_norm: 34.95016636932103, clipped: 1.0
+epoch: 12, train_batch_id: 2400, avg_cost: 6.52297306060791
+grad_norm: 20.777148349229712, clipped: 1.0
+epoch: 12, train_batch_id: 2450, avg_cost: 6.449092864990234
+grad_norm: 24.002644275733985, clipped: 1.0
+Finished epoch 12, took 00:24:50 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.121257781982422 +- 0.006865215487778187
+Evaluating candidate model on evaluation dataset
+Epoch 12 candidate mean 9.119808197021484, baseline epoch 7 mean 9.565526962280273, difference -0.44571876525878906
+p-value: 0.0
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 13, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 13, train_batch_id: 0, avg_cost: 6.468379974365234
+grad_norm: 33.95509330324246, clipped: 1.0
+epoch: 13, train_batch_id: 50, avg_cost: 6.465063095092773
+grad_norm: 19.476081366532608, clipped: 1.0
+epoch: 13, train_batch_id: 100, avg_cost: 6.647611618041992
+grad_norm: 23.826691760764604, clipped: 1.0
+epoch: 13, train_batch_id: 150, avg_cost: 6.436269760131836
+grad_norm: 25.563225775156663, clipped: 1.0
+epoch: 13, train_batch_id: 200, avg_cost: 6.509376525878906
+grad_norm: 23.684865007229508, clipped: 1.0
+epoch: 13, train_batch_id: 250, avg_cost: 6.458207130432129
+grad_norm: 24.03656071831631, clipped: 1.0
+epoch: 13, train_batch_id: 300, avg_cost: 6.42861270904541
+grad_norm: 23.525392435563507, clipped: 1.0
+epoch: 13, train_batch_id: 350, avg_cost: 6.433916091918945
+grad_norm: 23.88911910506887, clipped: 1.0
+epoch: 13, train_batch_id: 400, avg_cost: 6.418790817260742
+grad_norm: 24.396321894629523, clipped: 1.0
+epoch: 13, train_batch_id: 450, avg_cost: 6.560727119445801
+grad_norm: 18.06906732008672, clipped: 1.0
+epoch: 13, train_batch_id: 500, avg_cost: 6.422509670257568
+grad_norm: 22.207836640425995, clipped: 1.0
+epoch: 13, train_batch_id: 550, avg_cost: 6.45914363861084
+grad_norm: 31.774471037438285, clipped: 1.0
+epoch: 13, train_batch_id: 600, avg_cost: 6.4214067459106445
+grad_norm: 22.195893514274527, clipped: 1.0
+epoch: 13, train_batch_id: 650, avg_cost: 6.416032791137695
+grad_norm: 20.03765457108102, clipped: 1.0
+epoch: 13, train_batch_id: 700, avg_cost: 6.44599723815918
+grad_norm: 24.423007940759636, clipped: 1.0
+epoch: 13, train_batch_id: 750, avg_cost: 6.562769889831543
+grad_norm: 22.83823278915518, clipped: 1.0
+epoch: 13, train_batch_id: 800, avg_cost: 6.454230308532715
+grad_norm: 28.70687714824614, clipped: 1.0
+epoch: 13, train_batch_id: 850, avg_cost: 6.411218643188477
+grad_norm: 19.501668210394698, clipped: 1.0
+epoch: 13, train_batch_id: 900, avg_cost: 6.423693656921387
+grad_norm: 27.095776331340883, clipped: 1.0
+epoch: 13, train_batch_id: 950, avg_cost: 6.430739402770996
+grad_norm: 21.43573182615094, clipped: 1.0
+epoch: 13, train_batch_id: 1000, avg_cost: 6.409964561462402
+grad_norm: 28.653299094108636, clipped: 1.0
+epoch: 13, train_batch_id: 1050, avg_cost: 6.448423385620117
+grad_norm: 19.27858385512803, clipped: 1.0
+epoch: 13, train_batch_id: 1100, avg_cost: 6.402426719665527
+grad_norm: 41.85663305104685, clipped: 1.0
+epoch: 13, train_batch_id: 1150, avg_cost: 6.513618469238281
+grad_norm: 36.60123475330071, clipped: 1.0
+epoch: 13, train_batch_id: 1200, avg_cost: 6.524594783782959
+grad_norm: 22.372332647405514, clipped: 1.0
+epoch: 13, train_batch_id: 1250, avg_cost: 6.509252548217773
+grad_norm: 33.19644124922495, clipped: 1.0
+epoch: 13, train_batch_id: 1300, avg_cost: 6.464682102203369
+grad_norm: 19.320630850652556, clipped: 1.0
+epoch: 13, train_batch_id: 1350, avg_cost: 6.46044397354126
+grad_norm: 16.116094433375192, clipped: 1.0
+epoch: 13, train_batch_id: 1400, avg_cost: 6.468772888183594
+grad_norm: 27.13343628212944, clipped: 1.0
+epoch: 13, train_batch_id: 1450, avg_cost: 6.477926731109619
+grad_norm: 26.813718520096952, clipped: 1.0
+epoch: 13, train_batch_id: 1500, avg_cost: 6.465362548828125
+grad_norm: 49.317612217959514, clipped: 1.0
+epoch: 13, train_batch_id: 1550, avg_cost: 6.526968955993652
+grad_norm: 17.547227235692986, clipped: 1.0
+epoch: 13, train_batch_id: 1600, avg_cost: 6.424537658691406
+grad_norm: 20.642268217499637, clipped: 1.0
+epoch: 13, train_batch_id: 1650, avg_cost: 6.501520156860352
+grad_norm: 16.923814359789663, clipped: 1.0
+epoch: 13, train_batch_id: 1700, avg_cost: 6.441187381744385
+grad_norm: 23.822636306613852, clipped: 1.0
+epoch: 13, train_batch_id: 1750, avg_cost: 6.502993583679199
+grad_norm: 28.988441714437993, clipped: 1.0
+epoch: 13, train_batch_id: 1800, avg_cost: 6.472011566162109
+grad_norm: 19.491302076054403, clipped: 1.0
+epoch: 13, train_batch_id: 1850, avg_cost: 6.597583293914795
+grad_norm: 24.990684714191215, clipped: 1.0
+epoch: 13, train_batch_id: 1900, avg_cost: 6.517187118530273
+grad_norm: 37.24557282909653, clipped: 1.0
+epoch: 13, train_batch_id: 1950, avg_cost: 6.417365074157715
+grad_norm: 30.31229861712312, clipped: 1.0
+epoch: 13, train_batch_id: 2000, avg_cost: 6.407718658447266
+grad_norm: 18.155182823411543, clipped: 1.0
+epoch: 13, train_batch_id: 2050, avg_cost: 6.428989887237549
+grad_norm: 21.84970025871234, clipped: 1.0
+epoch: 13, train_batch_id: 2100, avg_cost: 6.387657642364502
+grad_norm: 23.86932215205612, clipped: 1.0
+epoch: 13, train_batch_id: 2150, avg_cost: 6.471381187438965
+grad_norm: 28.41733175983234, clipped: 1.0
+epoch: 13, train_batch_id: 2200, avg_cost: 6.461702346801758
+grad_norm: 21.904288187741507, clipped: 1.0
+epoch: 13, train_batch_id: 2250, avg_cost: 6.440342426300049
+grad_norm: 17.755542109694268, clipped: 1.0
+epoch: 13, train_batch_id: 2300, avg_cost: 6.434700965881348
+grad_norm: 23.77853527770698, clipped: 1.0
+epoch: 13, train_batch_id: 2350, avg_cost: 6.472827911376953
+grad_norm: 20.531982372064487, clipped: 1.0
+epoch: 13, train_batch_id: 2400, avg_cost: 6.465837478637695
+grad_norm: 19.63361895499462, clipped: 1.0
+epoch: 13, train_batch_id: 2450, avg_cost: 6.445562362670898
+grad_norm: 22.071795037999234, clipped: 1.0
+Finished epoch 13, took 00:24:38 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.581624031066895 +- 0.006351342424750328
+Evaluating candidate model on evaluation dataset
+Epoch 13 candidate mean 9.572545051574707, baseline epoch 12 mean 9.118352890014648, difference 0.4541921615600586
+Start train epoch 14, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 14, train_batch_id: 0, avg_cost: 6.595582962036133
+grad_norm: 23.665945018933307, clipped: 1.0
+epoch: 14, train_batch_id: 50, avg_cost: 6.631392478942871
+grad_norm: 26.27762911341825, clipped: 1.0
+epoch: 14, train_batch_id: 100, avg_cost: 6.431781768798828
+grad_norm: 21.375861833373254, clipped: 1.0
+epoch: 14, train_batch_id: 150, avg_cost: 6.4442315101623535
+grad_norm: 24.410691538387667, clipped: 1.0
+epoch: 14, train_batch_id: 200, avg_cost: 6.470973968505859
+grad_norm: 27.77153442810038, clipped: 1.0
+epoch: 14, train_batch_id: 250, avg_cost: 6.474343299865723
+grad_norm: 27.473208904807183, clipped: 1.0
+epoch: 14, train_batch_id: 300, avg_cost: 6.410425662994385
+grad_norm: 20.65709537691756, clipped: 1.0
+epoch: 14, train_batch_id: 350, avg_cost: 6.443498611450195
+grad_norm: 24.80609480062805, clipped: 1.0
+epoch: 14, train_batch_id: 400, avg_cost: 6.443110466003418
+grad_norm: 19.952060391956994, clipped: 1.0
+epoch: 14, train_batch_id: 450, avg_cost: 6.487403869628906
+grad_norm: 22.95060766215761, clipped: 1.0
+epoch: 14, train_batch_id: 500, avg_cost: 6.425737380981445
+grad_norm: 21.80384185339408, clipped: 1.0
+epoch: 14, train_batch_id: 550, avg_cost: 6.422396659851074
+grad_norm: 24.40721377637352, clipped: 1.0
+epoch: 14, train_batch_id: 600, avg_cost: 6.443111896514893
+grad_norm: 16.543438806620063, clipped: 1.0
+epoch: 14, train_batch_id: 650, avg_cost: 6.358475208282471
+grad_norm: 23.317865125109776, clipped: 1.0
+epoch: 14, train_batch_id: 700, avg_cost: 6.373284339904785
+grad_norm: 24.433119003345332, clipped: 1.0
+epoch: 14, train_batch_id: 750, avg_cost: 6.392776012420654
+grad_norm: 29.211770150401673, clipped: 1.0
+epoch: 14, train_batch_id: 800, avg_cost: 6.434950828552246
+grad_norm: 38.41834535241073, clipped: 1.0
+epoch: 14, train_batch_id: 850, avg_cost: 6.435976982116699
+grad_norm: 40.66750246612846, clipped: 1.0
+epoch: 14, train_batch_id: 900, avg_cost: 6.450575828552246
+grad_norm: 35.40139090586537, clipped: 1.0
+epoch: 14, train_batch_id: 950, avg_cost: 6.378325939178467
+grad_norm: 33.817987662136616, clipped: 1.0
+epoch: 14, train_batch_id: 1000, avg_cost: 6.421430587768555
+grad_norm: 36.17663023351162, clipped: 1.0
+epoch: 14, train_batch_id: 1050, avg_cost: 6.405751705169678
+grad_norm: 39.3682570512063, clipped: 1.0
+epoch: 14, train_batch_id: 1100, avg_cost: 6.424770355224609
+grad_norm: 24.58532235197643, clipped: 1.0
+epoch: 14, train_batch_id: 1150, avg_cost: 6.441793441772461
+grad_norm: 23.428530616978975, clipped: 1.0
+epoch: 14, train_batch_id: 1200, avg_cost: 6.458944320678711
+grad_norm: 25.33096371751139, clipped: 1.0
+epoch: 14, train_batch_id: 1250, avg_cost: 6.401423454284668
+grad_norm: 24.16627416625872, clipped: 1.0
+epoch: 14, train_batch_id: 1300, avg_cost: 6.547607898712158
+grad_norm: 22.57946543860598, clipped: 1.0
+epoch: 14, train_batch_id: 1350, avg_cost: 6.394168853759766
+grad_norm: 23.123898050163543, clipped: 1.0
+epoch: 14, train_batch_id: 1400, avg_cost: 6.518416881561279
+grad_norm: 29.004382782991595, clipped: 1.0
+epoch: 14, train_batch_id: 1450, avg_cost: 6.43375301361084
+grad_norm: 27.325799601110024, clipped: 1.0
+epoch: 14, train_batch_id: 1500, avg_cost: 6.410421848297119
+grad_norm: 23.42108511625987, clipped: 1.0
+epoch: 14, train_batch_id: 1550, avg_cost: 6.399358749389648
+grad_norm: 22.588452387168065, clipped: 1.0
+epoch: 14, train_batch_id: 1600, avg_cost: 6.444502353668213
+grad_norm: 23.935726971212883, clipped: 1.0
+epoch: 14, train_batch_id: 1650, avg_cost: 6.448305130004883
+grad_norm: 36.11964466311396, clipped: 1.0
+epoch: 14, train_batch_id: 1700, avg_cost: 6.464939117431641
+grad_norm: 30.861110023478407, clipped: 1.0
+epoch: 14, train_batch_id: 1750, avg_cost: 6.447611331939697
+grad_norm: 24.399623921130374, clipped: 1.0
+epoch: 14, train_batch_id: 1800, avg_cost: 6.415774345397949
+grad_norm: 30.834774773153484, clipped: 1.0
+epoch: 14, train_batch_id: 1850, avg_cost: 6.441409111022949
+grad_norm: 24.614467840088846, clipped: 1.0
+epoch: 14, train_batch_id: 1900, avg_cost: 6.499988555908203
+grad_norm: 25.743594780308907, clipped: 1.0
+epoch: 14, train_batch_id: 1950, avg_cost: 6.498714923858643
+grad_norm: 23.574183403334747, clipped: 1.0
+epoch: 14, train_batch_id: 2000, avg_cost: 6.425384521484375
+grad_norm: 19.11732914549272, clipped: 1.0
+epoch: 14, train_batch_id: 2050, avg_cost: 6.428915977478027
+grad_norm: 27.46832613442146, clipped: 1.0
+epoch: 14, train_batch_id: 2100, avg_cost: 6.413973808288574
+grad_norm: 19.186588373522678, clipped: 1.0
+epoch: 14, train_batch_id: 2150, avg_cost: 6.424436569213867
+grad_norm: 22.494527679480896, clipped: 1.0
+epoch: 14, train_batch_id: 2200, avg_cost: 6.502337455749512
+grad_norm: 16.983810539611287, clipped: 1.0
+epoch: 14, train_batch_id: 2250, avg_cost: 6.489607810974121
+grad_norm: 32.862765686406675, clipped: 1.0
+epoch: 14, train_batch_id: 2300, avg_cost: 6.527588844299316
+grad_norm: 28.30328546725271, clipped: 1.0
+epoch: 14, train_batch_id: 2350, avg_cost: 6.489002704620361
+grad_norm: 23.3315952277249, clipped: 1.0
+epoch: 14, train_batch_id: 2400, avg_cost: 6.4481024742126465
+grad_norm: 18.729098356773996, clipped: 1.0
+epoch: 14, train_batch_id: 2450, avg_cost: 6.54981803894043
+grad_norm: 19.727564242267757, clipped: 1.0
+Finished epoch 14, took 00:24:41 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.386886596679688 +- 0.008345887996256351
+Evaluating candidate model on evaluation dataset
+Epoch 14 candidate mean 9.399178504943848, baseline epoch 12 mean 9.118352890014648, difference 0.2808256149291992
+Start train epoch 15, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 15, train_batch_id: 0, avg_cost: 6.683446884155273
+grad_norm: 26.547393462867547, clipped: 1.0
+epoch: 15, train_batch_id: 50, avg_cost: 6.503458499908447
+grad_norm: 19.077754809561682, clipped: 1.0
+epoch: 15, train_batch_id: 100, avg_cost: 6.5704569816589355
+grad_norm: 14.380937095323654, clipped: 1.0
+epoch: 15, train_batch_id: 150, avg_cost: 6.481777191162109
+grad_norm: 19.277447406327095, clipped: 1.0
+epoch: 15, train_batch_id: 200, avg_cost: 6.492606163024902
+grad_norm: 22.4012837436051, clipped: 1.0
+epoch: 15, train_batch_id: 250, avg_cost: 6.399606704711914
+grad_norm: 23.085700573371117, clipped: 1.0
+epoch: 15, train_batch_id: 300, avg_cost: 6.512798309326172
+grad_norm: 21.237685620599713, clipped: 1.0
+epoch: 15, train_batch_id: 350, avg_cost: 6.488309860229492
+grad_norm: 17.402410960205106, clipped: 1.0
+epoch: 15, train_batch_id: 400, avg_cost: 6.429365158081055
+grad_norm: 19.97817813953197, clipped: 1.0
+epoch: 15, train_batch_id: 450, avg_cost: 6.51329231262207
+grad_norm: 16.18389802426621, clipped: 1.0
+epoch: 15, train_batch_id: 500, avg_cost: 6.538216590881348
+grad_norm: 19.31885673666545, clipped: 1.0
+epoch: 15, train_batch_id: 550, avg_cost: 6.43638277053833
+grad_norm: 20.353877425359123, clipped: 1.0
+epoch: 15, train_batch_id: 600, avg_cost: 6.43269157409668
+grad_norm: 17.060923235758708, clipped: 1.0
+epoch: 15, train_batch_id: 650, avg_cost: 6.418826103210449
+grad_norm: 21.12597959656037, clipped: 1.0
+epoch: 15, train_batch_id: 700, avg_cost: 6.375104904174805
+grad_norm: 19.027110702533477, clipped: 1.0
+epoch: 15, train_batch_id: 750, avg_cost: 6.5138726234436035
+grad_norm: 18.494832973586355, clipped: 1.0
+epoch: 15, train_batch_id: 800, avg_cost: 6.3923492431640625
+grad_norm: 22.71184828768403, clipped: 1.0
+epoch: 15, train_batch_id: 850, avg_cost: 6.400176048278809
+grad_norm: 25.16141740066399, clipped: 1.0
+epoch: 15, train_batch_id: 900, avg_cost: 6.458700180053711
+grad_norm: 26.058168740864282, clipped: 1.0
+epoch: 15, train_batch_id: 950, avg_cost: 6.388965606689453
+grad_norm: 21.85132813882703, clipped: 1.0
+epoch: 15, train_batch_id: 1000, avg_cost: 6.40798807144165
+grad_norm: 24.25203935500637, clipped: 1.0
+epoch: 15, train_batch_id: 1050, avg_cost: 6.469665050506592
+grad_norm: 17.887015253700586, clipped: 1.0
+epoch: 15, train_batch_id: 1100, avg_cost: 6.456999778747559
+grad_norm: 17.231870795750034, clipped: 1.0
+epoch: 15, train_batch_id: 1150, avg_cost: 6.466507911682129
+grad_norm: 18.972178048283233, clipped: 1.0
+epoch: 15, train_batch_id: 1200, avg_cost: 6.387207984924316
+grad_norm: 24.022586220886723, clipped: 1.0
+epoch: 15, train_batch_id: 1250, avg_cost: 6.49852180480957
+grad_norm: 15.677539664513565, clipped: 1.0
+epoch: 15, train_batch_id: 1300, avg_cost: 6.520191669464111
+grad_norm: 16.295737780430322, clipped: 1.0
+epoch: 15, train_batch_id: 1350, avg_cost: 6.378782272338867
+grad_norm: 18.35972117657556, clipped: 1.0
+epoch: 15, train_batch_id: 1400, avg_cost: 6.388718605041504
+grad_norm: 22.6426261460115, clipped: 1.0
+epoch: 15, train_batch_id: 1450, avg_cost: 6.381503582000732
+grad_norm: 26.581610824169065, clipped: 1.0
+epoch: 15, train_batch_id: 1500, avg_cost: 6.524966716766357
+grad_norm: 22.360431334021015, clipped: 1.0
+epoch: 15, train_batch_id: 1550, avg_cost: 6.4625444412231445
+grad_norm: 22.682459438161434, clipped: 1.0
+epoch: 15, train_batch_id: 1600, avg_cost: 6.540088653564453
+grad_norm: 17.522652637353158, clipped: 1.0
+epoch: 15, train_batch_id: 1650, avg_cost: 6.506768226623535
+grad_norm: 26.936997429461623, clipped: 1.0
+epoch: 15, train_batch_id: 1700, avg_cost: 6.501757621765137
+grad_norm: 25.730619096475312, clipped: 1.0
+epoch: 15, train_batch_id: 1750, avg_cost: 6.375091552734375
+grad_norm: 23.094326438999644, clipped: 1.0
+epoch: 15, train_batch_id: 1800, avg_cost: 6.514980316162109
+grad_norm: 18.840894524692676, clipped: 1.0
+epoch: 15, train_batch_id: 1850, avg_cost: 6.450894355773926
+grad_norm: 22.260901003861083, clipped: 1.0
+epoch: 15, train_batch_id: 1900, avg_cost: 6.471935749053955
+grad_norm: 22.117657522076474, clipped: 1.0
+epoch: 15, train_batch_id: 1950, avg_cost: 6.537524700164795
+grad_norm: 19.37582118034043, clipped: 1.0
+epoch: 15, train_batch_id: 2000, avg_cost: 6.476814270019531
+grad_norm: 22.4506129733388, clipped: 1.0
+epoch: 15, train_batch_id: 2050, avg_cost: 6.414755821228027
+grad_norm: 23.05746914156342, clipped: 1.0
+epoch: 15, train_batch_id: 2100, avg_cost: 6.4163923263549805
+grad_norm: 18.33601853805246, clipped: 1.0
+epoch: 15, train_batch_id: 2150, avg_cost: 6.373963356018066
+grad_norm: 17.515082677252593, clipped: 1.0
+epoch: 15, train_batch_id: 2200, avg_cost: 6.424444198608398
+grad_norm: 16.808928725576063, clipped: 1.0
+epoch: 15, train_batch_id: 2250, avg_cost: 6.427552223205566
+grad_norm: 19.321548953927834, clipped: 1.0
+epoch: 15, train_batch_id: 2300, avg_cost: 6.334602355957031
+grad_norm: 17.878796250817462, clipped: 1.0
+epoch: 15, train_batch_id: 2350, avg_cost: 6.344357013702393
+grad_norm: 19.187104749613553, clipped: 1.0
+epoch: 15, train_batch_id: 2400, avg_cost: 6.429377555847168
+grad_norm: 22.48944969683427, clipped: 1.0
+epoch: 15, train_batch_id: 2450, avg_cost: 6.376270771026611
+grad_norm: 19.597831809572245, clipped: 1.0
+Finished epoch 15, took 00:24:46 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.155163764953613 +- 0.008532827720046043
+Evaluating candidate model on evaluation dataset
+Epoch 15 candidate mean 9.161559104919434, baseline epoch 12 mean 9.118352890014648, difference 0.043206214904785156
+Start train epoch 16, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 16, train_batch_id: 0, avg_cost: 6.374205589294434
+grad_norm: 30.14433710129598, clipped: 1.0
+epoch: 16, train_batch_id: 50, avg_cost: 6.397059917449951
+grad_norm: 23.96910088886945, clipped: 1.0
+epoch: 16, train_batch_id: 100, avg_cost: 6.432092189788818
+grad_norm: 16.537767837197055, clipped: 1.0
+epoch: 16, train_batch_id: 150, avg_cost: 6.399000644683838
+grad_norm: 23.354784494647085, clipped: 1.0
+epoch: 16, train_batch_id: 200, avg_cost: 6.372804641723633
+grad_norm: 16.740555615679586, clipped: 1.0
+epoch: 16, train_batch_id: 250, avg_cost: 6.3722734451293945
+grad_norm: 20.419848149597954, clipped: 1.0
+epoch: 16, train_batch_id: 300, avg_cost: 6.427642822265625
+grad_norm: 21.299494526301288, clipped: 1.0
+epoch: 16, train_batch_id: 350, avg_cost: 6.442070007324219
+grad_norm: 26.276514496794224, clipped: 1.0
+epoch: 16, train_batch_id: 400, avg_cost: 6.3797454833984375
+grad_norm: 25.564734703160475, clipped: 1.0
+epoch: 16, train_batch_id: 450, avg_cost: 6.43602991104126
+grad_norm: 23.26418354799632, clipped: 1.0
+epoch: 16, train_batch_id: 500, avg_cost: 6.342339038848877
+grad_norm: 19.51778139566576, clipped: 1.0
+epoch: 16, train_batch_id: 550, avg_cost: 6.41264533996582
+grad_norm: 19.65987153507444, clipped: 1.0
+epoch: 16, train_batch_id: 600, avg_cost: 6.370754718780518
+grad_norm: 20.056390890530697, clipped: 1.0
+epoch: 16, train_batch_id: 650, avg_cost: 6.4189300537109375
+grad_norm: 21.783633472212205, clipped: 1.0
+epoch: 16, train_batch_id: 700, avg_cost: 6.379642486572266
+grad_norm: 28.814642792876718, clipped: 1.0
+epoch: 16, train_batch_id: 750, avg_cost: 6.480506896972656
+grad_norm: 26.561963767380487, clipped: 1.0
+epoch: 16, train_batch_id: 800, avg_cost: 6.374573707580566
+grad_norm: 33.08874464830522, clipped: 1.0
+epoch: 16, train_batch_id: 850, avg_cost: 6.391685485839844
+grad_norm: 33.19729319193614, clipped: 1.0
+epoch: 16, train_batch_id: 900, avg_cost: 6.379569053649902
+grad_norm: 19.798368429732296, clipped: 1.0
+epoch: 16, train_batch_id: 950, avg_cost: 6.3796491622924805
+grad_norm: 35.71126384073185, clipped: 1.0
+epoch: 16, train_batch_id: 1000, avg_cost: 6.3887529373168945
+grad_norm: 20.82603202907587, clipped: 1.0
+epoch: 16, train_batch_id: 1050, avg_cost: 6.331001281738281
+grad_norm: 27.73895755007884, clipped: 1.0
+epoch: 16, train_batch_id: 1100, avg_cost: 6.338101387023926
+grad_norm: 28.150436179772907, clipped: 1.0
+epoch: 16, train_batch_id: 1150, avg_cost: 6.483827590942383
+grad_norm: 21.946916479730973, clipped: 1.0
+epoch: 16, train_batch_id: 1200, avg_cost: 6.484759330749512
+grad_norm: 18.377285947088623, clipped: 1.0
+epoch: 16, train_batch_id: 1250, avg_cost: 6.45162296295166
+grad_norm: 27.238422349840484, clipped: 1.0
+epoch: 16, train_batch_id: 1300, avg_cost: 6.4775710105896
+grad_norm: 27.057287913873896, clipped: 1.0
+epoch: 16, train_batch_id: 1350, avg_cost: 6.382185935974121
+grad_norm: 31.78020404746942, clipped: 1.0
+epoch: 16, train_batch_id: 1400, avg_cost: 6.387042045593262
+grad_norm: 21.176145473342842, clipped: 1.0
+epoch: 16, train_batch_id: 1450, avg_cost: 6.424243450164795
+grad_norm: 18.10743077156949, clipped: 1.0
+epoch: 16, train_batch_id: 1500, avg_cost: 6.399621486663818
+grad_norm: 21.812856209388638, clipped: 1.0
+epoch: 16, train_batch_id: 1550, avg_cost: 6.44365930557251
+grad_norm: 21.63934005438668, clipped: 1.0
+epoch: 16, train_batch_id: 1600, avg_cost: 6.454795837402344
+grad_norm: 17.181474131716925, clipped: 1.0
+epoch: 16, train_batch_id: 1650, avg_cost: 6.418322563171387
+grad_norm: 32.342927878878065, clipped: 1.0
+epoch: 16, train_batch_id: 1700, avg_cost: 6.401473045349121
+grad_norm: 22.72672523490736, clipped: 1.0
+epoch: 16, train_batch_id: 1750, avg_cost: 6.411581993103027
+grad_norm: 25.20209618699912, clipped: 1.0
+epoch: 16, train_batch_id: 1800, avg_cost: 6.398839473724365
+grad_norm: 24.536827652226933, clipped: 1.0
+epoch: 16, train_batch_id: 1850, avg_cost: 6.346320152282715
+grad_norm: 23.756782856330066, clipped: 1.0
+epoch: 16, train_batch_id: 1900, avg_cost: 6.341523170471191
+grad_norm: 32.775612358274145, clipped: 1.0
+epoch: 16, train_batch_id: 1950, avg_cost: 6.3670244216918945
+grad_norm: 23.314622877371914, clipped: 1.0
+epoch: 16, train_batch_id: 2000, avg_cost: 6.38506555557251
+grad_norm: 21.450559021483972, clipped: 1.0
+epoch: 16, train_batch_id: 2050, avg_cost: 6.3821492195129395
+grad_norm: 27.573441667371192, clipped: 1.0
+epoch: 16, train_batch_id: 2100, avg_cost: 6.456122875213623
+grad_norm: 20.800873046173486, clipped: 1.0
+epoch: 16, train_batch_id: 2150, avg_cost: 6.405559062957764
+grad_norm: 22.17533737841953, clipped: 1.0
+epoch: 16, train_batch_id: 2200, avg_cost: 6.359499931335449
+grad_norm: 21.79918122650031, clipped: 1.0
+epoch: 16, train_batch_id: 2250, avg_cost: 6.41757869720459
+grad_norm: 18.43293952951396, clipped: 1.0
+epoch: 16, train_batch_id: 2300, avg_cost: 6.447083473205566
+grad_norm: 20.313276051143788, clipped: 1.0
+epoch: 16, train_batch_id: 2350, avg_cost: 6.399669170379639
+grad_norm: 19.34276814745919, clipped: 1.0
+epoch: 16, train_batch_id: 2400, avg_cost: 6.375247955322266
+grad_norm: 21.320725832827925, clipped: 1.0
+epoch: 16, train_batch_id: 2450, avg_cost: 6.348685264587402
+grad_norm: 23.2406284672695, clipped: 1.0
+Finished epoch 16, took 00:24:44 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.38953971862793 +- 0.008191173896193504
+Evaluating candidate model on evaluation dataset
+Epoch 16 candidate mean 9.397396087646484, baseline epoch 12 mean 9.118352890014648, difference 0.27904319763183594
+Start train epoch 17, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 17, train_batch_id: 0, avg_cost: 6.3775506019592285
+grad_norm: 28.5300700416645, clipped: 1.0
+epoch: 17, train_batch_id: 50, avg_cost: 6.36785888671875
+grad_norm: 27.25051826157257, clipped: 1.0
+epoch: 17, train_batch_id: 100, avg_cost: 6.433714866638184
+grad_norm: 17.085695893129227, clipped: 1.0
+epoch: 17, train_batch_id: 150, avg_cost: 6.424037933349609
+grad_norm: 27.784036413674087, clipped: 1.0
+epoch: 17, train_batch_id: 200, avg_cost: 6.416738510131836
+grad_norm: 20.032316148040174, clipped: 1.0
+epoch: 17, train_batch_id: 250, avg_cost: 6.405511856079102
+grad_norm: 25.679635153477147, clipped: 1.0
+epoch: 17, train_batch_id: 300, avg_cost: 6.359106063842773
+grad_norm: 23.206554478492095, clipped: 1.0
+epoch: 17, train_batch_id: 350, avg_cost: 6.462769508361816
+grad_norm: 28.013212858968604, clipped: 1.0
+epoch: 17, train_batch_id: 400, avg_cost: 6.495296478271484
+grad_norm: 19.415214248118534, clipped: 1.0
+epoch: 17, train_batch_id: 450, avg_cost: 6.434648036956787
+grad_norm: 20.52908628575059, clipped: 1.0
+epoch: 17, train_batch_id: 500, avg_cost: 6.378218173980713
+grad_norm: 22.878705681077005, clipped: 1.0
+epoch: 17, train_batch_id: 550, avg_cost: 6.423150062561035
+grad_norm: 24.295837388274148, clipped: 1.0
+epoch: 17, train_batch_id: 600, avg_cost: 6.35869026184082
+grad_norm: 21.5297258359998, clipped: 1.0
+epoch: 17, train_batch_id: 650, avg_cost: 6.412901878356934
+grad_norm: 23.388751860112194, clipped: 1.0
+epoch: 17, train_batch_id: 700, avg_cost: 6.474711894989014
+grad_norm: 21.424224934056166, clipped: 1.0
+epoch: 17, train_batch_id: 750, avg_cost: 6.340818405151367
+grad_norm: 24.05538436980992, clipped: 1.0
+epoch: 17, train_batch_id: 800, avg_cost: 6.349874973297119
+grad_norm: 21.768553554956846, clipped: 1.0
+epoch: 17, train_batch_id: 850, avg_cost: 6.363507270812988
+grad_norm: 23.604090749993045, clipped: 1.0
+epoch: 17, train_batch_id: 900, avg_cost: 6.4806671142578125
+grad_norm: 21.560043379294765, clipped: 1.0
+epoch: 17, train_batch_id: 950, avg_cost: 6.44804573059082
+grad_norm: 30.375617345304786, clipped: 1.0
+epoch: 17, train_batch_id: 1000, avg_cost: 6.39532470703125
+grad_norm: 24.40648569450819, clipped: 1.0
+epoch: 17, train_batch_id: 1050, avg_cost: 6.422301769256592
+grad_norm: 24.899545207509718, clipped: 1.0
+epoch: 17, train_batch_id: 1100, avg_cost: 6.406856536865234
+grad_norm: 41.92640461604028, clipped: 1.0
+epoch: 17, train_batch_id: 1150, avg_cost: 6.352558135986328
+grad_norm: 26.548446100920597, clipped: 1.0
+epoch: 17, train_batch_id: 1200, avg_cost: 6.311017990112305
+grad_norm: 24.99042214045169, clipped: 1.0
+epoch: 17, train_batch_id: 1250, avg_cost: 6.420314788818359
+grad_norm: 19.6150208421623, clipped: 1.0
+epoch: 17, train_batch_id: 1300, avg_cost: 6.407573699951172
+grad_norm: 25.541485819835962, clipped: 1.0
+epoch: 17, train_batch_id: 1350, avg_cost: 6.4164323806762695
+grad_norm: 24.51371194970565, clipped: 1.0
+epoch: 17, train_batch_id: 1400, avg_cost: 6.388853073120117
+grad_norm: 22.695063342444268, clipped: 1.0
+epoch: 17, train_batch_id: 1450, avg_cost: 6.4597883224487305
+grad_norm: 17.81071379261693, clipped: 1.0
+epoch: 17, train_batch_id: 1500, avg_cost: 6.385746955871582
+grad_norm: 25.4057701137592, clipped: 1.0
+epoch: 17, train_batch_id: 1550, avg_cost: 6.423194885253906
+grad_norm: 19.425913283949033, clipped: 1.0
+epoch: 17, train_batch_id: 1600, avg_cost: 6.30892276763916
+grad_norm: 21.60875475046829, clipped: 1.0
+epoch: 17, train_batch_id: 1650, avg_cost: 6.361809730529785
+grad_norm: 26.778560281989915, clipped: 1.0
+epoch: 17, train_batch_id: 1700, avg_cost: 6.352912902832031
+grad_norm: 25.058620869448806, clipped: 1.0
+epoch: 17, train_batch_id: 1750, avg_cost: 6.415425777435303
+grad_norm: 19.414749384218936, clipped: 1.0
+epoch: 17, train_batch_id: 1800, avg_cost: 6.353812217712402
+grad_norm: 31.335529656866566, clipped: 1.0
+epoch: 17, train_batch_id: 1850, avg_cost: 6.408376693725586
+grad_norm: 30.015010101944064, clipped: 1.0
+epoch: 17, train_batch_id: 1900, avg_cost: 6.368780612945557
+grad_norm: 25.367816981245436, clipped: 1.0
+epoch: 17, train_batch_id: 1950, avg_cost: 6.382185935974121
+grad_norm: 20.63655386123979, clipped: 1.0
+epoch: 17, train_batch_id: 2000, avg_cost: 6.424793243408203
+grad_norm: 18.545287473230463, clipped: 1.0
+epoch: 17, train_batch_id: 2050, avg_cost: 6.376214981079102
+grad_norm: 19.301446159703044, clipped: 1.0
+epoch: 17, train_batch_id: 2100, avg_cost: 6.467159271240234
+grad_norm: 22.859036127030574, clipped: 1.0
+epoch: 17, train_batch_id: 2150, avg_cost: 6.442878723144531
+grad_norm: 20.67143802145316, clipped: 1.0
+epoch: 17, train_batch_id: 2200, avg_cost: 6.305044174194336
+grad_norm: 21.985352899750055, clipped: 1.0
+epoch: 17, train_batch_id: 2250, avg_cost: 6.3630266189575195
+grad_norm: 17.60777083727606, clipped: 1.0
+epoch: 17, train_batch_id: 2300, avg_cost: 6.507258415222168
+grad_norm: 28.938288209510855, clipped: 1.0
+epoch: 17, train_batch_id: 2350, avg_cost: 6.419312000274658
+grad_norm: 25.558050125950295, clipped: 1.0
+epoch: 17, train_batch_id: 2400, avg_cost: 6.30824613571167
+grad_norm: 26.219463579135233, clipped: 1.0
+epoch: 17, train_batch_id: 2450, avg_cost: 6.439034461975098
+grad_norm: 22.571562166263103, clipped: 1.0
+Finished epoch 17, took 00:24:47 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.10477066040039 +- 0.00728684663772583
+Evaluating candidate model on evaluation dataset
+Epoch 17 candidate mean 9.115413665771484, baseline epoch 12 mean 9.118352890014648, difference -0.0029392242431640625
+p-value: 0.3349924246578483
+Start train epoch 18, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 18, train_batch_id: 0, avg_cost: 6.3081769943237305
+grad_norm: 26.463388793430962, clipped: 1.0
+epoch: 18, train_batch_id: 50, avg_cost: 6.407785415649414
+grad_norm: 24.712886544061057, clipped: 1.0
+epoch: 18, train_batch_id: 100, avg_cost: 6.369950294494629
+grad_norm: 18.008718176412568, clipped: 1.0
+epoch: 18, train_batch_id: 150, avg_cost: 6.330085754394531
+grad_norm: 32.556769409913606, clipped: 1.0
+epoch: 18, train_batch_id: 200, avg_cost: 6.441344738006592
+grad_norm: 21.00717285937582, clipped: 1.0
+epoch: 18, train_batch_id: 250, avg_cost: 6.399487495422363
+grad_norm: 22.353697647309332, clipped: 1.0
+epoch: 18, train_batch_id: 300, avg_cost: 6.3531928062438965
+grad_norm: 22.08916069056702, clipped: 1.0
+epoch: 18, train_batch_id: 350, avg_cost: 6.42063045501709
+grad_norm: 19.146280776622365, clipped: 1.0
+epoch: 18, train_batch_id: 400, avg_cost: 6.456107139587402
+grad_norm: 22.84021615641134, clipped: 1.0
+epoch: 18, train_batch_id: 450, avg_cost: 6.400059223175049
+grad_norm: 24.959064994629042, clipped: 1.0
+epoch: 18, train_batch_id: 500, avg_cost: 6.37269401550293
+grad_norm: 25.8953383684226, clipped: 1.0
+epoch: 18, train_batch_id: 550, avg_cost: 6.394197463989258
+grad_norm: 17.37968638487216, clipped: 1.0
+epoch: 18, train_batch_id: 600, avg_cost: 6.402862071990967
+grad_norm: 22.31911300586583, clipped: 1.0
+epoch: 18, train_batch_id: 650, avg_cost: 6.434111595153809
+grad_norm: 20.526480910327184, clipped: 1.0
+epoch: 18, train_batch_id: 700, avg_cost: 6.435530662536621
+grad_norm: 22.79209474993712, clipped: 1.0
+epoch: 18, train_batch_id: 750, avg_cost: 6.488451957702637
+grad_norm: 19.834728389217183, clipped: 1.0
+epoch: 18, train_batch_id: 800, avg_cost: 6.394000053405762
+grad_norm: 17.35216717822955, clipped: 1.0
+epoch: 18, train_batch_id: 850, avg_cost: 6.393048286437988
+grad_norm: 19.766814128977984, clipped: 1.0
+epoch: 18, train_batch_id: 900, avg_cost: 6.416571617126465
+grad_norm: 24.836863495784634, clipped: 1.0
+epoch: 18, train_batch_id: 950, avg_cost: 6.294947624206543
+grad_norm: 24.2783345412, clipped: 1.0
+epoch: 18, train_batch_id: 1000, avg_cost: 6.3582916259765625
+grad_norm: 23.415124940455133, clipped: 1.0
+epoch: 18, train_batch_id: 1050, avg_cost: 6.414792060852051
+grad_norm: 21.81044721140876, clipped: 1.0
+epoch: 18, train_batch_id: 1100, avg_cost: 6.330975532531738
+grad_norm: 37.486155897296015, clipped: 1.0
+epoch: 18, train_batch_id: 1150, avg_cost: 6.353781700134277
+grad_norm: 21.688740213509988, clipped: 1.0
+epoch: 18, train_batch_id: 1200, avg_cost: 6.3267927169799805
+grad_norm: 19.354815216257666, clipped: 1.0
+epoch: 18, train_batch_id: 1250, avg_cost: 6.37637996673584
+grad_norm: 19.42315784907047, clipped: 1.0
+epoch: 18, train_batch_id: 1300, avg_cost: 6.445446968078613
+grad_norm: 21.871334411856015, clipped: 1.0
+epoch: 18, train_batch_id: 1350, avg_cost: 6.38692569732666
+grad_norm: 25.079767966292412, clipped: 1.0
+epoch: 18, train_batch_id: 1400, avg_cost: 6.332243919372559
+grad_norm: 33.073713159537334, clipped: 1.0
+epoch: 18, train_batch_id: 1450, avg_cost: 6.348923683166504
+grad_norm: 18.792724942878753, clipped: 1.0
+epoch: 18, train_batch_id: 1500, avg_cost: 6.443849563598633
+grad_norm: 27.517816571684165, clipped: 1.0
+epoch: 18, train_batch_id: 1550, avg_cost: 6.478511333465576
+grad_norm: 20.04701660490788, clipped: 1.0
+epoch: 18, train_batch_id: 1600, avg_cost: 6.438577651977539
+grad_norm: 21.876248793272854, clipped: 1.0
+epoch: 18, train_batch_id: 1650, avg_cost: 6.4014892578125
+grad_norm: 44.672965661367826, clipped: 1.0
+epoch: 18, train_batch_id: 1700, avg_cost: 6.361564636230469
+grad_norm: 35.82414958966411, clipped: 1.0
+epoch: 18, train_batch_id: 1750, avg_cost: 6.386922836303711
+grad_norm: 23.48020083184807, clipped: 1.0
+epoch: 18, train_batch_id: 1800, avg_cost: 6.404698371887207
+grad_norm: 22.071434041435868, clipped: 1.0
+epoch: 18, train_batch_id: 1850, avg_cost: 6.4543890953063965
+grad_norm: 21.15029607195797, clipped: 1.0
+epoch: 18, train_batch_id: 1900, avg_cost: 6.321366786956787
+grad_norm: 31.982174056345123, clipped: 1.0
+epoch: 18, train_batch_id: 1950, avg_cost: 6.431577205657959
+grad_norm: 24.10045480622764, clipped: 1.0
+epoch: 18, train_batch_id: 2000, avg_cost: 6.392792701721191
+grad_norm: 20.46200395348652, clipped: 1.0
+epoch: 18, train_batch_id: 2050, avg_cost: 6.345039367675781
+grad_norm: 19.882653027294452, clipped: 1.0
+epoch: 18, train_batch_id: 2100, avg_cost: 6.328554153442383
+grad_norm: 16.644388131920344, clipped: 1.0
+epoch: 18, train_batch_id: 2150, avg_cost: 6.374130725860596
+grad_norm: 24.129497768178883, clipped: 1.0
+epoch: 18, train_batch_id: 2200, avg_cost: 6.454185962677002
+grad_norm: 21.113490240164086, clipped: 1.0
+epoch: 18, train_batch_id: 2250, avg_cost: 6.388581275939941
+grad_norm: 26.06951931226225, clipped: 1.0
+epoch: 18, train_batch_id: 2300, avg_cost: 6.457376480102539
+grad_norm: 18.512624155250464, clipped: 1.0
+epoch: 18, train_batch_id: 2350, avg_cost: 6.3790130615234375
+grad_norm: 19.867017631412917, clipped: 1.0
+epoch: 18, train_batch_id: 2400, avg_cost: 6.293100833892822
+grad_norm: 21.075372583727795, clipped: 1.0
+epoch: 18, train_batch_id: 2450, avg_cost: 6.393819332122803
+grad_norm: 19.626581547778322, clipped: 1.0
+Finished epoch 18, took 00:24:48 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.898015975952148 +- 0.008383280597627163
+Evaluating candidate model on evaluation dataset
+Epoch 18 candidate mean 8.90046501159668, baseline epoch 12 mean 9.118352890014648, difference -0.21788787841796875
+p-value: 6.76778758871609e-138
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 19, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 19, train_batch_id: 0, avg_cost: 6.3619842529296875
+grad_norm: 17.807663643236904, clipped: 1.0
+epoch: 19, train_batch_id: 50, avg_cost: 6.400123596191406
+grad_norm: 20.577926571479807, clipped: 1.0
+epoch: 19, train_batch_id: 100, avg_cost: 6.417254447937012
+grad_norm: 19.04057104640952, clipped: 1.0
+epoch: 19, train_batch_id: 150, avg_cost: 6.424271583557129
+grad_norm: 19.658959004703522, clipped: 1.0
+epoch: 19, train_batch_id: 200, avg_cost: 6.4022417068481445
+grad_norm: 18.216583065022355, clipped: 1.0
+epoch: 19, train_batch_id: 250, avg_cost: 6.370025634765625
+grad_norm: 25.07025245486158, clipped: 1.0
+epoch: 19, train_batch_id: 300, avg_cost: 6.284351348876953
+grad_norm: 20.676674134748964, clipped: 1.0
+epoch: 19, train_batch_id: 350, avg_cost: 6.373902320861816
+grad_norm: 20.895778458012682, clipped: 1.0
+epoch: 19, train_batch_id: 400, avg_cost: 6.39103889465332
+grad_norm: 18.27257213506319, clipped: 1.0
+epoch: 19, train_batch_id: 450, avg_cost: 6.501938819885254
+grad_norm: 16.116482175416824, clipped: 1.0
+epoch: 19, train_batch_id: 500, avg_cost: 6.367702960968018
+grad_norm: 16.910124572527653, clipped: 1.0
+epoch: 19, train_batch_id: 550, avg_cost: 6.373225212097168
+grad_norm: 19.7669177050292, clipped: 1.0
+epoch: 19, train_batch_id: 600, avg_cost: 6.375601768493652
+grad_norm: 25.521050823801396, clipped: 1.0
+epoch: 19, train_batch_id: 650, avg_cost: 6.387580871582031
+grad_norm: 16.928383531565125, clipped: 1.0
+epoch: 19, train_batch_id: 700, avg_cost: 6.457716464996338
+grad_norm: 19.37340637212624, clipped: 1.0
+epoch: 19, train_batch_id: 750, avg_cost: 6.377114295959473
+grad_norm: 21.23729058953704, clipped: 1.0
+epoch: 19, train_batch_id: 800, avg_cost: 6.364413261413574
+grad_norm: 24.92354256535637, clipped: 1.0
+epoch: 19, train_batch_id: 850, avg_cost: 6.4070820808410645
+grad_norm: 16.39463472868134, clipped: 1.0
+epoch: 19, train_batch_id: 900, avg_cost: 6.5293288230896
+grad_norm: 21.99177812950382, clipped: 1.0
+epoch: 19, train_batch_id: 950, avg_cost: 6.421939373016357
+grad_norm: 17.555727896100475, clipped: 1.0
+epoch: 19, train_batch_id: 1000, avg_cost: 6.376424789428711
+grad_norm: 19.859692328613775, clipped: 1.0
+epoch: 19, train_batch_id: 1050, avg_cost: 6.343754768371582
+grad_norm: 19.603954289347552, clipped: 1.0
+epoch: 19, train_batch_id: 1100, avg_cost: 6.349002838134766
+grad_norm: 19.837844123077435, clipped: 1.0
+epoch: 19, train_batch_id: 1150, avg_cost: 6.407688140869141
+grad_norm: 19.85916587979656, clipped: 1.0
+epoch: 19, train_batch_id: 1200, avg_cost: 6.434067726135254
+grad_norm: 14.149395851904531, clipped: 1.0
+epoch: 19, train_batch_id: 1250, avg_cost: 6.446639060974121
+grad_norm: 15.499865440204363, clipped: 1.0
+epoch: 19, train_batch_id: 1300, avg_cost: 6.454588890075684
+grad_norm: 18.38882184447199, clipped: 1.0
+epoch: 19, train_batch_id: 1350, avg_cost: 6.370544910430908
+grad_norm: 23.02680593799499, clipped: 1.0
+epoch: 19, train_batch_id: 1400, avg_cost: 6.406272888183594
+grad_norm: 17.50740190584427, clipped: 1.0
+epoch: 19, train_batch_id: 1450, avg_cost: 6.391362190246582
+grad_norm: 18.659005567308075, clipped: 1.0
+epoch: 19, train_batch_id: 1500, avg_cost: 6.3342180252075195
+grad_norm: 19.61889957718332, clipped: 1.0
+epoch: 19, train_batch_id: 1550, avg_cost: 6.311980247497559
+grad_norm: 20.342411358507928, clipped: 1.0
+epoch: 19, train_batch_id: 1600, avg_cost: 6.351301193237305
+grad_norm: 20.799477731135493, clipped: 1.0
+epoch: 19, train_batch_id: 1650, avg_cost: 6.453357696533203
+grad_norm: 18.254237640596937, clipped: 1.0
+epoch: 19, train_batch_id: 1700, avg_cost: 6.330748558044434
+grad_norm: 20.812625036019707, clipped: 1.0
+epoch: 19, train_batch_id: 1750, avg_cost: 6.340972423553467
+grad_norm: 32.27393822588877, clipped: 1.0
+epoch: 19, train_batch_id: 1800, avg_cost: 6.469997406005859
+grad_norm: 16.155444585186014, clipped: 1.0
+epoch: 19, train_batch_id: 1850, avg_cost: 6.4457244873046875
+grad_norm: 21.473408212668115, clipped: 1.0
+epoch: 19, train_batch_id: 1900, avg_cost: 6.477193355560303
+grad_norm: 26.992399034736074, clipped: 1.0
+epoch: 19, train_batch_id: 1950, avg_cost: 6.475821495056152
+grad_norm: 19.42919066942729, clipped: 1.0
+epoch: 19, train_batch_id: 2000, avg_cost: 6.346215724945068
+grad_norm: 19.746724739766226, clipped: 1.0
+epoch: 19, train_batch_id: 2050, avg_cost: 6.374810218811035
+grad_norm: 23.321301933411085, clipped: 1.0
+epoch: 19, train_batch_id: 2100, avg_cost: 6.342865943908691
+grad_norm: 22.530003849512177, clipped: 1.0
+epoch: 19, train_batch_id: 2150, avg_cost: 6.3146562576293945
+grad_norm: 22.60894711910658, clipped: 1.0
+epoch: 19, train_batch_id: 2200, avg_cost: 6.278055667877197
+grad_norm: 20.20239861760352, clipped: 1.0
+epoch: 19, train_batch_id: 2250, avg_cost: 6.4000773429870605
+grad_norm: 19.224361699717583, clipped: 1.0
+epoch: 19, train_batch_id: 2300, avg_cost: 6.397119522094727
+grad_norm: 23.58825289306604, clipped: 1.0
+epoch: 19, train_batch_id: 2350, avg_cost: 6.398694038391113
+grad_norm: 24.538780766185948, clipped: 1.0
+epoch: 19, train_batch_id: 2400, avg_cost: 6.414471626281738
+grad_norm: 21.057794015672027, clipped: 1.0
+epoch: 19, train_batch_id: 2450, avg_cost: 6.309577465057373
+grad_norm: 21.63566569146335, clipped: 1.0
+Finished epoch 19, took 00:24:56 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.693352699279785 +- 0.008028946816921234
+Evaluating candidate model on evaluation dataset
+Epoch 19 candidate mean 9.677347183227539, baseline epoch 18 mean 8.882865905761719, difference 0.7944812774658203
+Start train epoch 20, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 20, train_batch_id: 0, avg_cost: 6.534006118774414
+grad_norm: 20.7902564170533, clipped: 1.0
+epoch: 20, train_batch_id: 50, avg_cost: 6.353398323059082
+grad_norm: 18.625054025672135, clipped: 1.0
+epoch: 20, train_batch_id: 100, avg_cost: 6.342649936676025
+grad_norm: 14.811014872393736, clipped: 1.0
+epoch: 20, train_batch_id: 150, avg_cost: 6.50034236907959
+grad_norm: 28.293857338980665, clipped: 1.0
+epoch: 20, train_batch_id: 200, avg_cost: 6.393266677856445
+grad_norm: 20.270655009743418, clipped: 1.0
+epoch: 20, train_batch_id: 250, avg_cost: 6.335535526275635
+grad_norm: 18.694757604252647, clipped: 1.0
+epoch: 20, train_batch_id: 300, avg_cost: 6.372732162475586
+grad_norm: 19.469921589417645, clipped: 1.0
+epoch: 20, train_batch_id: 350, avg_cost: 6.350390434265137
+grad_norm: 16.658209045767247, clipped: 1.0
+epoch: 20, train_batch_id: 400, avg_cost: 6.413889408111572
+grad_norm: 18.134413503412386, clipped: 1.0
+epoch: 20, train_batch_id: 450, avg_cost: 6.353936195373535
+grad_norm: 16.724670442485007, clipped: 1.0
+epoch: 20, train_batch_id: 500, avg_cost: 6.484003067016602
+grad_norm: 19.393446997998225, clipped: 1.0
+epoch: 20, train_batch_id: 550, avg_cost: 6.3810834884643555
+grad_norm: 19.328437364083403, clipped: 1.0
+epoch: 20, train_batch_id: 600, avg_cost: 6.449505805969238
+grad_norm: 35.843533807726544, clipped: 1.0
+epoch: 20, train_batch_id: 650, avg_cost: 6.4015045166015625
+grad_norm: 25.68264299716477, clipped: 1.0
+epoch: 20, train_batch_id: 700, avg_cost: 6.52014684677124
+grad_norm: 24.452937059520483, clipped: 1.0
+epoch: 20, train_batch_id: 750, avg_cost: 6.5434346199035645
+grad_norm: 19.874899830826518, clipped: 1.0
+epoch: 20, train_batch_id: 800, avg_cost: 6.600090980529785
+grad_norm: 19.396971122337483, clipped: 1.0
+epoch: 20, train_batch_id: 850, avg_cost: 6.584254264831543
+grad_norm: 21.915857965446406, clipped: 1.0
+epoch: 20, train_batch_id: 900, avg_cost: 6.465489387512207
+grad_norm: 51.820145670088564, clipped: 1.0
+epoch: 20, train_batch_id: 950, avg_cost: 6.5754594802856445
+grad_norm: 20.179285095204712, clipped: 1.0
+epoch: 20, train_batch_id: 1000, avg_cost: 6.648402214050293
+grad_norm: 19.11202748131877, clipped: 1.0
+epoch: 20, train_batch_id: 1050, avg_cost: 6.536684513092041
+grad_norm: 21.33587449204708, clipped: 1.0
+epoch: 20, train_batch_id: 1100, avg_cost: 6.506038188934326
+grad_norm: 19.255660085151725, clipped: 1.0
+epoch: 20, train_batch_id: 1150, avg_cost: 6.572735786437988
+grad_norm: 18.786056779028364, clipped: 1.0
+epoch: 20, train_batch_id: 1200, avg_cost: 6.528524875640869
+grad_norm: 21.409081234634563, clipped: 1.0
+epoch: 20, train_batch_id: 1250, avg_cost: 6.508050918579102
+grad_norm: 25.636679266664906, clipped: 1.0
+epoch: 20, train_batch_id: 1300, avg_cost: 6.528919219970703
+grad_norm: 21.398863826975813, clipped: 1.0
+epoch: 20, train_batch_id: 1350, avg_cost: 6.468585968017578
+grad_norm: 17.163383655956828, clipped: 1.0
+epoch: 20, train_batch_id: 1400, avg_cost: 6.484035491943359
+grad_norm: 20.211822000130965, clipped: 1.0
+epoch: 20, train_batch_id: 1450, avg_cost: 6.464871406555176
+grad_norm: 34.86550321800828, clipped: 1.0
+epoch: 20, train_batch_id: 1500, avg_cost: 6.523358345031738
+grad_norm: 23.669642386170526, clipped: 1.0
+epoch: 20, train_batch_id: 1550, avg_cost: 6.551172733306885
+grad_norm: 27.763244062265112, clipped: 1.0
+epoch: 20, train_batch_id: 1600, avg_cost: 6.523553848266602
+grad_norm: 23.715048434048136, clipped: 1.0
+epoch: 20, train_batch_id: 1650, avg_cost: 6.440025329589844
+grad_norm: 21.00151989236662, clipped: 1.0
+epoch: 20, train_batch_id: 1700, avg_cost: 6.490299224853516
+grad_norm: 22.34567868327122, clipped: 1.0
+epoch: 20, train_batch_id: 1750, avg_cost: 6.52194881439209
+grad_norm: 28.32508193892457, clipped: 1.0
+epoch: 20, train_batch_id: 1800, avg_cost: 6.4789719581604
+grad_norm: 20.976132094620763, clipped: 1.0
+epoch: 20, train_batch_id: 1850, avg_cost: 6.486990928649902
+grad_norm: 33.60800117205462, clipped: 1.0
+epoch: 20, train_batch_id: 1900, avg_cost: 6.434736251831055
+grad_norm: 39.33203981023513, clipped: 1.0
+epoch: 20, train_batch_id: 1950, avg_cost: 6.418189525604248
+grad_norm: 22.216175658589002, clipped: 1.0
+epoch: 20, train_batch_id: 2000, avg_cost: 6.441091537475586
+grad_norm: 30.845341265072364, clipped: 1.0
+epoch: 20, train_batch_id: 2050, avg_cost: 6.421146392822266
+grad_norm: 19.7656300298243, clipped: 1.0
+epoch: 20, train_batch_id: 2100, avg_cost: 6.429232597351074
+grad_norm: 27.10862031021554, clipped: 1.0
+epoch: 20, train_batch_id: 2150, avg_cost: 6.399237632751465
+grad_norm: 33.398156427710276, clipped: 1.0
+epoch: 20, train_batch_id: 2200, avg_cost: 6.417182922363281
+grad_norm: 27.408808709391938, clipped: 1.0
+epoch: 20, train_batch_id: 2250, avg_cost: 6.4080352783203125
+grad_norm: 30.74078640229288, clipped: 1.0
+epoch: 20, train_batch_id: 2300, avg_cost: 6.413108825683594
+grad_norm: 23.061266117549057, clipped: 1.0
+epoch: 20, train_batch_id: 2350, avg_cost: 6.409536361694336
+grad_norm: 20.84983164328987, clipped: 1.0
+epoch: 20, train_batch_id: 2400, avg_cost: 6.416293144226074
+grad_norm: 21.67820268532477, clipped: 1.0
+epoch: 20, train_batch_id: 2450, avg_cost: 6.446662902832031
+grad_norm: 19.52251964499644, clipped: 1.0
+Finished epoch 20, took 00:24:38 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.033136367797852 +- 0.008063155226409435
+Evaluating candidate model on evaluation dataset
+Epoch 20 candidate mean 9.01820182800293, baseline epoch 18 mean 8.882865905761719, difference 0.13533592224121094
+Start train epoch 21, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 21, train_batch_id: 0, avg_cost: 6.428339004516602
+grad_norm: 29.520529355056237, clipped: 1.0
+epoch: 21, train_batch_id: 50, avg_cost: 6.4696550369262695
+grad_norm: 23.256077000560953, clipped: 1.0
+epoch: 21, train_batch_id: 100, avg_cost: 6.473837852478027
+grad_norm: 26.3258537341058, clipped: 1.0
+epoch: 21, train_batch_id: 150, avg_cost: 6.451352119445801
+grad_norm: 26.442339458204742, clipped: 1.0
+epoch: 21, train_batch_id: 200, avg_cost: 6.435063362121582
+grad_norm: 32.25611908809011, clipped: 1.0
+epoch: 21, train_batch_id: 250, avg_cost: 6.416256904602051
+grad_norm: 19.02712386495665, clipped: 1.0
+epoch: 21, train_batch_id: 300, avg_cost: 6.404401779174805
+grad_norm: 34.17370293689859, clipped: 1.0
+epoch: 21, train_batch_id: 350, avg_cost: 6.373106956481934
+grad_norm: 23.426616848423585, clipped: 1.0
+epoch: 21, train_batch_id: 400, avg_cost: 6.380334854125977
+grad_norm: 27.08122816773136, clipped: 1.0
+epoch: 21, train_batch_id: 450, avg_cost: 6.415775775909424
+grad_norm: 21.226143815976535, clipped: 1.0
+epoch: 21, train_batch_id: 500, avg_cost: 6.385297775268555
+grad_norm: 35.53491802399537, clipped: 1.0
+epoch: 21, train_batch_id: 550, avg_cost: 6.401895523071289
+grad_norm: 22.097240854162703, clipped: 1.0
+epoch: 21, train_batch_id: 600, avg_cost: 6.4261794090271
+grad_norm: 27.515165955866493, clipped: 1.0
+epoch: 21, train_batch_id: 650, avg_cost: 6.383034706115723
+grad_norm: 33.23860787372968, clipped: 1.0
+epoch: 21, train_batch_id: 700, avg_cost: 6.364065170288086
+grad_norm: 20.12236222967108, clipped: 1.0
+epoch: 21, train_batch_id: 750, avg_cost: 6.42099142074585
+grad_norm: 20.84245129329616, clipped: 1.0
+epoch: 21, train_batch_id: 800, avg_cost: 6.37702751159668
+grad_norm: 29.155858474627138, clipped: 1.0
+epoch: 21, train_batch_id: 850, avg_cost: 6.365157127380371
+grad_norm: 22.21439207989216, clipped: 1.0
+epoch: 21, train_batch_id: 900, avg_cost: 6.409246444702148
+grad_norm: 19.956813870011057, clipped: 1.0
+epoch: 21, train_batch_id: 950, avg_cost: 6.37307596206665
+grad_norm: 17.790116922215617, clipped: 1.0
+epoch: 21, train_batch_id: 1000, avg_cost: 6.413153648376465
+grad_norm: 20.74712381852111, clipped: 1.0
+epoch: 21, train_batch_id: 1050, avg_cost: 6.4376325607299805
+grad_norm: 19.803561753716426, clipped: 1.0
+epoch: 21, train_batch_id: 1100, avg_cost: 6.407519340515137
+grad_norm: 23.731550511070687, clipped: 1.0
+epoch: 21, train_batch_id: 1150, avg_cost: 6.448071479797363
+grad_norm: 18.923441482878996, clipped: 1.0
+epoch: 21, train_batch_id: 1200, avg_cost: 6.358029365539551
+grad_norm: 21.928402725112615, clipped: 1.0
+epoch: 21, train_batch_id: 1250, avg_cost: 6.455389022827148
+grad_norm: 22.974410964058464, clipped: 1.0
+epoch: 21, train_batch_id: 1300, avg_cost: 6.345047950744629
+grad_norm: 27.06036539741178, clipped: 1.0
+epoch: 21, train_batch_id: 1350, avg_cost: 6.477253437042236
+grad_norm: 16.936286866302297, clipped: 1.0
+epoch: 21, train_batch_id: 1400, avg_cost: 6.458132743835449
+grad_norm: 28.844858489798156, clipped: 1.0
+epoch: 21, train_batch_id: 1450, avg_cost: 6.454268455505371
+grad_norm: 27.37596539192331, clipped: 1.0
+epoch: 21, train_batch_id: 1500, avg_cost: 6.394484519958496
+grad_norm: 18.233763702976656, clipped: 1.0
+epoch: 21, train_batch_id: 1550, avg_cost: 6.398795127868652
+grad_norm: 25.13815151640171, clipped: 1.0
+epoch: 21, train_batch_id: 1600, avg_cost: 6.37382698059082
+grad_norm: 27.07664303774816, clipped: 1.0
+epoch: 21, train_batch_id: 1650, avg_cost: 6.389288902282715
+grad_norm: 23.357032941505313, clipped: 1.0
+epoch: 21, train_batch_id: 1700, avg_cost: 6.406222820281982
+grad_norm: 24.70337831467027, clipped: 1.0
+epoch: 21, train_batch_id: 1750, avg_cost: 6.340153694152832
+grad_norm: 38.966531735812, clipped: 1.0
+epoch: 21, train_batch_id: 1800, avg_cost: 6.34056282043457
+grad_norm: 19.589768980861873, clipped: 1.0
+epoch: 21, train_batch_id: 1850, avg_cost: 6.363389015197754
+grad_norm: 40.69553479608169, clipped: 1.0
+epoch: 21, train_batch_id: 1900, avg_cost: 6.4412360191345215
+grad_norm: 28.482067690261466, clipped: 1.0
+epoch: 21, train_batch_id: 1950, avg_cost: 6.406366348266602
+grad_norm: 48.364710161062796, clipped: 1.0
+epoch: 21, train_batch_id: 2000, avg_cost: 6.347635746002197
+grad_norm: 26.406767016012363, clipped: 1.0
+epoch: 21, train_batch_id: 2050, avg_cost: 6.492185592651367
+grad_norm: 20.59510863961278, clipped: 1.0
+epoch: 21, train_batch_id: 2100, avg_cost: 6.450801849365234
+grad_norm: 19.486399308058996, clipped: 1.0
+epoch: 21, train_batch_id: 2150, avg_cost: 6.521842956542969
+grad_norm: 20.49107324881312, clipped: 1.0
+epoch: 21, train_batch_id: 2200, avg_cost: 6.466255187988281
+grad_norm: 23.202783072807044, clipped: 1.0
+epoch: 21, train_batch_id: 2250, avg_cost: 6.358482360839844
+grad_norm: 22.59662133605318, clipped: 1.0
+epoch: 21, train_batch_id: 2300, avg_cost: 6.39687442779541
+grad_norm: 21.936518589905955, clipped: 1.0
+epoch: 21, train_batch_id: 2350, avg_cost: 6.369712829589844
+grad_norm: 19.44069206280804, clipped: 1.0
+epoch: 21, train_batch_id: 2400, avg_cost: 6.488260269165039
+grad_norm: 26.46488062276715, clipped: 1.0
+epoch: 21, train_batch_id: 2450, avg_cost: 6.36252498626709
+grad_norm: 19.132019067822164, clipped: 1.0
+Finished epoch 21, took 00:24:36 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.895235061645508 +- 0.007425870280712843
+Evaluating candidate model on evaluation dataset
+Epoch 21 candidate mean 8.885501861572266, baseline epoch 18 mean 8.882865905761719, difference 0.002635955810546875
+Start train epoch 22, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 22, train_batch_id: 0, avg_cost: 6.44382905960083
+grad_norm: 18.139086242474765, clipped: 1.0
+epoch: 22, train_batch_id: 50, avg_cost: 6.468613624572754
+grad_norm: 26.44972284722612, clipped: 1.0
+epoch: 22, train_batch_id: 100, avg_cost: 6.487452983856201
+grad_norm: 25.10243901694131, clipped: 1.0
+epoch: 22, train_batch_id: 150, avg_cost: 6.428461074829102
+grad_norm: 27.119068210223308, clipped: 1.0
+epoch: 22, train_batch_id: 200, avg_cost: 6.49335241317749
+grad_norm: 16.030823276439317, clipped: 1.0
+epoch: 22, train_batch_id: 250, avg_cost: 6.382922649383545
+grad_norm: 18.22940017593711, clipped: 1.0
+epoch: 22, train_batch_id: 300, avg_cost: 6.367222785949707
+grad_norm: 18.229139417776253, clipped: 1.0
+epoch: 22, train_batch_id: 350, avg_cost: 6.36210823059082
+grad_norm: 22.39212304137924, clipped: 1.0
+epoch: 22, train_batch_id: 400, avg_cost: 6.423577308654785
+grad_norm: 21.688016949081256, clipped: 1.0
+epoch: 22, train_batch_id: 450, avg_cost: 6.376994609832764
+grad_norm: 20.750932280067854, clipped: 1.0
+epoch: 22, train_batch_id: 500, avg_cost: 6.398690223693848
+grad_norm: 17.792143657802697, clipped: 1.0
+epoch: 22, train_batch_id: 550, avg_cost: 6.361360549926758
+grad_norm: 17.9197571487122, clipped: 1.0
+epoch: 22, train_batch_id: 600, avg_cost: 6.42363166809082
+grad_norm: 26.799983947877408, clipped: 1.0
+epoch: 22, train_batch_id: 650, avg_cost: 6.400911331176758
+grad_norm: 18.780636900812144, clipped: 1.0
+epoch: 22, train_batch_id: 700, avg_cost: 6.4297075271606445
+grad_norm: 20.323704595106726, clipped: 1.0
+epoch: 22, train_batch_id: 750, avg_cost: 6.356622695922852
+grad_norm: 20.459547546207226, clipped: 1.0
+epoch: 22, train_batch_id: 800, avg_cost: 6.340087413787842
+grad_norm: 26.730107697037845, clipped: 1.0
+epoch: 22, train_batch_id: 850, avg_cost: 6.41505765914917
+grad_norm: 29.677453705219094, clipped: 1.0
+epoch: 22, train_batch_id: 900, avg_cost: 6.389969825744629
+grad_norm: 22.89545734591179, clipped: 1.0
+epoch: 22, train_batch_id: 950, avg_cost: 6.2951202392578125
+grad_norm: 20.412261298558324, clipped: 1.0
+epoch: 22, train_batch_id: 1000, avg_cost: 6.428540229797363
+grad_norm: 16.531690787466484, clipped: 1.0
+epoch: 22, train_batch_id: 1050, avg_cost: 6.441964626312256
+grad_norm: 18.221661865537644, clipped: 1.0
+epoch: 22, train_batch_id: 1100, avg_cost: 6.385135173797607
+grad_norm: 16.630289677979643, clipped: 1.0
+epoch: 22, train_batch_id: 1150, avg_cost: 6.374517917633057
+grad_norm: 22.05304582744938, clipped: 1.0
+epoch: 22, train_batch_id: 1200, avg_cost: 6.36177921295166
+grad_norm: 40.40581064633848, clipped: 1.0
+epoch: 22, train_batch_id: 1250, avg_cost: 6.4753007888793945
+grad_norm: 19.525357572248325, clipped: 1.0
+epoch: 22, train_batch_id: 1300, avg_cost: 6.345284461975098
+grad_norm: 21.73990779056367, clipped: 1.0
+epoch: 22, train_batch_id: 1350, avg_cost: 6.405934810638428
+grad_norm: 28.418203553768123, clipped: 1.0
+epoch: 22, train_batch_id: 1400, avg_cost: 6.449789047241211
+grad_norm: 22.75831204845317, clipped: 1.0
+epoch: 22, train_batch_id: 1450, avg_cost: 6.363142967224121
+grad_norm: 19.42746304896893, clipped: 1.0
+epoch: 22, train_batch_id: 1500, avg_cost: 6.411209583282471
+grad_norm: 17.559960466003336, clipped: 1.0
+epoch: 22, train_batch_id: 1550, avg_cost: 6.367020130157471
+grad_norm: 22.611505878145607, clipped: 1.0
+epoch: 22, train_batch_id: 1600, avg_cost: 6.34847354888916
+grad_norm: 19.756158200557785, clipped: 1.0
+epoch: 22, train_batch_id: 1650, avg_cost: 6.380821704864502
+grad_norm: 15.684793378348624, clipped: 1.0
+epoch: 22, train_batch_id: 1700, avg_cost: 6.313281059265137
+grad_norm: 24.20744164373373, clipped: 1.0
+epoch: 22, train_batch_id: 1750, avg_cost: 6.358402729034424
+grad_norm: 21.630662380192852, clipped: 1.0
+epoch: 22, train_batch_id: 1800, avg_cost: 6.358895301818848
+grad_norm: 18.36530160880209, clipped: 1.0
+epoch: 22, train_batch_id: 1850, avg_cost: 6.27677583694458
+grad_norm: 16.554769990441137, clipped: 1.0
+epoch: 22, train_batch_id: 1900, avg_cost: 6.438324451446533
+grad_norm: 19.93560135230411, clipped: 1.0
+epoch: 22, train_batch_id: 1950, avg_cost: 6.412929058074951
+grad_norm: 21.509971887367282, clipped: 1.0
+epoch: 22, train_batch_id: 2000, avg_cost: 6.324483871459961
+grad_norm: 24.01369011120881, clipped: 1.0
+epoch: 22, train_batch_id: 2050, avg_cost: 6.370710849761963
+grad_norm: 22.53351436603406, clipped: 1.0
+epoch: 22, train_batch_id: 2100, avg_cost: 6.406334400177002
+grad_norm: 15.344453250179843, clipped: 1.0
+epoch: 22, train_batch_id: 2150, avg_cost: 6.363281726837158
+grad_norm: 18.543121533026653, clipped: 1.0
+epoch: 22, train_batch_id: 2200, avg_cost: 6.376795291900635
+grad_norm: 21.89357910582675, clipped: 1.0
+epoch: 22, train_batch_id: 2250, avg_cost: 6.357351303100586
+grad_norm: 22.183036527638677, clipped: 1.0
+epoch: 22, train_batch_id: 2300, avg_cost: 6.4036407470703125
+grad_norm: 18.565433968549172, clipped: 1.0
+epoch: 22, train_batch_id: 2350, avg_cost: 6.389965057373047
+grad_norm: 16.167961150894268, clipped: 1.0
+epoch: 22, train_batch_id: 2400, avg_cost: 6.341998100280762
+grad_norm: 16.31555895615675, clipped: 1.0
+epoch: 22, train_batch_id: 2450, avg_cost: 6.426675319671631
+grad_norm: 15.124290293560634, clipped: 1.0
+Finished epoch 22, took 00:24:41 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.714178085327148 +- 0.007027211133390665
+Evaluating candidate model on evaluation dataset
+Epoch 22 candidate mean 8.703451156616211, baseline epoch 18 mean 8.882865905761719, difference -0.1794147491455078
+p-value: 2.2752514763494375e-93
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 23, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 23, train_batch_id: 0, avg_cost: 6.40349006652832
+grad_norm: 17.444546509805278, clipped: 1.0
+epoch: 23, train_batch_id: 50, avg_cost: 6.35688591003418
+grad_norm: 18.250722658182568, clipped: 1.0
+epoch: 23, train_batch_id: 100, avg_cost: 6.335745334625244
+grad_norm: 15.753674263709279, clipped: 1.0
+epoch: 23, train_batch_id: 150, avg_cost: 6.310825347900391
+grad_norm: 20.639479778895723, clipped: 1.0
+epoch: 23, train_batch_id: 200, avg_cost: 6.348692893981934
+grad_norm: 17.59189421749366, clipped: 1.0
+epoch: 23, train_batch_id: 250, avg_cost: 6.311784267425537
+grad_norm: 19.33760860469952, clipped: 1.0
+epoch: 23, train_batch_id: 300, avg_cost: 6.360003471374512
+grad_norm: 22.67143648715016, clipped: 1.0
+epoch: 23, train_batch_id: 350, avg_cost: 6.437665939331055
+grad_norm: 16.609349810443064, clipped: 1.0
+epoch: 23, train_batch_id: 400, avg_cost: 6.464054107666016
+grad_norm: 22.308082587787734, clipped: 1.0
+epoch: 23, train_batch_id: 450, avg_cost: 6.369697570800781
+grad_norm: 14.11235353645061, clipped: 1.0
+epoch: 23, train_batch_id: 500, avg_cost: 6.5025787353515625
+grad_norm: 15.091398162788954, clipped: 1.0
+epoch: 23, train_batch_id: 550, avg_cost: 6.362642288208008
+grad_norm: 18.99764266297584, clipped: 1.0
+epoch: 23, train_batch_id: 600, avg_cost: 6.405973434448242
+grad_norm: 25.844070814676684, clipped: 1.0
+epoch: 23, train_batch_id: 650, avg_cost: 6.37586784362793
+grad_norm: 18.05300950896604, clipped: 1.0
+epoch: 23, train_batch_id: 700, avg_cost: 6.41769552230835
+grad_norm: 20.78120283309202, clipped: 1.0
+epoch: 23, train_batch_id: 750, avg_cost: 6.308350563049316
+grad_norm: 20.62626146543266, clipped: 1.0
+epoch: 23, train_batch_id: 800, avg_cost: 6.471724033355713
+grad_norm: 20.939506460569106, clipped: 1.0
+epoch: 23, train_batch_id: 850, avg_cost: 6.32236909866333
+grad_norm: 20.91625397688467, clipped: 1.0
+epoch: 23, train_batch_id: 900, avg_cost: 6.284900188446045
+grad_norm: 22.543054405394454, clipped: 1.0
+epoch: 23, train_batch_id: 950, avg_cost: 6.334219932556152
+grad_norm: 15.682595978175708, clipped: 1.0
+epoch: 23, train_batch_id: 1000, avg_cost: 6.307487487792969
+grad_norm: 21.198701740925962, clipped: 1.0
+epoch: 23, train_batch_id: 1050, avg_cost: 6.333792209625244
+grad_norm: 14.211261999864524, clipped: 1.0
+epoch: 23, train_batch_id: 1100, avg_cost: 6.387933731079102
+grad_norm: 20.316537236517245, clipped: 1.0
+epoch: 23, train_batch_id: 1150, avg_cost: 6.330167770385742
+grad_norm: 25.716180404564067, clipped: 1.0
+epoch: 23, train_batch_id: 1200, avg_cost: 6.313619613647461
+grad_norm: 23.200305119242753, clipped: 1.0
+epoch: 23, train_batch_id: 1250, avg_cost: 6.34417724609375
+grad_norm: 16.867106278783123, clipped: 1.0
+epoch: 23, train_batch_id: 1300, avg_cost: 6.3310017585754395
+grad_norm: 22.615292172370612, clipped: 1.0
+epoch: 23, train_batch_id: 1350, avg_cost: 6.260132789611816
+grad_norm: 20.572500850105556, clipped: 1.0
+epoch: 23, train_batch_id: 1400, avg_cost: 6.329290390014648
+grad_norm: 22.12995342698655, clipped: 1.0
+epoch: 23, train_batch_id: 1450, avg_cost: 6.3177809715271
+grad_norm: 23.585025554528432, clipped: 1.0
+epoch: 23, train_batch_id: 1500, avg_cost: 6.315751552581787
+grad_norm: 29.69752992618236, clipped: 1.0
+epoch: 23, train_batch_id: 1550, avg_cost: 6.3787641525268555
+grad_norm: 16.112098039845417, clipped: 1.0
+epoch: 23, train_batch_id: 1600, avg_cost: 6.424839973449707
+grad_norm: 24.59614294040897, clipped: 1.0
+epoch: 23, train_batch_id: 1650, avg_cost: 6.3810577392578125
+grad_norm: 20.146886848720634, clipped: 1.0
+epoch: 23, train_batch_id: 1700, avg_cost: 6.327823162078857
+grad_norm: 15.388602560783877, clipped: 1.0
+epoch: 23, train_batch_id: 1750, avg_cost: 6.312362194061279
+grad_norm: 23.7879825133529, clipped: 1.0
+epoch: 23, train_batch_id: 1800, avg_cost: 6.365622520446777
+grad_norm: 19.358183458953512, clipped: 1.0
+epoch: 23, train_batch_id: 1850, avg_cost: 6.304570198059082
+grad_norm: 18.358809527250944, clipped: 1.0
+epoch: 23, train_batch_id: 1900, avg_cost: 6.3674211502075195
+grad_norm: 26.245170412944514, clipped: 1.0
+epoch: 23, train_batch_id: 1950, avg_cost: 6.315147399902344
+grad_norm: 21.16318326614875, clipped: 1.0
+epoch: 23, train_batch_id: 2000, avg_cost: 6.342652320861816
+grad_norm: 20.9243882828455, clipped: 1.0
+epoch: 23, train_batch_id: 2050, avg_cost: 6.375173091888428
+grad_norm: 19.152961203323127, clipped: 1.0
+epoch: 23, train_batch_id: 2100, avg_cost: 6.342728614807129
+grad_norm: 17.51646009385781, clipped: 1.0
+epoch: 23, train_batch_id: 2150, avg_cost: 6.2605485916137695
+grad_norm: 18.87638183735535, clipped: 1.0
+epoch: 23, train_batch_id: 2200, avg_cost: 6.39031982421875
+grad_norm: 21.3776548127215, clipped: 1.0
+epoch: 23, train_batch_id: 2250, avg_cost: 6.305367946624756
+grad_norm: 23.812941643180213, clipped: 1.0
+epoch: 23, train_batch_id: 2300, avg_cost: 6.384252071380615
+grad_norm: 19.430807060631743, clipped: 1.0
+epoch: 23, train_batch_id: 2350, avg_cost: 6.343278884887695
+grad_norm: 22.27172560886558, clipped: 1.0
+epoch: 23, train_batch_id: 2400, avg_cost: 6.316184043884277
+grad_norm: 16.401995608089628, clipped: 1.0
+epoch: 23, train_batch_id: 2450, avg_cost: 6.272601127624512
+grad_norm: 21.09805763884847, clipped: 1.0
+Finished epoch 23, took 00:24:39 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.907569885253906 +- 0.008641345426440239
+Evaluating candidate model on evaluation dataset
+Epoch 23 candidate mean 8.903955459594727, baseline epoch 22 mean 8.721517562866211, difference 0.18243789672851562
+Start train epoch 24, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 24, train_batch_id: 0, avg_cost: 6.307862281799316
+grad_norm: 24.299317431397327, clipped: 1.0
+epoch: 24, train_batch_id: 50, avg_cost: 6.28841495513916
+grad_norm: 22.51675878236679, clipped: 1.0
+epoch: 24, train_batch_id: 100, avg_cost: 6.330341339111328
+grad_norm: 18.77915159528353, clipped: 1.0
+epoch: 24, train_batch_id: 150, avg_cost: 6.298179626464844
+grad_norm: 15.141306071480246, clipped: 1.0
+epoch: 24, train_batch_id: 200, avg_cost: 6.320524215698242
+grad_norm: 19.603026038220545, clipped: 1.0
+epoch: 24, train_batch_id: 250, avg_cost: 6.452243804931641
+grad_norm: 17.61595440625048, clipped: 1.0
+epoch: 24, train_batch_id: 300, avg_cost: 6.336343765258789
+grad_norm: 29.012876957546624, clipped: 1.0
+epoch: 24, train_batch_id: 350, avg_cost: 6.4283857345581055
+grad_norm: 15.99271465395593, clipped: 1.0
+epoch: 24, train_batch_id: 400, avg_cost: 6.430569648742676
+grad_norm: 19.217305603382762, clipped: 1.0
+epoch: 24, train_batch_id: 450, avg_cost: 6.392245769500732
+grad_norm: 18.73540220607235, clipped: 1.0
+epoch: 24, train_batch_id: 500, avg_cost: 6.349425315856934
+grad_norm: 19.848200963307523, clipped: 1.0
+epoch: 24, train_batch_id: 550, avg_cost: 6.274787902832031
+grad_norm: 24.490234834916762, clipped: 1.0
+epoch: 24, train_batch_id: 600, avg_cost: 6.372720241546631
+grad_norm: 21.823158044445552, clipped: 1.0
+epoch: 24, train_batch_id: 650, avg_cost: 6.363327980041504
+grad_norm: 15.457227860809978, clipped: 1.0
+epoch: 24, train_batch_id: 700, avg_cost: 6.418411731719971
+grad_norm: 18.227706275165463, clipped: 1.0
+epoch: 24, train_batch_id: 750, avg_cost: 6.4120659828186035
+grad_norm: 22.474313205360982, clipped: 1.0
+epoch: 24, train_batch_id: 800, avg_cost: 6.374882698059082
+grad_norm: 21.429088434838633, clipped: 1.0
+epoch: 24, train_batch_id: 850, avg_cost: 6.374310493469238
+grad_norm: 16.93760800078843, clipped: 1.0
+epoch: 24, train_batch_id: 900, avg_cost: 6.319284439086914
+grad_norm: 20.307660863702978, clipped: 1.0
+epoch: 24, train_batch_id: 950, avg_cost: 6.339210510253906
+grad_norm: 34.229032107975804, clipped: 1.0
+epoch: 24, train_batch_id: 1000, avg_cost: 6.336396217346191
+grad_norm: 18.607036649746007, clipped: 1.0
+epoch: 24, train_batch_id: 1050, avg_cost: 6.3254547119140625
+grad_norm: 18.73557521228811, clipped: 1.0
+epoch: 24, train_batch_id: 1100, avg_cost: 6.41725492477417
+grad_norm: 27.409260973276155, clipped: 1.0
+epoch: 24, train_batch_id: 1150, avg_cost: 6.359455108642578
+grad_norm: 41.17146129572861, clipped: 1.0
+epoch: 24, train_batch_id: 1200, avg_cost: 6.356368064880371
+grad_norm: 15.815043625968014, clipped: 1.0
+epoch: 24, train_batch_id: 1250, avg_cost: 6.404720306396484
+grad_norm: 23.119636377601978, clipped: 1.0
+epoch: 24, train_batch_id: 1300, avg_cost: 6.4077677726745605
+grad_norm: 18.73027175019593, clipped: 1.0
+epoch: 24, train_batch_id: 1350, avg_cost: 6.355658531188965
+grad_norm: 23.354219148060036, clipped: 1.0
+epoch: 24, train_batch_id: 1400, avg_cost: 6.290412902832031
+grad_norm: 23.25022523483368, clipped: 1.0
+epoch: 24, train_batch_id: 1450, avg_cost: 6.282850742340088
+grad_norm: 15.18526896725125, clipped: 1.0
+epoch: 24, train_batch_id: 1500, avg_cost: 6.417186737060547
+grad_norm: 13.748592464345442, clipped: 1.0
+epoch: 24, train_batch_id: 1550, avg_cost: 6.348584175109863
+grad_norm: 19.667895651217982, clipped: 1.0
+epoch: 24, train_batch_id: 1600, avg_cost: 6.546213150024414
+grad_norm: 18.22126268627979, clipped: 1.0
+epoch: 24, train_batch_id: 1650, avg_cost: 6.418997287750244
+grad_norm: 17.274799213554367, clipped: 1.0
+epoch: 24, train_batch_id: 1700, avg_cost: 6.348745822906494
+grad_norm: 22.061426219328467, clipped: 1.0
+epoch: 24, train_batch_id: 1750, avg_cost: 6.356595039367676
+grad_norm: 22.715553146152267, clipped: 1.0
+epoch: 24, train_batch_id: 1800, avg_cost: 6.466306686401367
+grad_norm: 27.512589079598936, clipped: 1.0
+epoch: 24, train_batch_id: 1850, avg_cost: 6.335546493530273
+grad_norm: 40.527662155222416, clipped: 1.0
+epoch: 24, train_batch_id: 1900, avg_cost: 6.366353511810303
+grad_norm: 21.998140206168248, clipped: 1.0
+epoch: 24, train_batch_id: 1950, avg_cost: 6.372635841369629
+grad_norm: 14.171767852923093, clipped: 1.0
+epoch: 24, train_batch_id: 2000, avg_cost: 6.339513778686523
+grad_norm: 16.038641810302313, clipped: 1.0
+epoch: 24, train_batch_id: 2050, avg_cost: 6.339364528656006
+grad_norm: 15.389877992228678, clipped: 1.0
+epoch: 24, train_batch_id: 2100, avg_cost: 6.377361297607422
+grad_norm: 16.80310443969104, clipped: 1.0
+epoch: 24, train_batch_id: 2150, avg_cost: 6.346748352050781
+grad_norm: 16.22101184928733, clipped: 1.0
+epoch: 24, train_batch_id: 2200, avg_cost: 6.322421073913574
+grad_norm: 23.668339514948755, clipped: 1.0
+epoch: 24, train_batch_id: 2250, avg_cost: 6.310611248016357
+grad_norm: 17.52578367926704, clipped: 1.0
+epoch: 24, train_batch_id: 2300, avg_cost: 6.383016586303711
+grad_norm: 17.578527567475966, clipped: 1.0
+epoch: 24, train_batch_id: 2350, avg_cost: 6.360352039337158
+grad_norm: 19.0283031607616, clipped: 1.0
+epoch: 24, train_batch_id: 2400, avg_cost: 6.316342353820801
+grad_norm: 19.02543599818743, clipped: 1.0
+epoch: 24, train_batch_id: 2450, avg_cost: 6.40607213973999
+grad_norm: 21.147633327981236, clipped: 1.0
+Finished epoch 24, took 00:24:35 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.994512557983398 +- 0.009027869440615177
+Evaluating candidate model on evaluation dataset
+Epoch 24 candidate mean 8.992993354797363, baseline epoch 22 mean 8.721517562866211, difference 0.27147579193115234
+Start train epoch 25, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 25, train_batch_id: 0, avg_cost: 6.306100845336914
+grad_norm: 23.788458510417726, clipped: 1.0
+epoch: 25, train_batch_id: 50, avg_cost: 6.352952003479004
+grad_norm: 23.025674195222745, clipped: 1.0
+epoch: 25, train_batch_id: 100, avg_cost: 6.372189044952393
+grad_norm: 16.897231516525085, clipped: 1.0
+epoch: 25, train_batch_id: 150, avg_cost: 6.296523571014404
+grad_norm: 18.023244182625866, clipped: 1.0
+epoch: 25, train_batch_id: 200, avg_cost: 6.341651916503906
+grad_norm: 14.639757897441411, clipped: 1.0
+epoch: 25, train_batch_id: 250, avg_cost: 6.301448822021484
+grad_norm: 17.751754506919486, clipped: 1.0
+epoch: 25, train_batch_id: 300, avg_cost: 6.328527450561523
+grad_norm: 23.76338991589235, clipped: 1.0
+epoch: 25, train_batch_id: 350, avg_cost: 6.403611183166504
+grad_norm: 15.575764275209885, clipped: 1.0
+epoch: 25, train_batch_id: 400, avg_cost: 6.356199264526367
+grad_norm: 20.81777259676706, clipped: 1.0
+epoch: 25, train_batch_id: 450, avg_cost: 6.401287078857422
+grad_norm: 18.821651089431395, clipped: 1.0
+epoch: 25, train_batch_id: 500, avg_cost: 6.31404972076416
+grad_norm: 14.671553923875742, clipped: 1.0
+epoch: 25, train_batch_id: 550, avg_cost: 6.304108619689941
+grad_norm: 17.32875976956104, clipped: 1.0
+epoch: 25, train_batch_id: 600, avg_cost: 6.50347900390625
+grad_norm: 17.81870981796827, clipped: 1.0
+epoch: 25, train_batch_id: 650, avg_cost: 6.34855842590332
+grad_norm: 28.85043678219249, clipped: 1.0
+epoch: 25, train_batch_id: 700, avg_cost: 6.29535436630249
+grad_norm: 22.79315903408196, clipped: 1.0
+epoch: 25, train_batch_id: 750, avg_cost: 6.329204559326172
+grad_norm: 21.705597374001254, clipped: 1.0
+epoch: 25, train_batch_id: 800, avg_cost: 6.35675573348999
+grad_norm: 18.314806741031166, clipped: 1.0
+epoch: 25, train_batch_id: 850, avg_cost: 6.379537582397461
+grad_norm: 22.594628204487375, clipped: 1.0
+epoch: 25, train_batch_id: 900, avg_cost: 6.4045867919921875
+grad_norm: 25.12564045389405, clipped: 1.0
+epoch: 25, train_batch_id: 950, avg_cost: 6.497818946838379
+grad_norm: 18.644028608169105, clipped: 1.0
+epoch: 25, train_batch_id: 1000, avg_cost: 6.3721923828125
+grad_norm: 19.49987557349156, clipped: 1.0
+epoch: 25, train_batch_id: 1050, avg_cost: 6.424755096435547
+grad_norm: 16.912962201946392, clipped: 1.0
+epoch: 25, train_batch_id: 1100, avg_cost: 6.367720603942871
+grad_norm: 18.530480717573486, clipped: 1.0
+epoch: 25, train_batch_id: 1150, avg_cost: 6.3946661949157715
+grad_norm: 22.496626060261445, clipped: 1.0
+epoch: 25, train_batch_id: 1200, avg_cost: 6.387640476226807
+grad_norm: 16.966132805973313, clipped: 1.0
+epoch: 25, train_batch_id: 1250, avg_cost: 6.401018142700195
+grad_norm: 21.105771670777248, clipped: 1.0
+epoch: 25, train_batch_id: 1300, avg_cost: 6.407719612121582
+grad_norm: 15.587480265620961, clipped: 1.0
+epoch: 25, train_batch_id: 1350, avg_cost: 6.464632511138916
+grad_norm: 15.741436273599303, clipped: 1.0
+epoch: 25, train_batch_id: 1400, avg_cost: 6.313616752624512
+grad_norm: 23.771973288053548, clipped: 1.0
+epoch: 25, train_batch_id: 1450, avg_cost: 6.327221870422363
+grad_norm: 22.53700773800129, clipped: 1.0
+epoch: 25, train_batch_id: 1500, avg_cost: 6.337077617645264
+grad_norm: 19.074925985557467, clipped: 1.0
+epoch: 25, train_batch_id: 1550, avg_cost: 6.286643981933594
+grad_norm: 16.267094265346994, clipped: 1.0
+epoch: 25, train_batch_id: 1600, avg_cost: 6.272031784057617
+grad_norm: 27.793285683038544, clipped: 1.0
+epoch: 25, train_batch_id: 1650, avg_cost: 6.349236965179443
+grad_norm: 18.296795004363908, clipped: 1.0
+epoch: 25, train_batch_id: 1700, avg_cost: 6.331754207611084
+grad_norm: 25.47898287230666, clipped: 1.0
+epoch: 25, train_batch_id: 1750, avg_cost: 6.275106430053711
+grad_norm: 43.1582026154742, clipped: 1.0
+epoch: 25, train_batch_id: 1800, avg_cost: 6.302546501159668
+grad_norm: 20.032507709308714, clipped: 1.0
+epoch: 25, train_batch_id: 1850, avg_cost: 6.3178229331970215
+grad_norm: 20.49745667247079, clipped: 1.0
+epoch: 25, train_batch_id: 1900, avg_cost: 6.293132781982422
+grad_norm: 21.840789701509618, clipped: 1.0
+epoch: 25, train_batch_id: 1950, avg_cost: 6.346538066864014
+grad_norm: 22.32767166841987, clipped: 1.0
+epoch: 25, train_batch_id: 2000, avg_cost: 6.319615364074707
+grad_norm: 17.86026571812446, clipped: 1.0
+epoch: 25, train_batch_id: 2050, avg_cost: 6.315988540649414
+grad_norm: 20.394808804098012, clipped: 1.0
+epoch: 25, train_batch_id: 2100, avg_cost: 6.29487943649292
+grad_norm: 21.99301935395161, clipped: 1.0
+epoch: 25, train_batch_id: 2150, avg_cost: 6.3687262535095215
+grad_norm: 18.379568063084438, clipped: 1.0
+epoch: 25, train_batch_id: 2200, avg_cost: 6.491534233093262
+grad_norm: 17.39590331551436, clipped: 1.0
+epoch: 25, train_batch_id: 2250, avg_cost: 6.366578578948975
+grad_norm: 15.75226931187311, clipped: 1.0
+epoch: 25, train_batch_id: 2300, avg_cost: 6.323716640472412
+grad_norm: 27.09747789593148, clipped: 1.0
+epoch: 25, train_batch_id: 2350, avg_cost: 6.357222080230713
+grad_norm: 21.01998995944462, clipped: 1.0
+epoch: 25, train_batch_id: 2400, avg_cost: 6.372525691986084
+grad_norm: 19.97528414475069, clipped: 1.0
+epoch: 25, train_batch_id: 2450, avg_cost: 6.3476881980896
+grad_norm: 22.318711953762516, clipped: 1.0
+Finished epoch 25, took 00:24:48 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.95113468170166 +- 0.009440233930945396
+Evaluating candidate model on evaluation dataset
+Epoch 25 candidate mean 9.947526931762695, baseline epoch 22 mean 8.721517562866211, difference 1.2260093688964844
+Start train epoch 26, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 26, train_batch_id: 0, avg_cost: 6.500058174133301
+grad_norm: 19.581326600905147, clipped: 1.0
+epoch: 26, train_batch_id: 50, avg_cost: 6.274503707885742
+grad_norm: 27.284227492828023, clipped: 1.0
+epoch: 26, train_batch_id: 100, avg_cost: 6.3137526512146
+grad_norm: 16.89660949824522, clipped: 1.0
+epoch: 26, train_batch_id: 150, avg_cost: 6.372183322906494
+grad_norm: 19.872562713099168, clipped: 1.0
+epoch: 26, train_batch_id: 200, avg_cost: 6.373126029968262
+grad_norm: 19.0089479835037, clipped: 1.0
+epoch: 26, train_batch_id: 250, avg_cost: 6.3102498054504395
+grad_norm: 20.86661175174386, clipped: 1.0
+epoch: 26, train_batch_id: 300, avg_cost: 6.2701416015625
+grad_norm: 19.969535963465926, clipped: 1.0
+epoch: 26, train_batch_id: 350, avg_cost: 6.332430839538574
+grad_norm: 22.610381456831373, clipped: 1.0
+epoch: 26, train_batch_id: 400, avg_cost: 6.3292083740234375
+grad_norm: 18.05405131422581, clipped: 1.0
+epoch: 26, train_batch_id: 450, avg_cost: 6.377342224121094
+grad_norm: 23.09537320704628, clipped: 1.0
+epoch: 26, train_batch_id: 500, avg_cost: 6.381770133972168
+grad_norm: 18.764349550112534, clipped: 1.0
+epoch: 26, train_batch_id: 550, avg_cost: 6.38874626159668
+grad_norm: 27.678939747313876, clipped: 1.0
+epoch: 26, train_batch_id: 600, avg_cost: 6.342227458953857
+grad_norm: 25.268823070057397, clipped: 1.0
+epoch: 26, train_batch_id: 650, avg_cost: 6.3473405838012695
+grad_norm: 24.831423607254106, clipped: 1.0
+epoch: 26, train_batch_id: 700, avg_cost: 6.346665859222412
+grad_norm: 20.689771854714632, clipped: 1.0
+epoch: 26, train_batch_id: 750, avg_cost: 6.375625133514404
+grad_norm: 20.548181060086126, clipped: 1.0
+epoch: 26, train_batch_id: 800, avg_cost: 6.392468452453613
+grad_norm: 21.12042997666575, clipped: 1.0
+epoch: 26, train_batch_id: 850, avg_cost: 6.451244831085205
+grad_norm: 23.096320527118884, clipped: 1.0
+epoch: 26, train_batch_id: 900, avg_cost: 6.297859191894531
+grad_norm: 25.014653635293747, clipped: 1.0
+epoch: 26, train_batch_id: 950, avg_cost: 6.338444709777832
+grad_norm: 24.803255848737724, clipped: 1.0
+epoch: 26, train_batch_id: 1000, avg_cost: 6.2918195724487305
+grad_norm: 28.310735058462555, clipped: 1.0
+epoch: 26, train_batch_id: 1050, avg_cost: 6.35613489151001
+grad_norm: 27.01754810003934, clipped: 1.0
+epoch: 26, train_batch_id: 1100, avg_cost: 6.319384574890137
+grad_norm: 24.789476728327543, clipped: 1.0
+epoch: 26, train_batch_id: 1150, avg_cost: 6.334303379058838
+grad_norm: 14.109584448225855, clipped: 1.0
+epoch: 26, train_batch_id: 1200, avg_cost: 6.337165832519531
+grad_norm: 19.01646124632859, clipped: 1.0
+epoch: 26, train_batch_id: 1250, avg_cost: 6.298586845397949
+grad_norm: 17.997757769208523, clipped: 1.0
+epoch: 26, train_batch_id: 1300, avg_cost: 6.337856292724609
+grad_norm: 21.443279467531376, clipped: 1.0
+epoch: 26, train_batch_id: 1350, avg_cost: 6.344970703125
+grad_norm: 17.85050938419446, clipped: 1.0
+epoch: 26, train_batch_id: 1400, avg_cost: 6.2993669509887695
+grad_norm: 23.163412004266625, clipped: 1.0
+epoch: 26, train_batch_id: 1450, avg_cost: 6.38245964050293
+grad_norm: 18.679066676656255, clipped: 1.0
+epoch: 26, train_batch_id: 1500, avg_cost: 6.45077657699585
+grad_norm: 16.343078611407268, clipped: 1.0
+epoch: 26, train_batch_id: 1550, avg_cost: 6.4056172370910645
+grad_norm: 18.760085085961382, clipped: 1.0
+epoch: 26, train_batch_id: 1600, avg_cost: 6.301666259765625
+grad_norm: 23.21881675497327, clipped: 1.0
+epoch: 26, train_batch_id: 1650, avg_cost: 6.440892219543457
+grad_norm: 25.94919739919692, clipped: 1.0
+epoch: 26, train_batch_id: 1700, avg_cost: 6.330915451049805
+grad_norm: 28.320991864272507, clipped: 1.0
+epoch: 26, train_batch_id: 1750, avg_cost: 6.358150005340576
+grad_norm: 45.18648403590418, clipped: 1.0
+epoch: 26, train_batch_id: 1800, avg_cost: 6.517409801483154
+grad_norm: 38.23061206260101, clipped: 1.0
+epoch: 26, train_batch_id: 1850, avg_cost: 6.349890232086182
+grad_norm: 26.08393429158286, clipped: 1.0
+epoch: 26, train_batch_id: 1900, avg_cost: 6.372560024261475
+grad_norm: 28.284548446914346, clipped: 1.0
+epoch: 26, train_batch_id: 1950, avg_cost: 6.38783597946167
+grad_norm: 23.678701633835935, clipped: 1.0
+epoch: 26, train_batch_id: 2000, avg_cost: 6.292783737182617
+grad_norm: 37.22375971996395, clipped: 1.0
+epoch: 26, train_batch_id: 2050, avg_cost: 6.34860372543335
+grad_norm: 25.371355535898697, clipped: 1.0
+epoch: 26, train_batch_id: 2100, avg_cost: 6.326544761657715
+grad_norm: 23.555232321254213, clipped: 1.0
+epoch: 26, train_batch_id: 2150, avg_cost: 6.339076519012451
+grad_norm: 18.816059962709772, clipped: 1.0
+epoch: 26, train_batch_id: 2200, avg_cost: 6.386391639709473
+grad_norm: 18.16436055671222, clipped: 1.0
+epoch: 26, train_batch_id: 2250, avg_cost: 6.367022514343262
+grad_norm: 19.094669373073774, clipped: 1.0
+epoch: 26, train_batch_id: 2300, avg_cost: 6.420886993408203
+grad_norm: 22.272958061556118, clipped: 1.0
+epoch: 26, train_batch_id: 2350, avg_cost: 6.337281227111816
+grad_norm: 16.834655009088234, clipped: 1.0
+epoch: 26, train_batch_id: 2400, avg_cost: 6.374502182006836
+grad_norm: 17.64694872987001, clipped: 1.0
+epoch: 26, train_batch_id: 2450, avg_cost: 6.359557151794434
+grad_norm: 27.059543273919036, clipped: 1.0
+Finished epoch 26, took 00:24:43 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.154495239257812 +- 0.0061308471485972404
+Evaluating candidate model on evaluation dataset
+Epoch 26 candidate mean 8.1552095413208, baseline epoch 22 mean 8.721517562866211, difference -0.5663080215454102
+p-value: 0.0
+Update baseline
+Evaluating baseline model on evaluation dataset
+Start train epoch 27, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 27, train_batch_id: 0, avg_cost: 6.332808494567871
+grad_norm: 14.308834487998066, clipped: 1.0
+epoch: 27, train_batch_id: 50, avg_cost: 6.2833123207092285
+grad_norm: 17.008896180900912, clipped: 1.0
+epoch: 27, train_batch_id: 100, avg_cost: 6.3661699295043945
+grad_norm: 17.110886547257135, clipped: 1.0
+epoch: 27, train_batch_id: 150, avg_cost: 6.3698811531066895
+grad_norm: 15.642121548727522, clipped: 1.0
+epoch: 27, train_batch_id: 200, avg_cost: 6.298723220825195
+grad_norm: 26.025328136643253, clipped: 1.0
+epoch: 27, train_batch_id: 250, avg_cost: 6.27714729309082
+grad_norm: 15.903848571173702, clipped: 1.0
+epoch: 27, train_batch_id: 300, avg_cost: 6.272902011871338
+grad_norm: 19.188870607269095, clipped: 1.0
+epoch: 27, train_batch_id: 350, avg_cost: 6.274044513702393
+grad_norm: 12.415501534926701, clipped: 1.0
+epoch: 27, train_batch_id: 400, avg_cost: 6.3458099365234375
+grad_norm: 13.879417425578328, clipped: 1.0
+epoch: 27, train_batch_id: 450, avg_cost: 6.255135536193848
+grad_norm: 15.886020165818305, clipped: 1.0
+epoch: 27, train_batch_id: 500, avg_cost: 6.313426971435547
+grad_norm: 18.295753512600285, clipped: 1.0
+epoch: 27, train_batch_id: 550, avg_cost: 6.356541633605957
+grad_norm: 15.080107520630921, clipped: 1.0
+epoch: 27, train_batch_id: 600, avg_cost: 6.288383483886719
+grad_norm: 16.960727549487018, clipped: 1.0
+epoch: 27, train_batch_id: 650, avg_cost: 6.305965900421143
+grad_norm: 17.2961496804847, clipped: 1.0
+epoch: 27, train_batch_id: 700, avg_cost: 6.285315036773682
+grad_norm: 20.198416406815575, clipped: 1.0
+epoch: 27, train_batch_id: 750, avg_cost: 6.27905797958374
+grad_norm: 16.300108299343357, clipped: 1.0
+epoch: 27, train_batch_id: 800, avg_cost: 6.353503704071045
+grad_norm: 17.748744883880317, clipped: 1.0
+epoch: 27, train_batch_id: 850, avg_cost: 6.25704288482666
+grad_norm: 13.96345524523956, clipped: 1.0
+epoch: 27, train_batch_id: 900, avg_cost: 6.274411678314209
+grad_norm: 26.385110908998467, clipped: 1.0
+epoch: 27, train_batch_id: 950, avg_cost: 6.277625560760498
+grad_norm: 26.265489903748488, clipped: 1.0
+epoch: 27, train_batch_id: 1000, avg_cost: 6.302335262298584
+grad_norm: 33.37827953856948, clipped: 1.0
+epoch: 27, train_batch_id: 1050, avg_cost: 6.347301483154297
+grad_norm: 22.252686781349706, clipped: 1.0
+epoch: 27, train_batch_id: 1100, avg_cost: 6.259338855743408
+grad_norm: 36.04634575705043, clipped: 1.0
+epoch: 27, train_batch_id: 1150, avg_cost: 6.308168411254883
+grad_norm: 16.10426205117185, clipped: 1.0
+epoch: 27, train_batch_id: 1200, avg_cost: 6.272067070007324
+grad_norm: 24.382712547664557, clipped: 1.0
+epoch: 27, train_batch_id: 1250, avg_cost: 6.275777816772461
+grad_norm: 15.90167734672692, clipped: 1.0
+epoch: 27, train_batch_id: 1300, avg_cost: 6.3326520919799805
+grad_norm: 19.170383581085137, clipped: 1.0
+epoch: 27, train_batch_id: 1350, avg_cost: 6.295456886291504
+grad_norm: 23.47839868232357, clipped: 1.0
+epoch: 27, train_batch_id: 1400, avg_cost: 6.2970805168151855
+grad_norm: 12.325302589768448, clipped: 1.0
+epoch: 27, train_batch_id: 1450, avg_cost: 6.291552543640137
+grad_norm: 31.79475406076196, clipped: 1.0
+epoch: 27, train_batch_id: 1500, avg_cost: 6.319957256317139
+grad_norm: 14.594787559182064, clipped: 1.0
+epoch: 27, train_batch_id: 1550, avg_cost: 6.266013145446777
+grad_norm: 18.315682207390985, clipped: 1.0
+epoch: 27, train_batch_id: 1600, avg_cost: 6.335681915283203
+grad_norm: 21.71059568368015, clipped: 1.0
+epoch: 27, train_batch_id: 1650, avg_cost: 6.293900489807129
+grad_norm: 21.729939853344906, clipped: 1.0
+epoch: 27, train_batch_id: 1700, avg_cost: 6.294007778167725
+grad_norm: 29.52393751708569, clipped: 1.0
+epoch: 27, train_batch_id: 1750, avg_cost: 6.331531524658203
+grad_norm: 11.597690021511529, clipped: 1.0
+epoch: 27, train_batch_id: 1800, avg_cost: 6.40134334564209
+grad_norm: 13.044373501793144, clipped: 1.0
+epoch: 27, train_batch_id: 1850, avg_cost: 6.271910190582275
+grad_norm: 28.122462986610635, clipped: 1.0
+epoch: 27, train_batch_id: 1900, avg_cost: 6.301179885864258
+grad_norm: 21.84827406016013, clipped: 1.0
+epoch: 27, train_batch_id: 1950, avg_cost: 6.326904296875
+grad_norm: 14.76298519172927, clipped: 1.0
+epoch: 27, train_batch_id: 2000, avg_cost: 6.398169040679932
+grad_norm: 14.935216902653595, clipped: 1.0
+epoch: 27, train_batch_id: 2050, avg_cost: 6.375118732452393
+grad_norm: 24.562110097345812, clipped: 1.0
+epoch: 27, train_batch_id: 2100, avg_cost: 6.358534812927246
+grad_norm: 14.062485813743013, clipped: 1.0
+epoch: 27, train_batch_id: 2150, avg_cost: 6.339012145996094
+grad_norm: 15.835588471371475, clipped: 1.0
+epoch: 27, train_batch_id: 2200, avg_cost: 6.348402976989746
+grad_norm: 15.293962599159615, clipped: 1.0
+epoch: 27, train_batch_id: 2250, avg_cost: 6.362089157104492
+grad_norm: 15.990803271410911, clipped: 1.0
+epoch: 27, train_batch_id: 2300, avg_cost: 6.36042594909668
+grad_norm: 18.702172894650037, clipped: 1.0
+epoch: 27, train_batch_id: 2350, avg_cost: 6.3786444664001465
+grad_norm: 17.25248871609406, clipped: 1.0
+epoch: 27, train_batch_id: 2400, avg_cost: 6.381557464599609
+grad_norm: 17.595686785087047, clipped: 1.0
+epoch: 27, train_batch_id: 2450, avg_cost: 6.447122573852539
+grad_norm: 22.466539122944205, clipped: 1.0
+Finished epoch 27, took 00:24:36 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 10.198891639709473 +- 0.011109676212072372
+Evaluating candidate model on evaluation dataset
+Epoch 27 candidate mean 10.188308715820312, baseline epoch 26 mean 8.146136283874512, difference 2.042172431945801
+Start train epoch 28, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 28, train_batch_id: 0, avg_cost: 6.4135637283325195
+grad_norm: 15.976608268269201, clipped: 1.0
+epoch: 28, train_batch_id: 50, avg_cost: 6.529260158538818
+grad_norm: 18.600014711597733, clipped: 1.0
+epoch: 28, train_batch_id: 100, avg_cost: 6.404673099517822
+grad_norm: 17.889608711369174, clipped: 1.0
+epoch: 28, train_batch_id: 150, avg_cost: 6.37830924987793
+grad_norm: 20.1530168154268, clipped: 1.0
+epoch: 28, train_batch_id: 200, avg_cost: 6.319184303283691
+grad_norm: 20.681752109939293, clipped: 1.0
+epoch: 28, train_batch_id: 250, avg_cost: 6.338502407073975
+grad_norm: 20.444012191127594, clipped: 1.0
+epoch: 28, train_batch_id: 300, avg_cost: 6.351012229919434
+grad_norm: 17.1035592794367, clipped: 1.0
+epoch: 28, train_batch_id: 350, avg_cost: 6.313608646392822
+grad_norm: 22.511740314103978, clipped: 1.0
+epoch: 28, train_batch_id: 400, avg_cost: 6.338392734527588
+grad_norm: 16.180343861308987, clipped: 1.0
+epoch: 28, train_batch_id: 450, avg_cost: 6.37518310546875
+grad_norm: 17.39831300862243, clipped: 1.0
+epoch: 28, train_batch_id: 500, avg_cost: 6.402094841003418
+grad_norm: 16.322182391558684, clipped: 1.0
+epoch: 28, train_batch_id: 550, avg_cost: 6.333774566650391
+grad_norm: 23.624378603071804, clipped: 1.0
+epoch: 28, train_batch_id: 600, avg_cost: 6.299806594848633
+grad_norm: 18.333588332015246, clipped: 1.0
+epoch: 28, train_batch_id: 650, avg_cost: 6.405962944030762
+grad_norm: 40.58558354580792, clipped: 1.0
+epoch: 28, train_batch_id: 700, avg_cost: 6.2642974853515625
+grad_norm: 27.728713042801278, clipped: 1.0
+epoch: 28, train_batch_id: 750, avg_cost: 6.308035850524902
+grad_norm: 21.52577742598374, clipped: 1.0
+epoch: 28, train_batch_id: 800, avg_cost: 6.303487777709961
+grad_norm: 15.68515187484806, clipped: 1.0
+epoch: 28, train_batch_id: 850, avg_cost: 6.284648895263672
+grad_norm: 15.610656403381583, clipped: 1.0
+epoch: 28, train_batch_id: 900, avg_cost: 6.313864707946777
+grad_norm: 31.68115829043521, clipped: 1.0
+epoch: 28, train_batch_id: 950, avg_cost: 6.301972389221191
+grad_norm: 18.379513475089972, clipped: 1.0
+epoch: 28, train_batch_id: 1000, avg_cost: 6.27297830581665
+grad_norm: 16.44326314479855, clipped: 1.0
+epoch: 28, train_batch_id: 1050, avg_cost: 6.3241353034973145
+grad_norm: 18.530768842645937, clipped: 1.0
+epoch: 28, train_batch_id: 1100, avg_cost: 6.359621524810791
+grad_norm: 15.519828101970209, clipped: 1.0
+epoch: 28, train_batch_id: 1150, avg_cost: 6.34883975982666
+grad_norm: 14.051055240117451, clipped: 1.0
+epoch: 28, train_batch_id: 1200, avg_cost: 6.397652626037598
+grad_norm: 15.930643105714958, clipped: 1.0
+epoch: 28, train_batch_id: 1250, avg_cost: 6.283380031585693
+grad_norm: 13.715198947428163, clipped: 1.0
+epoch: 28, train_batch_id: 1300, avg_cost: 6.23980188369751
+grad_norm: 24.16411065254293, clipped: 1.0
+epoch: 28, train_batch_id: 1350, avg_cost: 6.293246269226074
+grad_norm: 12.380268726923699, clipped: 1.0
+epoch: 28, train_batch_id: 1400, avg_cost: 6.324268341064453
+grad_norm: 15.286489930617947, clipped: 1.0
+epoch: 28, train_batch_id: 1450, avg_cost: 6.25784158706665
+grad_norm: 22.63440294307495, clipped: 1.0
+epoch: 28, train_batch_id: 1500, avg_cost: 6.245929718017578
+grad_norm: 15.60525912034916, clipped: 1.0
+epoch: 28, train_batch_id: 1550, avg_cost: 6.320486068725586
+grad_norm: 15.384134629404405, clipped: 1.0
+epoch: 28, train_batch_id: 1600, avg_cost: 6.3449506759643555
+grad_norm: 13.862727047114248, clipped: 1.0
+epoch: 28, train_batch_id: 1650, avg_cost: 6.348042011260986
+grad_norm: 15.109914746870013, clipped: 1.0
+epoch: 28, train_batch_id: 1700, avg_cost: 6.375413417816162
+grad_norm: 15.793872111731158, clipped: 1.0
+epoch: 28, train_batch_id: 1750, avg_cost: 6.393013000488281
+grad_norm: 18.23043295132278, clipped: 1.0
+epoch: 28, train_batch_id: 1800, avg_cost: 6.33448600769043
+grad_norm: 20.38655808840453, clipped: 1.0
+epoch: 28, train_batch_id: 1850, avg_cost: 6.281491279602051
+grad_norm: 14.580937194402997, clipped: 1.0
+epoch: 28, train_batch_id: 1900, avg_cost: 6.273319244384766
+grad_norm: 16.102404530603035, clipped: 1.0
+epoch: 28, train_batch_id: 1950, avg_cost: 6.2380595207214355
+grad_norm: 14.1271813027784, clipped: 1.0
+epoch: 28, train_batch_id: 2000, avg_cost: 6.295659065246582
+grad_norm: 21.117090026920586, clipped: 1.0
+epoch: 28, train_batch_id: 2050, avg_cost: 6.266574859619141
+grad_norm: 15.54029256381065, clipped: 1.0
+epoch: 28, train_batch_id: 2100, avg_cost: 6.277335166931152
+grad_norm: 12.385861319088333, clipped: 1.0
+epoch: 28, train_batch_id: 2150, avg_cost: 6.229242324829102
+grad_norm: 12.978568993542117, clipped: 1.0
+epoch: 28, train_batch_id: 2200, avg_cost: 6.291964530944824
+grad_norm: 19.65435551508065, clipped: 1.0
+epoch: 28, train_batch_id: 2250, avg_cost: 6.263605117797852
+grad_norm: 17.01624609723363, clipped: 1.0
+epoch: 28, train_batch_id: 2300, avg_cost: 6.260852336883545
+grad_norm: 19.010214132032527, clipped: 1.0
+epoch: 28, train_batch_id: 2350, avg_cost: 6.312790870666504
+grad_norm: 15.101848649431105, clipped: 1.0
+epoch: 28, train_batch_id: 2400, avg_cost: 6.332080364227295
+grad_norm: 24.698256345140322, clipped: 1.0
+epoch: 28, train_batch_id: 2450, avg_cost: 6.33526086807251
+grad_norm: 16.35013481036931, clipped: 1.0
+Finished epoch 28, took 00:24:41 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.583657264709473 +- 0.010040264576673508
+Evaluating candidate model on evaluation dataset
+Epoch 28 candidate mean 9.570563316345215, baseline epoch 26 mean 8.146136283874512, difference 1.4244270324707031
+Start train epoch 29, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 29, train_batch_id: 0, avg_cost: 6.25112247467041
+grad_norm: 12.993314656208439, clipped: 1.0
+epoch: 29, train_batch_id: 50, avg_cost: 6.316904067993164
+grad_norm: 22.91102469458896, clipped: 1.0
+epoch: 29, train_batch_id: 100, avg_cost: 6.311209678649902
+grad_norm: 16.713685037096113, clipped: 1.0
+epoch: 29, train_batch_id: 150, avg_cost: 6.259738922119141
+grad_norm: 25.5752880770711, clipped: 1.0
+epoch: 29, train_batch_id: 200, avg_cost: 6.304389953613281
+grad_norm: 14.577002484518411, clipped: 1.0
+epoch: 29, train_batch_id: 250, avg_cost: 6.291496753692627
+grad_norm: 15.524744724710274, clipped: 1.0
+epoch: 29, train_batch_id: 300, avg_cost: 6.291629314422607
+grad_norm: 20.74224788997001, clipped: 1.0
+epoch: 29, train_batch_id: 350, avg_cost: 6.317276954650879
+grad_norm: 15.391781311660111, clipped: 1.0
+epoch: 29, train_batch_id: 400, avg_cost: 6.2772321701049805
+grad_norm: 15.375311795345796, clipped: 1.0
+epoch: 29, train_batch_id: 450, avg_cost: 6.256628513336182
+grad_norm: 20.946516440221167, clipped: 1.0
+epoch: 29, train_batch_id: 500, avg_cost: 6.268344879150391
+grad_norm: 45.26527131365587, clipped: 1.0
+epoch: 29, train_batch_id: 550, avg_cost: 6.247897148132324
+grad_norm: 14.719811902814643, clipped: 1.0
+epoch: 29, train_batch_id: 600, avg_cost: 6.272784233093262
+grad_norm: 15.452826656061733, clipped: 1.0
+epoch: 29, train_batch_id: 650, avg_cost: 6.319021224975586
+grad_norm: 22.710167203965376, clipped: 1.0
+epoch: 29, train_batch_id: 700, avg_cost: 6.239114284515381
+grad_norm: 18.343939947695304, clipped: 1.0
+epoch: 29, train_batch_id: 750, avg_cost: 6.281097888946533
+grad_norm: 19.670869213603073, clipped: 1.0
+epoch: 29, train_batch_id: 800, avg_cost: 6.275594711303711
+grad_norm: 20.606279243262566, clipped: 1.0
+epoch: 29, train_batch_id: 850, avg_cost: 6.302248001098633
+grad_norm: 15.365932944589076, clipped: 1.0
+epoch: 29, train_batch_id: 900, avg_cost: 6.311447620391846
+grad_norm: 15.951661390925373, clipped: 1.0
+epoch: 29, train_batch_id: 950, avg_cost: 6.248111248016357
+grad_norm: 13.571302835397438, clipped: 1.0
+epoch: 29, train_batch_id: 1000, avg_cost: 6.294791221618652
+grad_norm: 17.484705069454687, clipped: 1.0
+epoch: 29, train_batch_id: 1050, avg_cost: 6.316286087036133
+grad_norm: 13.825423265773392, clipped: 1.0
+epoch: 29, train_batch_id: 1100, avg_cost: 6.329973220825195
+grad_norm: 23.917044119311637, clipped: 1.0
+epoch: 29, train_batch_id: 1150, avg_cost: 6.286096572875977
+grad_norm: 42.23327546639651, clipped: 1.0
+epoch: 29, train_batch_id: 1200, avg_cost: 6.343266487121582
+grad_norm: 20.305947258183465, clipped: 1.0
+epoch: 29, train_batch_id: 1250, avg_cost: 6.326440334320068
+grad_norm: 21.02414457271428, clipped: 1.0
+epoch: 29, train_batch_id: 1300, avg_cost: 6.310901165008545
+grad_norm: 16.453854230662916, clipped: 1.0
+epoch: 29, train_batch_id: 1350, avg_cost: 6.332061767578125
+grad_norm: 23.762968935602853, clipped: 1.0
+epoch: 29, train_batch_id: 1400, avg_cost: 6.293097019195557
+grad_norm: 41.94219782905727, clipped: 1.0
+epoch: 29, train_batch_id: 1450, avg_cost: 6.2597432136535645
+grad_norm: 19.405288248557774, clipped: 1.0
+epoch: 29, train_batch_id: 1500, avg_cost: 6.260087490081787
+grad_norm: 16.236038672293212, clipped: 1.0
+epoch: 29, train_batch_id: 1550, avg_cost: 6.288379192352295
+grad_norm: 14.139331984807953, clipped: 1.0
+epoch: 29, train_batch_id: 1600, avg_cost: 6.225617408752441
+grad_norm: 17.596261124241757, clipped: 1.0
+epoch: 29, train_batch_id: 1650, avg_cost: 6.30905818939209
+grad_norm: 14.99223701123307, clipped: 1.0
+epoch: 29, train_batch_id: 1700, avg_cost: 6.292486190795898
+grad_norm: 14.280502140369455, clipped: 1.0
+epoch: 29, train_batch_id: 1750, avg_cost: 6.314631462097168
+grad_norm: 18.759339131713258, clipped: 1.0
+epoch: 29, train_batch_id: 1800, avg_cost: 6.3426618576049805
+grad_norm: 17.04890519179314, clipped: 1.0
+epoch: 29, train_batch_id: 1850, avg_cost: 6.3090667724609375
+grad_norm: 18.68475763839229, clipped: 1.0
+epoch: 29, train_batch_id: 1900, avg_cost: 6.408533096313477
+grad_norm: 22.517747753964443, clipped: 1.0
+epoch: 29, train_batch_id: 1950, avg_cost: 6.401484489440918
+grad_norm: 17.035411995553087, clipped: 1.0
+epoch: 29, train_batch_id: 2000, avg_cost: 6.295997619628906
+grad_norm: 20.036195948452697, clipped: 1.0
+epoch: 29, train_batch_id: 2050, avg_cost: 6.3448166847229
+grad_norm: 17.500969919210448, clipped: 1.0
+epoch: 29, train_batch_id: 2100, avg_cost: 6.333415508270264
+grad_norm: 13.724809008321916, clipped: 1.0
+epoch: 29, train_batch_id: 2150, avg_cost: 6.318337440490723
+grad_norm: 20.79700653070805, clipped: 1.0
+epoch: 29, train_batch_id: 2200, avg_cost: 6.326464653015137
+grad_norm: 13.892823170341288, clipped: 1.0
+epoch: 29, train_batch_id: 2250, avg_cost: 6.368598937988281
+grad_norm: 18.194066804699393, clipped: 1.0
+epoch: 29, train_batch_id: 2300, avg_cost: 6.2992753982543945
+grad_norm: 30.18338074992684, clipped: 1.0
+epoch: 29, train_batch_id: 2350, avg_cost: 6.3627448081970215
+grad_norm: 12.197247799542748, clipped: 1.0
+epoch: 29, train_batch_id: 2400, avg_cost: 6.338268756866455
+grad_norm: 14.79329199292602, clipped: 1.0
+epoch: 29, train_batch_id: 2450, avg_cost: 6.309264659881592
+grad_norm: 20.66107460802579, clipped: 1.0
+Finished epoch 29, took 00:24:46 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 9.905576705932617 +- 0.007870517671108246
+Evaluating candidate model on evaluation dataset
+Epoch 29 candidate mean 9.89441204071045, baseline epoch 26 mean 8.146136283874512, difference 1.7482757568359375
+Start train epoch 30, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+171
+
+
+epoch: 30, train_batch_id: 0, avg_cost: 6.290343761444092
+grad_norm: 18.605640715002046, clipped: 1.0
+epoch: 30, train_batch_id: 50, avg_cost: 6.275408744812012
+grad_norm: 14.544843445318202, clipped: 1.0
+epoch: 30, train_batch_id: 100, avg_cost: 6.289762496948242
+grad_norm: 20.368341310977033, clipped: 1.0
+epoch: 30, train_batch_id: 150, avg_cost: 6.350522518157959
+grad_norm: 14.067636493919188, clipped: 1.0
+epoch: 30, train_batch_id: 200, avg_cost: 6.334933757781982
+grad_norm: 14.345766825847633, clipped: 1.0
+epoch: 30, train_batch_id: 250, avg_cost: 6.307295799255371
+grad_norm: 18.017204073100995, clipped: 1.0
+epoch: 30, train_batch_id: 300, avg_cost: 6.350053787231445
+grad_norm: 14.195839974632369, clipped: 1.0
+epoch: 30, train_batch_id: 350, avg_cost: 6.319499969482422
+grad_norm: 15.526080919299536, clipped: 1.0
+epoch: 30, train_batch_id: 400, avg_cost: 6.263150215148926
+grad_norm: 15.461466000443272, clipped: 1.0
+epoch: 30, train_batch_id: 450, avg_cost: 6.316084861755371
+grad_norm: 19.93906597806794, clipped: 1.0
+epoch: 30, train_batch_id: 500, avg_cost: 6.352748870849609
+grad_norm: 21.608763452424856, clipped: 1.0
+epoch: 30, train_batch_id: 550, avg_cost: 6.273838520050049
+grad_norm: 16.350338211566893, clipped: 1.0
+epoch: 30, train_batch_id: 600, avg_cost: 6.311329364776611
+grad_norm: 15.821805926910054, clipped: 1.0
+epoch: 30, train_batch_id: 650, avg_cost: 6.286821365356445
+grad_norm: 15.216291966679231, clipped: 1.0
+epoch: 30, train_batch_id: 700, avg_cost: 6.313590049743652
+grad_norm: 24.918320748841587, clipped: 1.0
+epoch: 30, train_batch_id: 750, avg_cost: 6.312540054321289
+grad_norm: 19.732319023269046, clipped: 1.0
+epoch: 30, train_batch_id: 800, avg_cost: 6.403557300567627
+grad_norm: 14.794958229795268, clipped: 1.0
+epoch: 30, train_batch_id: 850, avg_cost: 6.2767839431762695
+grad_norm: 18.580482328402113, clipped: 1.0
+epoch: 30, train_batch_id: 900, avg_cost: 6.343745231628418
+grad_norm: 11.946354984982701, clipped: 1.0
+epoch: 30, train_batch_id: 950, avg_cost: 6.328502178192139
+grad_norm: 14.631647790353423, clipped: 1.0
+epoch: 30, train_batch_id: 1000, avg_cost: 6.36566162109375
+grad_norm: 14.8383842935225, clipped: 1.0
+epoch: 30, train_batch_id: 1050, avg_cost: 6.364269733428955
+grad_norm: 13.399010634383977, clipped: 1.0
+epoch: 30, train_batch_id: 1100, avg_cost: 6.296399116516113
+grad_norm: 14.422579906670748, clipped: 1.0
+epoch: 30, train_batch_id: 1150, avg_cost: 6.298376083374023
+grad_norm: 12.885065014385932, clipped: 1.0
+epoch: 30, train_batch_id: 1200, avg_cost: 6.288638591766357
+grad_norm: 22.82736050553514, clipped: 1.0
+epoch: 30, train_batch_id: 1250, avg_cost: 6.257173538208008
+grad_norm: 15.480834237550017, clipped: 1.0
+epoch: 30, train_batch_id: 1300, avg_cost: 6.270278453826904
+grad_norm: 19.34799851768086, clipped: 1.0
+epoch: 30, train_batch_id: 1350, avg_cost: 6.260438919067383
+grad_norm: 11.467229866521155, clipped: 1.0
+epoch: 30, train_batch_id: 1400, avg_cost: 6.287707328796387
+grad_norm: 15.934248973536464, clipped: 1.0
+epoch: 30, train_batch_id: 1450, avg_cost: 6.343039035797119
+grad_norm: 39.5716837947794, clipped: 1.0
+epoch: 30, train_batch_id: 1500, avg_cost: 6.2774658203125
+grad_norm: 16.550786660608853, clipped: 1.0
+epoch: 30, train_batch_id: 1550, avg_cost: 6.275876522064209
+grad_norm: 14.397582839658481, clipped: 1.0
+epoch: 30, train_batch_id: 1600, avg_cost: 6.27463960647583
+grad_norm: 39.43175771861243, clipped: 1.0
+epoch: 30, train_batch_id: 1650, avg_cost: 6.2401123046875
+grad_norm: 36.52709976532274, clipped: 1.0
+epoch: 30, train_batch_id: 1700, avg_cost: 6.273843288421631
+grad_norm: 20.688644597408487, clipped: 1.0
+epoch: 30, train_batch_id: 1750, avg_cost: 6.290797710418701
+grad_norm: 16.812801874808233, clipped: 1.0
+epoch: 30, train_batch_id: 1800, avg_cost: 6.277727127075195
+grad_norm: 16.84728065932764, clipped: 1.0
+epoch: 30, train_batch_id: 1850, avg_cost: 6.3681793212890625
+grad_norm: 32.08724160039, clipped: 1.0
+epoch: 30, train_batch_id: 1900, avg_cost: 6.2601518630981445
+grad_norm: 14.120993406368017, clipped: 1.0
+epoch: 30, train_batch_id: 1950, avg_cost: 6.295025825500488
+grad_norm: 28.149236988398386, clipped: 1.0
+epoch: 30, train_batch_id: 2000, avg_cost: 6.292550563812256
+grad_norm: 14.440713385029284, clipped: 1.0
+epoch: 30, train_batch_id: 2050, avg_cost: 6.268484115600586
+grad_norm: 22.721406923596955, clipped: 1.0
+epoch: 30, train_batch_id: 2100, avg_cost: 6.272462368011475
+grad_norm: 16.903400798490225, clipped: 1.0
+epoch: 30, train_batch_id: 2150, avg_cost: 6.287225723266602
+grad_norm: 32.69946841595405, clipped: 1.0
+epoch: 30, train_batch_id: 2200, avg_cost: 6.277007102966309
+grad_norm: 14.40993584220536, clipped: 1.0
+epoch: 30, train_batch_id: 2250, avg_cost: 6.2952728271484375
+grad_norm: 16.576549805899944, clipped: 1.0
+epoch: 30, train_batch_id: 2300, avg_cost: 6.264776229858398
+grad_norm: 17.77080173912462, clipped: 1.0
+epoch: 30, train_batch_id: 2350, avg_cost: 6.247795104980469
+grad_norm: 17.01984476158682, clipped: 1.0
+epoch: 30, train_batch_id: 2400, avg_cost: 6.327964782714844
+grad_norm: 11.21602313218651, clipped: 1.0
+epoch: 30, train_batch_id: 2450, avg_cost: 6.314201354980469
+grad_norm: 15.773591292073705, clipped: 1.0
+Finished epoch 30, took 00:24:42 s
+Saving model and state...
+Validating...
+Validation overall avg_cost: 8.715009689331055 +- 0.01190035231411457
+Evaluating candidate model on evaluation dataset
+Epoch 30 candidate mean 8.69294261932373, baseline epoch 26 mean 8.146136283874512, difference 0.5468063354492188
+Start train epoch 31, lr=0.0001 for run tsp50_attiter3_rollout_20200202T054549
+Evaluating baseline on dataset...
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
+342
+
+
