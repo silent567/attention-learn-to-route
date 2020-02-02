@@ -172,6 +172,52 @@ class MultiHeadAttentionLayer(nn.Sequential):
             Normalization(embed_dim, normalization)
         )
 
+class IterMultiHeadAttentionLayer(nn.Module):
+
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            feed_forward_hidden=512,
+            normalization='batch',
+            layer_num=None,
+    ):
+        super(IterMultiHeadAttentionLayer, self).__init__()
+        self.module = MultiHeadAttentionLayer(n_heads, embed_dim,
+                                              feed_forward_hidden=feed_forward_hidden,
+                                              normalization=normalization,)
+        self.confidence_module = nn.Sequential(
+            nn.Linear(embed_dim, 1, bias=True),
+            nn.Sigmoid(),
+        )
+        self.layer_num = layer_num
+    @staticmethod
+    def update_x(x, new_x, left_confidence, current_confidence):
+        return x + left_confidence*current_confidence*new_x
+    @staticmethod
+    def next_x(x, new_x, left_confidence):
+        return new_x
+    @staticmethod
+    def update_confidence(left_confidence, current_confidence):
+        return left_confidence*(1.-current_confidence)
+    def forward(self, x):
+        # x.shape = [batch_size, graph_size, embed_dim]
+        new_x = x
+        left_confidence = torch.ones([x.size(0),1,1], device=x.device, dtype=x.dtype)
+        for iter_num in range(self.layer_num):
+            if torch.max(left_confidence).item() > 1e-7:
+                new_x = self.module(self.next_x(x, new_x, left_confidence))
+                current_confidence = self.confidence_module(torch.mean(x, dim=1)).unsqueeze(1)
+                x = self.update_x(x, new_x, left_confidence, current_confidence)
+                left_confidence = self.update_confidence(left_confidence, current_confidence)
+            else:
+                break;
+        return x
+
+class GatedIterMultiHeadAttentionLayer(IterMultiHeadAttentionLayer):
+    @staticmethod
+    def next_x(x, new_x, left_confidence):
+        return x
 
 class GraphAttentionEncoder(nn.Module):
     def __init__(
@@ -192,6 +238,138 @@ class GraphAttentionEncoder(nn.Module):
             MultiHeadAttentionLayer(n_heads, embed_dim, feed_forward_hidden, normalization)
             for _ in range(n_layers)
         ))
+
+    def forward(self, x, mask=None):
+
+        assert mask is None, "TODO mask not yet supported!"
+
+        # Batch multiply to get initial embeddings of nodes
+        h = self.init_embed(x.view(-1, x.size(-1))).view(*x.size()[:2], -1) if self.init_embed is not None else x
+
+        h = self.layers(h)
+
+        return (
+            h,  # (batch_size, graph_size, embed_dim)
+            h.mean(dim=1),  # average to get embedding of graph, (batch_size, embed_dim)
+        )
+
+class _GraphIterAttentionEncoder(nn.Module):
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=None,
+            normalization='batch',
+            feed_forward_hidden=512,
+            layer_num=None,
+    ):
+        super(_GraphIterAttentionEncoder, self).__init__()
+
+        # To map input to embedding space
+        self.init_embed = nn.Linear(node_dim, embed_dim) if node_dim is not None else None
+
+        self.layers = nn.Sequential(*(
+            IterMultiHeadAttentionLayer(n_heads, embed_dim,
+                                        feed_forward_hidden, normalization,
+                                        layer_num=layer_num,)
+            for _ in range(n_layers)
+        ))
+
+    def forward(self, x, mask=None):
+        assert mask is None, "TODO mask not yet supported!"
+
+        # Batch multiply to get initial embeddings of nodes
+        h = self.init_embed(x.view(-1, x.size(-1))).view(*x.size()[:2], -1) if self.init_embed is not None else x
+
+        h = self.layers(h)
+
+        return (
+            h,  # (batch_size, graph_size, embed_dim)
+            h.mean(dim=1),  # average to get embedding of graph, (batch_size, embed_dim)
+        )
+
+class GraphIter2AttentionEncoder(_GraphIterAttentionEncoder):
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=None,
+            normalization='batch',
+            feed_forward_hidden=512,
+            layer_num=None,
+    ):
+        super(GraphIter2AttentionEncoder, self).__init__(
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=node_dim,
+            normalization=normalization,
+            feed_forward_hidden=feed_forward_hidden,
+            layer_num=2,
+        )
+
+class GraphIter3AttentionEncoder(_GraphIterAttentionEncoder):
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=None,
+            normalization='batch',
+            feed_forward_hidden=512,
+            layer_num=None,
+    ):
+        super(GraphIter3AttentionEncoder, self).__init__(
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=node_dim,
+            normalization=normalization,
+            feed_forward_hidden=feed_forward_hidden,
+            layer_num=3,
+        )
+
+class GraphIter5AttentionEncoder(_GraphIterAttentionEncoder):
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=None,
+            normalization='batch',
+            feed_forward_hidden=512,
+            layer_num=None,
+    ):
+        super(GraphIter5AttentionEncoder, self).__init__(
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=node_dim,
+            normalization=normalization,
+            feed_forward_hidden=feed_forward_hidden,
+            layer_num=5,
+        )
+
+class IterGraphAttentionEncoder(nn.Module):
+    def __init__(
+            self,
+            n_heads,
+            embed_dim,
+            n_layers,
+            node_dim=None,
+            normalization='batch',
+            feed_forward_hidden=512,
+    ):
+        super(IterGraphAttentionEncoder, self).__init__()
+
+        # To map input to embedding space
+        self.init_embed = nn.Linear(node_dim, embed_dim) if node_dim is not None else None
+
+        self.layers = IterMultiHeadAttentionLayer(n_heads, embed_dim,
+                                                  feed_forward_hidden, normalization,
+                                                  layer_num=n_layers,)
 
     def forward(self, x, mask=None):
 

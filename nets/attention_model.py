@@ -5,7 +5,8 @@ import math
 from typing import NamedTuple
 from utils.tensor_functions import compute_in_batches
 
-from nets.graph_encoder import GraphAttentionEncoder
+from nets.graph_encoder import GraphAttentionEncoder, IterGraphAttentionEncoder
+from nets.graph_encoder import GraphIter2AttentionEncoder, GraphIter3AttentionEncoder, GraphIter5AttentionEncoder
 from torch.nn import DataParallel
 from utils.beam_search import CachedLookup
 from utils.functions import sample_many
@@ -41,7 +42,6 @@ class AttentionModelFixed(NamedTuple):
 
 
 class AttentionModel(nn.Module):
-
     def __init__(self,
                  embedding_dim,
                  hidden_dim,
@@ -88,14 +88,14 @@ class AttentionModel(nn.Module):
 
             # Special embedding projection for depot node
             self.init_embed_depot = nn.Linear(2, embedding_dim)
-            
+
             if self.is_vrp and self.allow_partial:  # Need to include the demand if split delivery allowed
                 self.project_node_step = nn.Linear(1, 3 * embedding_dim, bias=False)
         else:  # TSP
             assert problem.NAME == "tsp", "Unsupported problem: {}".format(problem.NAME)
             step_context_dim = 2 * embedding_dim  # Embedding of first and last node
             node_dim = 2  # x, y
-            
+
             # Learned input symbols for first action
             self.W_placeholder = nn.Parameter(torch.Tensor(2 * embedding_dim))
             self.W_placeholder.data.uniform_(-1, 1)  # Placeholder should be in range of activations
@@ -368,7 +368,7 @@ class AttentionModel(nn.Module):
     def _get_parallel_step_context(self, embeddings, state, from_depot=False):
         """
         Returns the context per step, optionally for multiple steps at once (for efficient evaluation of the model)
-        
+
         :param embeddings: (batch_size, graph_size, embed_dim)
         :param prev_a: (batch_size, num_steps)
         :param first_a: Only used when num_steps = 1, action of first step or None if first step
@@ -424,7 +424,7 @@ class AttentionModel(nn.Module):
                 -1
             )
         else:  # TSP
-        
+
             if num_steps == 1:  # We need to special case if we have only 1 step, may be the first or not
                 if state.i.item() == 0:
                     # First and only step, ignore prev_a (this is a placeholder)
@@ -511,4 +511,140 @@ class AttentionModel(nn.Module):
             v.contiguous().view(v.size(0), v.size(1), v.size(2), self.n_heads, -1)
             .expand(v.size(0), v.size(1) if num_steps is None else num_steps, v.size(2), self.n_heads, -1)
             .permute(3, 0, 1, 2, 4)  # (n_heads, batch_size, num_steps, graph_size, head_dim)
+        )
+
+class IterAttentionModel(AttentionModel):
+    def __init__(self,
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=2,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None):
+        super(IterAttentionModel, self).__init__(
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=2,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None,
+        )
+
+        self.embedder = IterGraphAttentionEncoder(
+            n_heads=n_heads,
+            embed_dim=embedding_dim,
+            n_layers=self.n_encode_layers,
+            normalization=normalization
+        )
+
+class AttentionIter2Model(AttentionModel):
+    def __init__(self,
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=2,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None):
+        super(AttentionIter2Model, self).__init__(
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=2,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None,
+        )
+
+        self.embedder = GraphIter2AttentionEncoder(
+            n_heads=n_heads,
+            embed_dim=embedding_dim,
+            n_layers=self.n_encode_layers,
+            normalization=normalization
+        )
+
+class AttentionIter3Model(AttentionModel):
+    def __init__(self,
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=3,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None):
+        super(AttentionIter3Model, self).__init__(
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=3,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None,
+        )
+
+        self.embedder = GraphIter3AttentionEncoder(
+            n_heads=n_heads,
+            embed_dim=embedding_dim,
+            n_layers=self.n_encode_layers,
+            normalization=normalization
+        )
+
+class AttentionIter5Model(AttentionModel):
+    def __init__(self,
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=5,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None):
+        super(AttentionIter5Model, self).__init__(
+                 embedding_dim,
+                 hidden_dim,
+                 problem,
+                 n_encode_layers=5,
+                 tanh_clipping=10.,
+                 mask_inner=True,
+                 mask_logits=True,
+                 normalization='batch',
+                 n_heads=8,
+                 checkpoint_encoder=False,
+                 shrink_size=None,
+        )
+
+        self.embedder = GraphIter5AttentionEncoder(
+            n_heads=n_heads,
+            embed_dim=embedding_dim,
+            n_layers=self.n_encode_layers,
+            normalization=normalization
         )
